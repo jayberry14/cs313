@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="PHP-Team-Activity-W02Thurs.css">
 </head>
 <body>
+<h1>PHP Team Activity</h1>
+<br>
 <div class="column left">
 <?php
     echo "<h1>PHP Team Activity</h1>";
