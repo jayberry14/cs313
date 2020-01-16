@@ -14,3 +14,15 @@ h1 {
     color: red;
     padding: 10px;
 }
+
+.column {
+    float: left;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}

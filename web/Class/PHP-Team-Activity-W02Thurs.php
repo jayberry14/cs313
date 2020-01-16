@@ -12,16 +12,21 @@
 <?php
     echo "<h1>PHP Team Activity</h1>";
 
-    for ($x = 0; $x < 10; $x++) {
-        if ($x%2 != 0) {
-            echo "<div>This is div #$x</div>";
-        }
-            
-        else if ($x%2 == 0) {
-            echo "<div class=\"evenDiv\">This is div #$x</div>";
-        }
-    }
+    create();
 ?>
 
 </body>
 </html>
+<?php
+    function create(){
+        for ($x = 0; $x < 10; $x++) {
+            if ($x%2 != 0) {
+                echo "<div>This is div #$x</div>";
+            }
+                
+            else if ($x%2 == 0) {
+                echo "<div class=\"evenDiv\">This is div #$x</div>";
+            }
+        }
+    }
+?>
