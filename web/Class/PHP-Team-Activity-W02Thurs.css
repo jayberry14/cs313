@@ -1,5 +1,4 @@
 div {
-
     border-style: solid;
     color: black;
     padding: 10px;
@@ -16,7 +15,7 @@ h1 {
 }
 
 .column {
-    width: 50%;
+    width: 40%;
 }
 
 .left {
