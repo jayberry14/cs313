@@ -1,0 +1,16 @@
+div {
+
+    border-style: solid;
+    color: black;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.evenDiv {
+    border-style: solid;
+    color: red;
+    padding: 10px;
+}
