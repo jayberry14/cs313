@@ -38,6 +38,9 @@
     $min = $info['minutes'];
     $sec = $info['seconds'];
 
-    $current_date = "$date/$month/$year == $hour:$min:$sec";
+    $current_date = "$date/$month/$year";
+    $current_time = "$hour:$min:$sec";
     echo "$current_date";
+    echo "<br>";
+    echo "$current_time";
 ?>
