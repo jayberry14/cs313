@@ -6,9 +6,9 @@
     <title>PHP Team Activity</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='PHP.css'>
+    <link rel="stylesheet" type="text/css" href="PHP-Team-Activity-W02Thurs.css">
 </head>
 <body>
-<h1>PHP Team Activity</h1>
 <?php
     echo "<h1>PHP Team Activity</h1>";
 
