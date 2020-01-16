@@ -9,14 +9,21 @@
     <link rel="stylesheet" type="text/css" href="PHP-Team-Activity-W02Thurs.css">
 </head>
 <body>
+<div class="column left">
 <?php
     echo "<h1>PHP Team Activity</h1>";
-
     create();
 ?>
-
+</div>
+<div class="column right">
+<?php
+    echo "<h1>PHP Team Activity</h1>";
+    create();
+?>
+</div>
 </body>
 </html>
+
 <?php
     function create(){
         for ($x = 0; $x < 10; $x++) {
