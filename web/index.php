@@ -25,7 +25,7 @@
 </html>
 
 <?php
-    echo "Hello World!\n";
+    echo "Hello World!\n\r";
     // set default timezone
     
     date_default_timezone_set('America/Boise'); // MST
