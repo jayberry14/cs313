@@ -10,16 +10,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='directory.css'>
-    <script src='directory.js'></script>
+    <!-- <script src='directory.js'></script> -->
 </head>
 <body>
     <h1>Table of Contents</h1>
-    <div>
+    <div class="column left">
+        <<h2>Personal Assignments</h2>
         <a href="hello.html">Assignment 1</a>
         <br>
+        <a href="Personal/w2/homepage.html">Something About Me</a>
+    </div>
+    <div class="column right">
+        <h2>Team Activities</h2>
         <a href="Team/index.html">Team Activity 1</a>
         <br>
-        <a href="Personal/w2/homepage.html">Something About Me</a>
     </div>
 </body>
 </html>
