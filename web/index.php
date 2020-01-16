@@ -27,7 +27,7 @@
 <?php
     echo "Hello World!";
     // set default timezone
-    date_default_timezone_set('America/Mountain'); // CDT
+    date_default_timezone_set('America/Boise'); // MST
 
     $info = getdate();
     $date = $info['mday'];
