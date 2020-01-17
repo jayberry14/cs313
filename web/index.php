@@ -15,7 +15,7 @@
 <body>
     <h1>Table of Contents</h1>
     <div class="column left">
-        <<h2>Personal Assignments</h2>
+        <h2>Personal Assignments</h2>
         <a href="hello.html">Assignment 1</a>
         <br>
         <a href="Personal/w2/homepage.html">Something About Me</a>
