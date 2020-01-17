@@ -10,7 +10,7 @@ h1 {
 }
 
 .column {
-    width: 40%;
+    width: 25%;
 }
 
 .left {
@@ -19,4 +19,8 @@ h1 {
 
 .right {
     float: right;
+}
+
+.center {
+    float: middle;
 }
