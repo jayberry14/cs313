@@ -20,9 +20,29 @@
             <h2>Personal Assignments</h2>
             <a href="hello.html">Assignment 1</a>
             <br>
-            <a href="hello.html">Assignment 1</a>
+            <a href="Team/construction.html">Assignment 2</a>
             <br>
-            <a href="hello.html">Assignment 1</a>
+            <a href="Team/construction.html">Assignment 3</a>
+            <br>
+            <a href="Team/construction.html">Assignment 4</a>
+            <br>
+            <a href="Team/construction.html">Assignment 5</a>
+            <br>
+            <a href="Team/construction.html">Assignment 6</a>
+            <br>
+            <a href="Team/construction.html">Assignment 7</a>
+            <br>
+            <a href="Team/construction.html">Assignment 8</a>
+            <br>
+            <a href="Team/construction.html">Assignment 9</a>
+            <br>
+            <a href="Team/construction.html">Assignment 10</a>
+            <br>
+            <a href="Team/construction.html">Assignment 11</a>
+            <br>
+            <a href="Team/construction.html">Assignment 12</a>
+            <br>
+            <a href="Team/construction.html">Assignment 13</a>
             <br>
         </div>
         <div class="col">

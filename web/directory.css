@@ -5,6 +5,10 @@ div {
     margin: 10px;  
 }
 
+.headerBox {
+    padding: 3%
+}
+
 h1 {
     text-align: center;
 }
@@ -21,6 +25,11 @@ h1 {
     float: right;
 }
 
-.center {
-    float: center;
+.centered {
+    text-emphasis: center;
+}
+
+.buttonBox {
+    background-color: brown;
+    padding: 0.5%;
 }
