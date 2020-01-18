@@ -27,7 +27,7 @@
         <div class="col">
             <h2>Personal Assignments</h2>
                 <a href="hello.html">Assignment 1</a>
-                <br>
+                <br><br>
                 <?php for ($i = 2; $i < 14; $i++) { ?>
                     <a href="Team/construction.html">Assignment <?php echo $i ?></a><br><br>
                 <?php } ?>
@@ -35,31 +35,10 @@
         <div class="col">
             <h2>Team Activities</h2>
             <a href="Team/index.html">Team Activity 1</a>
-            <br>
-            <a href="Team/construction.html">Team Activity 2</a>
-            <br>
-            <a href="Team/construction.html">Team Activity 3</a>
-            <br>
-            <a href="Team/construction.html">Team Activity 4</a>
-            <br>
-            <a href="Team/construction.html">Team Activity 5</a>
-            <br>
-            <a href="Team/construction.html">Team Activity 6</a>
-            <br>
-            <a href="Team/construction.html">Team Activity 7</a>
-            <br>
-            <a href="Team/construction.html">Team Activity 8</a>
-            <br>
-            <a href="Team/construction.html">Team Activity 9</a>
-            <br>
-            <a href="Team/construction.html">Team Activity 10</a>
-            <br>
-            <a href="Team/construction.html">Team Activity 11</a>
-            <br>
-            <a href="Team/construction.html">Team Activity 12</a>
-            <br>
-            <a href="Team/construction.html">Team Activity 13</a>
-            <br>
+            <br><br>
+            <?php for ($i = 2; $i < 14; $i++) { ?>
+                    <a href="Team/construction.html">Team Activity <?php echo $i ?></a><br><br>
+                <?php } ?>
         </div>
     </div>
 </body>
