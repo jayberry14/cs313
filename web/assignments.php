@@ -23,6 +23,7 @@
     <?php include 'header.php';?>
     <?php session_start(); ?>
     <h1>Table of Contents</h1>
+    <img src="Files/self-portrait.jpg" alt="Me" class="img-circle img-2 left">
     <div class="row container-fluid squish-center">
         <div class="column left">
             <h2><u>Personal Assignments</u></h2>
