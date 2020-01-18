@@ -16,6 +16,11 @@ h1 {
     color: lightslategray;
 }
 
+.img-1 {
+    max-width: 100%;
+    height: auto;
+}
+
 .divHover {
     visibility: visible;
     color: black;
@@ -27,18 +32,6 @@ h1 {
 
 .column {
     width: 25%;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-.centered {
-    text-emphasis: center;
 }
 
 .buttonBox {
