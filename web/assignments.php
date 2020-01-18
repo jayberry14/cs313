@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Josh's Assignment Directory</title>
-    <link rel="icon" type="image/ico" href="https://cdn.dribbble.com/users/646147/screenshots/5600907/j_4x.png">
+    <link rel="icon" type="image/ico" href="https://cdn3.iconfinder.com/data/icons/round-icons-vol-2/512/j-512.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -26,7 +26,7 @@
     <div class="row container-fluid">
         <div class="col left">
             <h2>Personal Assignments</h2>
-                <a href="hello.html">Assignment 1</a>
+                <a href="hello.html"><button class="button">Assignment 1</button></a>
                 <br><br>
                 <?php for ($i = 2; $i < 14; $i++) { ?>
                     <a href="Team/construction.html"><button class="button">Assignment <?php echo $i ?></button></a><br><br>
