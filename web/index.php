@@ -20,8 +20,21 @@
 <body>
     <?php include 'header.php';?>
     <?php session_start(); ?>
+    <h1>The Homepage of Josh Mayberry</h1>
     <div class="container-fluid bg-1 text-center">
         <img src="self-portrait.jpg" alt="Me" class="img-circle img-1">
+        <div>
+        I am a dynamic figure often seen crushing noobs or playing chess.
+        I once conquered an entire classroom of students, becoming their Project Manager
+        by using only my laptop and sheer unstoppable willpower. 
+        I spend my off-time defending your credit cards to the death and whipping the
+        Wi-Fi back into shape in the on-campus IT Security Office.
+        I don't get stressed.
+        On weekends I pamper myself with the sounds of pain exiting my body as the bench
+        press ascends and descends in my arms
+        Jack Wilder, from the hit blockbuster "Now You See Me" wishes he could throw
+        playing cards as well as I do.
+        </div>
     </div>
 </body>
 </html>

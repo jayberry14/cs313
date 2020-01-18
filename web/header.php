@@ -30,9 +30,7 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">WHO</a></li>
                     <li><a href="assignments.php">Assignments</a></li>
-                    <li><a href="#">WHERE</a></li>
                 </ul>
             </div>
         </div>
