@@ -23,7 +23,7 @@
     <?php session_start(); ?>
     <h1>Table of Contents</h1>
     <div class="row">
-        <div class="col">
+        <div class="col left">
             <h2>Personal Assignments</h2>
                 <a href="hello.html">Assignment 1</a>
                 <br><br>
@@ -31,7 +31,7 @@
                     <a href="Team/construction.html">Assignment <?php echo $i ?></a><br><br>
                 <?php } ?>
         </div>
-        <div class="col">
+        <div class="col right">
             <h2>Team Activities</h2>
                 <a href="Team/index.html">Team Activity 1</a>
                 <br><br>

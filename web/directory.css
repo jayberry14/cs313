@@ -22,7 +22,7 @@ footer {
 }
 
 .bg-2 {
-    background-color: lightgray;
+    background-color: rgb(185, 185, 185);
     color: black;
 }
 
@@ -52,4 +52,12 @@ footer {
 
 .button {
     box-shadow: slategrey;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }
