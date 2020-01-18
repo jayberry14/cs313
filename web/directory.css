@@ -1,14 +1,13 @@
 body {
     background-color: whitesmoke;
-    margin-right: 4vw;
-    margin-left: 4vw;
 }
 
 div {
     border-style: groove;
     color: black;
     padding: 10px;
-    margin: 10px;  
+    margin: 10px;
+    max-width: fit-content;
 }
 
 .divHover {
@@ -41,7 +40,7 @@ h1 {
 }
 
 .buttonBox {
-    background-color: lightgreen;
+    background-color: rgb(229, 238, 144);
     padding: 0.5%;
 }
 
