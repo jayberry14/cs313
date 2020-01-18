@@ -20,6 +20,7 @@
     </script>
 </head>
 <body>
+    <?php include 'header.php';?>
     <?php session_start(); ?>
     <h1>Table of Contents</h1>
     <div class="row">
