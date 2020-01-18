@@ -22,7 +22,7 @@
     <?php include 'header.php';?>
     <?php session_start(); ?>
     <h1>Table of Contents</h1>
-    <div class="row">
+    <div class="row container-fluid">
         <div class="col left">
             <h2>Personal Assignments</h2>
                 <a href="hello.html">Assignment 1</a>
