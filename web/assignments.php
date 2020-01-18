@@ -36,7 +36,7 @@
         <div class="column right">
             <h2><u>Team Activities</u></h2>
             <br>
-                <a href="Team/index.html"><button class="button">Team Activity 1</button></a>
+                <a href="Team/index.html"><button class="button center-block">Team Activity 1</button></a>
                 <br><br>
                 <?php for ($i = 2; $i < 14; $i++) { ?>
                     <a href="Team/construction.html"><button class="button">Team Activity <?php echo $i ?></button></a><br><br>
