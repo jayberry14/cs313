@@ -27,10 +27,10 @@
         <div class="column left">
             <h2><u>Personal Assignments</u></h2>
             <br>
-                <a href="hello.html"><button class="button">Assignment 1</button></a>
+                <a href="hello.html"><button class="button center-block">Assignment 1</button></a>
                 <br><br>
                 <?php for ($i = 2; $i < 14; $i++) { ?>
-                    <a href="Team/construction.html"><button class="button">Assignment <?php echo $i ?></button></a><br><br>
+                    <a href="Team/construction.html"><button class="button center-block">Assignment <?php echo $i ?></button></a><br><br>
                 <?php } ?>
         </div>
         <div class="column right">
@@ -39,7 +39,7 @@
                 <a href="Team/index.html"><button class="button center-block">Team Activity 1</button></a>
                 <br><br>
                 <?php for ($i = 2; $i < 14; $i++) { ?>
-                    <a href="Team/construction.html"><button class="button">Team Activity <?php echo $i ?></button></a><br><br>
+                    <a href="Team/construction.html"><button class="button center-block">Team Activity <?php echo $i ?></button></a><br><br>
                 <?php } ?>
         </div>
     </div>
