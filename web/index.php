@@ -22,11 +22,11 @@
     <header class="headerBox">
         <?php session_start(); ?>
         <h1>The Homepage for Joshua Mayberry</h1>
-        <div class="row buttonBox btn-group" id="navBar">
-            <div class="col buttonBox button">
+        <div class="row buttonBox" id="navBar">
+            <div class="col button">
                 <button onclick="navigate('assignmentsBut')" class="button" type="button" id="assignmentsBut">Assignments</button>
             </div>
-            <div class="col buttonBox button"> 
+            <div class="col button"> 
                 <button onclick="navigate('aboutBut')" class="button" type="button" id="aboutBut">About Me</button>
             </div>
         </div>
