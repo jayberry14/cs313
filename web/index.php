@@ -25,10 +25,10 @@
     </header>
     <div class="row buttonBox" id="navBar">
         <div class="col buttonBox">
-            <button type="button" id="assignmentsBut">Assignments</button>
+            <button onclick="navigate('assignmentsBut')" class="button" type="button" id="assignmentsBut">Assignments</button>
         </div>
         <div class="col buttonBox">
-            <button type="button" id="aboutBut">About Me</button>
+            <button onclick="navigate('aboutBut')" class="button" type="button" id="aboutBut">About Me</button>
         </div>
     </div>
 </body>
