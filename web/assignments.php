@@ -22,9 +22,6 @@
 <body>
     <?php session_start(); ?>
     <h1>Table of Contents</h1>
-    <header class="header centered">
-        <a href="Personal/w2/homepage.html">Something About Me</a>
-    </header>
     <div class="row">
         <div class="col">
             <h2>Personal Assignments</h2>
