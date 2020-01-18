@@ -12,6 +12,10 @@ div {
     max-width: 100%;
 }
 
+p {
+    font-size: 14pt;
+}
+
 footer {
     text-align: center;
 }
