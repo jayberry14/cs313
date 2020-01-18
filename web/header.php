@@ -19,7 +19,7 @@
     </script>
 </head>
 <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default bg-2">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
