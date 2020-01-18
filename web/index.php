@@ -27,13 +27,18 @@
         <div>
             <p>
                 I am a dynamic figure often seen crushing noobs or playing chess.
+                <br>
                 I once conquered an entire classroom of students, becoming their Project Manager
                 by using only my laptop and sheer unstoppable willpower. 
+                <br>
                 I spend my off-time defending your credit cards to the death and whipping the
                 Wi-Fi back into shape in the on-campus IT Security Office.
+                <br>
                 I don't get stressed.
+                <br>
                 On weekends I pamper myself with the sounds of pain exiting my body as the bench
-                press ascends and descends in my arms
+                press ascends and descends in my arms.
+                <br>
                 Jack Wilder, from the hit blockbuster "Now You See Me" wishes he could throw
                 playing cards as well as I do.
             </p>

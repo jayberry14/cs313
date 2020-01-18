@@ -32,7 +32,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="assignments.php">Assignments</a></li>
-                    <li><a href="#">TBD</a></li>
+                    <li><a href="#">Coming Soon!</a></li>
                 </ul>
             </div>
         </div>
