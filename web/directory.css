@@ -6,6 +6,12 @@ h1 {
     text-align: center;
 }
 
+div {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    max-width: 100%;
+}
+
 .bg-1 {
     background-color: whitesmoke;
     color: lightslategray;
