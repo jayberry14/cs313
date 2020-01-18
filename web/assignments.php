@@ -34,10 +34,10 @@
         </div>
         <div class="column right">
             <h2>Team Activities</h2>
-                <a href="Team/index.html">Team Activity 1</a>
+                <a href="Team/index.html">><button class="button">Team Activity 1</button></a>
                 <br><br>
                 <?php for ($i = 2; $i < 14; $i++) { ?>
-                    <a href="Team/construction.html">Team Activity <?php echo $i ?></a><br><br>
+                    <a href="Team/construction.html">><button class="button">Team Activity <?php echo $i ?></button></a><br><br>
                 <?php } ?>
         </div>
     </div>
