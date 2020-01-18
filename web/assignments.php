@@ -28,7 +28,7 @@
                 <a href="hello.html">Assignment 1</a>
                 <br><br>
                 <?php for ($i = 2; $i < 14; $i++) { ?>
-                    <a href="Team/construction.html">Assignment <?php echo $i ?></a><br><br>
+                    <a href="Team/construction.html"><button class="button">Assignment <?php echo $i ?></button></a><br><br>
                 <?php } ?>
         </div>
         <div class="col right">
