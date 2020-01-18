@@ -23,8 +23,8 @@
     <?php include 'header.php';?>
     <?php session_start(); ?>
     <h1>Table of Contents</h1>
-    <div class="row container-fluid">
-        <div class="col left">
+    <div class="row container-fluid ">
+        <div class="column left">
             <h2>Personal Assignments</h2>
                 <a href="hello.html"><button class="button">Assignment 1</button></a>
                 <br><br>
@@ -32,7 +32,7 @@
                     <a href="Team/construction.html"><button class="button">Assignment <?php echo $i ?></button></a><br><br>
                 <?php } ?>
         </div>
-        <div class="col right">
+        <div class="column right">
             <h2>Team Activities</h2>
                 <a href="Team/index.html">Team Activity 1</a>
                 <br><br>

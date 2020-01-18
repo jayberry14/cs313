@@ -41,15 +41,6 @@ footer {
     font-weight: bold;
 }
 
-.headerBox {
-    padding: 3%
-}
-
-.buttonBox {
-    background-color: rgb(228, 240, 119);
-    padding: 0.5%;
-}
-
 .button {
     box-shadow: slategrey;
 }
