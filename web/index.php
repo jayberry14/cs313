@@ -22,15 +22,26 @@
     <header class="headerBox">
         <?php session_start(); ?>
         <h1>The Homepage for Joshua Mayberry</h1>
-        <div class="row buttonBox" id="navBar">
-            <div class="col button">
-                <a href="assignments.php"><button class="button" type="button" id="assignmentsBut">Assignments</button></a>
+    </header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Me</a>
             </div>
-            <div class="col button"> 
-                <a href="index.php"><button class="button" type="button" id="aboutBut">About Me</button></a>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">WHO</a></li>
+                    <li><a href="#">WHAT</a></li>
+                    <li><a href="#">WHERE</a></li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
     <div class="container-fluid bg-1 text-center">
         <img src="self-portrait.jpg" alt="Me" class="img-circle img-1">
     </div>
