@@ -3,11 +3,19 @@ body {
 }
 
 div {
-    border-style: groove;
     color: black;
     padding: 10px;
     margin: 10px;
-    max-width: fit-content;
+    max-width: max-content;
+}
+
+h1 {
+    text-align: center;
+}
+
+.bg-1 {
+    background-color: whitesmoke;
+    color: lightslategray;
 }
 
 .divHover {
@@ -17,10 +25,6 @@ div {
 
 .headerBox {
     padding: 3%
-}
-
-h1 {
-    text-align: center;
 }
 
 .column {
@@ -40,7 +44,7 @@ h1 {
 }
 
 .buttonBox {
-    background-color: rgb(229, 238, 144);
+    background-color: rgb(228, 240, 119);
     padding: 0.5%;
 }
 
