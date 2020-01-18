@@ -20,16 +20,16 @@
 </head>
 <body>
     <header class="headerBox">
-    <?php session_start(); ?>
+        <?php session_start(); ?>
         <h1>The Homepage for Joshua Mayberry</h1>
-    </header>
-    <div class="container-fluid">
         <div class="row buttonBox btn-group" id="navBar">
             <div class="col buttonBox button">
                 <button onclick="navigate('assignmentsBut')" class=" row btn btn-primary" type="button" id="assignmentsBut">Assignments</button>
                 <button onclick="navigate('aboutBut')" class=" row btn btn-primary" type="button" id="aboutBut">About Me</button>
             </div>
         </div>
+    </header>
+    <div class="container-fluid">
         <img src="self-portrait.jpg" alt="Me">
     </div>
 </body>
