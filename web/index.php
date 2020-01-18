@@ -24,10 +24,10 @@
         <h1>The Homepage for Joshua Mayberry</h1>
         <div class="row buttonBox" id="navBar">
             <div class="col button">
-                <button onclick="navigate('assignmentsBut')" class="button" type="button" id="assignmentsBut">Assignments</button>
+                <a href="assignments.php"><button class="button" type="button" id="assignmentsBut">Assignments</button></a>
             </div>
             <div class="col button"> 
-                <button onclick="navigate('aboutBut')" class="button" type="button" id="aboutBut">About Me</button>
+                <a href="index.php"><button class="button" type="button" id="aboutBut">About Me</button></a>
             </div>
         </div>
     </header>
