@@ -17,9 +17,15 @@ div {
     color: lightslategray;
 }
 
+.bg-2 {
+    background-color: lightslategrey;
+    color: black;
+}
+
 .img-1 {
     max-width: 100%;
     height: auto;
+    size: 75%;
 }
 
 .divHover {

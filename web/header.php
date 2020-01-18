@@ -17,7 +17,7 @@
             }
     </script>
 </head>
-<body>
+<body class="bg-2">
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
