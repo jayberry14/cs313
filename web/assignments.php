@@ -20,9 +20,11 @@
     </script>
 </head>
 <body>
+    <?php session_start(); ?>
     <h1>Table of Contents</h1>
     <header class="header centered">
         <a href="Personal/w2/homepage.html">Something About Me</a>
+    </header>
     <div class="row">
         <div class="col">
             <h2>Personal Assignments</h2>
@@ -34,9 +36,9 @@
         </div>
         <div class="col">
             <h2>Team Activities</h2>
-            <a href="Team/index.html">Team Activity 1</a>
-            <br><br>
-            <?php for ($i = 2; $i < 14; $i++) { ?>
+                <a href="Team/index.html">Team Activity 1</a>
+                <br><br>
+                <?php for ($i = 2; $i < 14; $i++) { ?>
                     <a href="Team/construction.html">Team Activity <?php echo $i ?></a><br><br>
                 <?php } ?>
         </div>
