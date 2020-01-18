@@ -41,25 +41,27 @@
         </div>
     </div>
 </body>
+<footer>
+    <?php
+        echo "Hello World!";
+        // set default timezone
+        echo "<br>";
+        date_default_timezone_set('America/Boise'); // MST
+
+        $info = getdate();
+        $date = $info['mday'];
+        $month = $info['mon'];
+        $year = $info['year'];
+        $hour = $info['hours'];
+        $min = $info['minutes'];
+        $sec = $info['seconds'];
+
+        $current_date = "$date/$month/$year";
+        $current_time = "$hour:$min:$sec";
+        echo "$current_date";
+        echo "<br>";
+        echo "$current_time";
+    ?>
+</footer>
 </html>
 
-<?php
-    echo "Hello World!";
-    // set default timezone
-    echo "<br>";
-    date_default_timezone_set('America/Boise'); // MST
-
-    $info = getdate();
-    $date = $info['mday'];
-    $month = $info['mon'];
-    $year = $info['year'];
-    $hour = $info['hours'];
-    $min = $info['minutes'];
-    $sec = $info['seconds'];
-
-    $current_date = "$date/$month/$year";
-    $current_time = "$hour:$min:$sec";
-    echo "$current_date";
-    echo "<br>";
-    echo "$current_time";
-?>

@@ -12,6 +12,10 @@ div {
     max-width: 100%;
 }
 
+footer {
+    text-align: center;
+}
+
 .bg-1 {
     background-color: whitesmoke;
     color: lightslategray;
