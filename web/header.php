@@ -32,7 +32,8 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="assignments.php">Assignments</a></li>
-                    <li><a href="#">Coming Soon!</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Ride Share</a></li>
                 </ul>
             </div>
         </div>

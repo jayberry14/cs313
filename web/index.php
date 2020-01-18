@@ -21,7 +21,7 @@
 <body>
     <?php include 'header.php';?>
     <?php session_start(); ?>
-    <h1>The Homepage of Josh Mayberry</h1>
+    <h1>Josh Mayberry's Online Profile</h1>
     <div class="container-fluid bg-1 text-center">
         <img src="self-portrait.jpg" alt="Me" class="img-circle img-1">
         <br>

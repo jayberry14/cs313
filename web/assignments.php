@@ -23,7 +23,7 @@
     <?php include 'header.php';?>
     <?php session_start(); ?>
     <h1>Table of Contents</h1>
-    <div class="row container-fluid ">
+    <div class="row container-fluid squish-center">
         <div class="column left">
             <h2>Personal Assignments</h2>
                 <a href="hello.html"><button class="button">Assignment 1</button></a>
@@ -37,7 +37,7 @@
                 <a href="Team/index.html">><button class="button">Team Activity 1</button></a>
                 <br><br>
                 <?php for ($i = 2; $i < 14; $i++) { ?>
-                    <a href="Team/construction.html">><button class="button">Team Activity <?php echo $i ?></button></a><br><br>
+                    <a href="Team/construction.html"><button class="button">Team Activity <?php echo $i ?></button></a><br><br>
                 <?php } ?>
         </div>
     </div>

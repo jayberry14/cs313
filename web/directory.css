@@ -56,3 +56,7 @@ footer {
 .right {
     float: right;
 }
+
+.squish-center {
+    margin: 10% 10%;
+}
