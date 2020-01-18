@@ -24,10 +24,10 @@
         <h1>The Homepage for Joshua Mayberry</h1>
         <div class="row buttonBox btn-group" id="navBar">
             <div class="col buttonBox button">
-                <button onclick="navigate('assignmentsBut')" class="button img-1" type="button" id="assignmentsBut">Assignments</button>
+                <button onclick="navigate('assignmentsBut')" class="button" type="button" id="assignmentsBut">Assignments</button>
             </div>
             <div class="col buttonBox button"> 
-                <button onclick="navigate('aboutBut')" class="button img-1" type="button" id="aboutBut">About Me</button>
+                <button onclick="navigate('aboutBut')" class="button" type="button" id="aboutBut">About Me</button>
             </div>
         </div>
     </header>

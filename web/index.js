@@ -6,4 +6,5 @@ function navigate(button) {
     else if (button == aboutBut) {
         URL = "index.php";
     }
+    <a href="URL"></a>
 }
