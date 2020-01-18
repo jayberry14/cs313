@@ -39,9 +39,9 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid bg-1 text-center">
+    <!-- <div class="container-fluid bg-1 text-center">
         <img src="self-portrait.jpg" alt="Me" class="img-circle img-1">
-    </div>
+    </div> -->
 </body>
 </html>
 
