@@ -11,39 +11,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='directory.css'>
     <!-- <script src='directory.js'></script> -->
+    <script>
+			// prevents refresh from submitting form and clears out unneeded variables
+            // Thank you Brother Birch for this section of JS!
+            if ( window.history.replaceState ) {
+                window.history.replaceState( null, null, window.location.href );
+            }
+    </script>
 </head>
 <body>
     <h1>Table of Contents</h1>
-    <a href="Personal/w2/homepage.html">Something About Me</a>
+    <header class="header centered">
+        <a href="Personal/w2/homepage.html">Something About Me</a>
     <div class="row">
         <div class="col">
             <h2>Personal Assignments</h2>
-            <a href="hello.html">Assignment 1</a>
-            <br>
-            <a href="Team/construction.html">Assignment 2</a>
-            <br>
-            <a href="Team/construction.html">Assignment 3</a>
-            <br>
-            <a href="Team/construction.html">Assignment 4</a>
-            <br>
-            <a href="Team/construction.html">Assignment 5</a>
-            <br>
-            <a href="Team/construction.html">Assignment 6</a>
-            <br>
-            <a href="Team/construction.html">Assignment 7</a>
-            <br>
-            <a href="Team/construction.html">Assignment 8</a>
-            <br>
-            <a href="Team/construction.html">Assignment 9</a>
-            <br>
-            <a href="Team/construction.html">Assignment 10</a>
-            <br>
-            <a href="Team/construction.html">Assignment 11</a>
-            <br>
-            <a href="Team/construction.html">Assignment 12</a>
-            <br>
-            <a href="Team/construction.html">Assignment 13</a>
-            <br>
+                <a href="hello.html">Assignment 1</a>
+                <br>
+                <?php for ($i = 2; $i < 14; $i++) { ?>
+                    <a href="Team/construction.html">Assignment <?php echo $i ?></a><br><br>
+                <?php } ?>
         </div>
         <div class="col">
             <h2>Team Activities</h2>
