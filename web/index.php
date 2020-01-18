@@ -32,7 +32,7 @@
         </div>
     </header>
     <div class="container-fluid bg-1 text-center">
-        <img src="self-portrait.jpg" alt="Me" class="img-rounded">
+        <img src="self-portrait.jpg" alt="Me" class="img-circle">
     </div>
 </body>
 </html>
