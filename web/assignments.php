@@ -25,7 +25,8 @@
     <h1>Table of Contents</h1>
     <div class="row container-fluid squish-center">
         <div class="column left">
-            <h2>Personal Assignments</h2>
+            <h2><u>Personal Assignments</u></h2>
+            <br>
                 <a href="hello.html"><button class="button">Assignment 1</button></a>
                 <br><br>
                 <?php for ($i = 2; $i < 14; $i++) { ?>
@@ -33,7 +34,8 @@
                 <?php } ?>
         </div>
         <div class="column right">
-            <h2>Team Activities</h2>
+            <h2><u>Team Activities</u></h2>
+            <br>
                 <a href="Team/index.html"><button class="button">Team Activity 1</button></a>
                 <br><br>
                 <?php for ($i = 2; $i < 14; $i++) { ?>
