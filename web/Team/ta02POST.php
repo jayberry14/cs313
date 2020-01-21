@@ -3,7 +3,7 @@
     $name = htmlspecialchars($_POST["nameForPHP"]);
     $email = htmlspecialchars($_POST["emailForPHP"]);
     $major = htmlspecialchars($_POST["majorForPHP"]);
-    $visitedContinents = array(htmlspecialchars($_POST["visitedContinents[]"]));
+    $visitedContinents = array(htmlspecialchars($_POST["visitedContinents"]));
     $comments = htmlspecialchars($_POST["comments"]);
     
     echo "Name: $name <br><br>";
