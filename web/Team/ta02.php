@@ -23,14 +23,14 @@
             <?php 
             $majors = array("CS" => "Computer Science", "WDD" => "Web Design and Development", "CIT" => "Computer Information Technology", "CE" => "Computer Engineering");
             foreach($majors as $i) {
-                echo "<input type=\"radio\" name=\"majorForPHP\" value=\"$majors[$i]\">$i<br><br>";
+                echo "<input type=\"radio\" name=\"majorForPHP\" value=\"$majors\">$i<br><br>";
             }
             ?>
                 <!-- <input type="radio" name="majorForPHP" value="CS"> Computer Science<br>
                 <input type="radio" name="majorForPHP" value="WDD"> Web Design and Development<br>
                 <input type="radio" name="majorForPHP" value="CIT"> Computer Information Technology<br>
                 <input type="radio" name="majorForPHP" value="CE"> Computer Engineering -->
-        u  </div>
+          </div>
             <br>
             <div>
                 <label for="comments">Comments:</label>
