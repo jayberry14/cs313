@@ -31,14 +31,14 @@
                 <textarea name="comments" rows="4" cols="50" placeholder="Comments Here..."></textarea>
             </div>
             <div>
-                <label for="visited countries">Select the countries you have visited before:</label><br>
-                    <input type="checkbox" name="visitedCountries[]" value="North America"> North America <br>
-                    <input type="checkbox" name="visitedCountries[]" value="South America"> South America <br>
-                    <input type="checkbox" name="visitedCountries[]" value="Europe"> Europe <br>
-                    <input type="checkbox" name="visitedCountries[]" value="Asia"> Asia <br>
-                    <input type="checkbox" name="visitedCountries[]" value="Australia"> Australia <br>
-                    <input type="checkbox" name="visitedCountries[]" value="Africa"> Africa <br>
-                    <input type="checkbox" name="visitedCountries[]" value="Antartica"> Antartica <br>                
+                <label for="visited countries">Select the continents you have visited before:</label><br>
+                    <input type="checkbox" name="visitedContinents[]" value="North America"> North America <br>
+                    <input type="checkbox" name="visitedContinents[]" value="South America"> South America <br>
+                    <input type="checkbox" name="visitedContinents[]" value="Europe"> Europe <br>
+                    <input type="checkbox" name="visitedContinents[]" value="Asia"> Asia <br>
+                    <input type="checkbox" name="visitedContinents[]" value="Australia"> Australia <br>
+                    <input type="checkbox" name="visitedContinents[]" value="Africa"> Africa <br>
+                    <input type="checkbox" name="visitedContinents[]" value="Antartica"> Antartica <br>                
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
