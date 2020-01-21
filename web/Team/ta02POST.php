@@ -12,8 +12,7 @@
     echo "Visited Countries: <br>";
     foreach($_POST["visitedContinents"] as $value)
     {
-        echo $value;
-        echo "<br>";
+        echo "      $value<br>";
     }
     echo "<br>Comments: $comments";
 ?>
