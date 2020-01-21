@@ -15,7 +15,7 @@
     foreach($visitedCountries as $value)
     {
         echo "Visited Countries: $value";
-        echo "<br>"
+        echo "<br>";
     }
     echo "Comments: $comments";
     
