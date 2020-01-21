@@ -19,14 +19,17 @@
             </div>
             <br>
             <div>
-            
+                
             <?php 
-                //$majorArray = 
+            $majors = array("CS" => "Computer Science", "WDD" => "Web Design and Development", "CIT" => "Computer Information Technology", "CE" => "Computer Engineering");
+            foreach($majors as $i) {
+                echo "<input type=\"radio\" name=\"majorForPHP\" value=\"$i\">$i<br><br>"
+            }
             ?>
-                <input type="radio" name="majorForPHP" value="CS"> Computer Science<br>
+                <!-- <input type="radio" name="majorForPHP" value="CS"> Computer Science<br>
                 <input type="radio" name="majorForPHP" value="WDD"> Web Design and Development<br>
                 <input type="radio" name="majorForPHP" value="CIT"> Computer Information Technology<br>
-                <input type="radio" name="majorForPHP" value="CE"> Computer Engineering
+                <input type="radio" name="majorForPHP" value="CE"> Computer Engineering -->
             </div>
             <br>
             <div>
