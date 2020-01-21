@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html class="no-js"> 
     <head>
         <meta charset="utf-8">
@@ -30,7 +31,7 @@
                 <textarea name="comments" rows="4" cols="50" placeholder="Comments Here..."></textarea>
             </div>
             <div>
-                <label for="visited countries">Select the countries you have visited before:</label>
+                <label for="visited countries">Select the countries you have visited before:</label><br>
                     <input type="checkbox" name="visitedCountries[]" value="North America"> North America <br>
                     <input type="checkbox" name="visitedCountries[]" value="South America"> South America <br>
                     <input type="checkbox" name="visitedCountries[]" value="Europe"> Europe <br>

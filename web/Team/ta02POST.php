@@ -12,12 +12,10 @@
     echo "<br>";
     echo "Major: $major";
     echo "<br>";
-    foreach($visitedCountries as $value)
+    foreach($_POST["visitedCountries[]"] as $value)
     {
         echo "Visited Countries: $value";
         echo "<br>";
     }
     echo "Comments: $comments";
-    
-    
 ?>
