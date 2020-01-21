@@ -1,15 +1,19 @@
 <?php 
+
     $name = htmlspecialchars($_POST["nameForPHP"]);
     $email = htmlspecialchars($_POST["emailForPHP"]);
     $major = htmlspecialchars($_POST["majorForPHP"]);
+    $visitedCountries = htmlspecialchars($_POST["visitedCountries"])
     $comments = htmlspecialchars($_POST["comments"]);
     
     echo "Name: $name";
-    <br>
+    echo "<br>";
     echo "Email: $email";
-    <br>
+    echo "<br>";
     echo "Major: $Major";
-    <br>
+    echo "<br>";
     echo "Comments: $comments";
+    echo "<br>";
+    echo "Visited Countries: $visitedCountries";
     
 ?>
