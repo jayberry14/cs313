@@ -32,13 +32,13 @@
             </div>
             <div>
                 <label for="visited countries">Select the continents you have visited before:</label><br>
-                    <input type="checkbox" name="visitedContinents" value="North America"> North America <br>
-                    <input type="checkbox" name="visitedContinents" value="South America"> South America <br>
-                    <input type="checkbox" name="visitedContinents" value="Europe"> Europe <br>
-                    <input type="checkbox" name="visitedContinents" value="Asia"> Asia <br>
-                    <input type="checkbox" name="visitedContinents" value="Australia"> Australia <br>
-                    <input type="checkbox" name="visitedContinents" value="Africa"> Africa <br>
-                    <input type="checkbox" name="visitedContinents" value="Antartica"> Antartica <br>                
+                    <input type="checkbox" name="visitedContinents[]" value="North America"> North America <br>
+                    <input type="checkbox" name="visitedContinents[]" value="South America"> South America <br>
+                    <input type="checkbox" name="visitedContinents[]" value="Europe"> Europe <br>
+                    <input type="checkbox" name="visitedContinents[]" value="Asia"> Asia <br>
+                    <input type="checkbox" name="visitedContinents[]" value="Australia"> Australia <br>
+                    <input type="checkbox" name="visitedContinents[]" value="Africa"> Africa <br>
+                    <input type="checkbox" name="visitedContinents[]" value="Antartica"> Antartica <br>                
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
