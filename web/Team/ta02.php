@@ -19,6 +19,10 @@
             </div>
             <br>
             <div>
+            
+            <?php 
+                //$majorArray = 
+            ?>
                 <input type="radio" name="majorForPHP" value="CS"> Computer Science<br>
                 <input type="radio" name="majorForPHP" value="WDD"> Web Design and Development<br>
                 <input type="radio" name="majorForPHP" value="CIT"> Computer Information Technology<br>
