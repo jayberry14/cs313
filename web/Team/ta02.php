@@ -23,14 +23,14 @@
             <?php 
             $majors = array("CS" => "Computer Science", "WDD" => "Web Design and Development", "CIT" => "Computer Information Technology", "CE" => "Computer Engineering");
             foreach($majors as $i) {
-                echo "<input type=\"radio\" name=\"majorForPHP\" value=\"$i\">$i<br><br>";
+                echo "<input type=\"radio\" name=\"majorForPHP\" value=\"$majors[$i]\">$i<br><br>";
             }
             ?>
                 <!-- <input type="radio" name="majorForPHP" value="CS"> Computer Science<br>
                 <input type="radio" name="majorForPHP" value="WDD"> Web Design and Development<br>
                 <input type="radio" name="majorForPHP" value="CIT"> Computer Information Technology<br>
                 <input type="radio" name="majorForPHP" value="CE"> Computer Engineering -->
-            </div>
+        u  </div>
             <br>
             <div>
                 <label for="comments">Comments:</label>
@@ -38,14 +38,17 @@
                 <textarea name="comments" rows="4" cols="50" placeholder="Comments Here..."></textarea>
             </div>
             <div>
+            <!-- <?php
+                // $continents = array("NA" => "North America", "SA" => "South America", "EU" => "Europe", "AS" => "Asia", "AU" => "Austrailia", "AF" => "Africa", "AN" => "Antarctica",);
+            ?> -->
                 <label for="visited countries">Select the continents you have visited before:</label><br>
-                    <input type="checkbox" name="visitedContinents[]" value="North America"> North America <br>
-                    <input type="checkbox" name="visitedContinents[]" value="South America"> South America <br>
-                    <input type="checkbox" name="visitedContinents[]" value="Europe"> Europe <br>
-                    <input type="checkbox" name="visitedContinents[]" value="Asia"> Asia <br>
-                    <input type="checkbox" name="visitedContinents[]" value="Australia"> Australia <br>
-                    <input type="checkbox" name="visitedContinents[]" value="Africa"> Africa <br>
-                    <input type="checkbox" name="visitedContinents[]" value="Antartica"> Antartica <br>                
+                    <input type="checkbox" name="visitedContinents[]" value="NA"> North America <br>
+                    <input type="checkbox" name="visitedContinents[]" value="SA"> South America <br>
+                    <input type="checkbox" name="visitedContinents[]" value="EU"> Europe <br>
+                    <input type="checkbox" name="visitedContinents[]" value="AS"> Asia <br>
+                    <input type="checkbox" name="visitedContinents[]" value="AU"> Australia <br>
+                    <input type="checkbox" name="visitedContinents[]" value="AF"> Africa <br>
+                    <input type="checkbox" name="visitedContinents[]" value="AN"> Antarctica <br>      
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
