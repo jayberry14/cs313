@@ -27,12 +27,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="Personal/w2/index.php">Me</a>
+                <a class="navbar-brand" href="index.php">Me</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="Personal/w2/assignments.php">Assignments</a></li>
-                    <li><a href="Personal/w2/josh's_resume.pdf">Resume</a></li>
+                    <li><a href="assignments.php">Assignments</a></li>
+                    <li><a href="josh's_resume.pdf">Resume</a></li>
                     <li><a href="#">Ride Share</a></li>
                 </ul>
             </div>
