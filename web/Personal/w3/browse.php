@@ -37,6 +37,11 @@
                     <li>Choice 5</li>
                     <li>Choice 6</li>
                 </ul>
+                <ul>
+                    <li>Choice 7</li>
+                    <li>Choice 8</li>
+                    <li>Choice 9</li>
+                </ul>
             </nav>
         </section>
         </div>
