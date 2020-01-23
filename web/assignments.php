@@ -34,7 +34,7 @@
                 <br><br>
                 <a href="Personal/w3/browse.php"><button class="button center-block">Assignment 3</button></a>
                 <br><br>
-                <?php for ($i = 4; $i < 12; $i++) { ?>
+                <?php for ($i = 4; $i < 14; $i++) { ?>
                     <a href="Team/construction.html"><button class="button center-block">Assignment <?php echo $i ?></button></a><br><br>
                 <?php } ?>
         </div>
@@ -45,7 +45,7 @@
                 <br><br>
                 <a href="Team/ta02.php"><button class="button center-block">Team Activity 2</button></a>
                 <br><br>
-                <?php for ($i = 3; $i < 13; $i++) { ?>
+                <?php for ($i = 3; $i < 14; $i++) { ?>
                     <a href="Team/construction.html"><button class="button center-block">Team Activity <?php echo $i ?></button></a><br><br>
                 <?php } ?>
         </div>
