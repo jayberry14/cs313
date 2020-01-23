@@ -20,12 +20,11 @@
     </script>
     </head>
     <body>
-    <!-- <?php include '../../header.php'?> -->
     <?php session_start(); ?>
-        <a href="viewcart.php"><button class="button">View your cart</button></a>
         <header>
             <h1>Browse to your heart's content!</h1>
         </header>
+        <a href="viewcart.php"><button class="button">View your cart</button></a>
         <section>
             <nav>
                 <ul>
@@ -39,5 +38,27 @@
         <div>
             <a href="checkout.php"><button class="button">Checkout</button></a>
         </div>
+        <footer>
+        <?php
+            echo "Hello World!";
+            // set default timezone
+            echo "<br>";
+            date_default_timezone_set('America/Boise'); // MST
+
+            $info = getdate();
+            $date = $info['mday'];
+            $month = $info['mon'];
+            $year = $info['year'];
+            $hour = $info['hours'];
+            $min = $info['minutes'];
+            $sec = $info['seconds'];
+
+            $current_date = "$date/$month/$year";
+            $current_time = "$hour:$min:$sec";
+            echo "$current_date";
+            echo "<br>";
+            echo "$current_time";
+        ?>
+        </footer>
     </body>
 </html>
