@@ -19,6 +19,7 @@
   nav {
     float: left;
     width: 20%;
+    height: auto;
     background: #ccc;
     padding: 20px;
   }
@@ -32,7 +33,8 @@
   article {
     float: left;
     padding: 20px;
-    width: 70%;
+    width: 80%;
+    height: auto;
     background-color: #f1f1f1;
   }
   
