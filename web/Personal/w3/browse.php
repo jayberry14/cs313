@@ -24,7 +24,7 @@
         <header>
             <h1>Browse to your heart's content!</h1>
         </header>
-        <a href="viewcart.php"><button class="button">View your cart</button></a>
+        <a href="viewcart.php"><button class="viewcart">View your cart</button></a>
         <section>
             <nav>
                 <ul>
@@ -36,7 +36,7 @@
         </section>
         </div>
         <div>
-            <a href="checkout.php"><button class="button">Checkout</button></a>
+            <a href="checkout.php"><button class="checkout">Checkout</button></a>
         </div>
         <footer>
         <?php

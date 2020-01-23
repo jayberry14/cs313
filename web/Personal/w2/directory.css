@@ -57,6 +57,14 @@ footer {
     box-shadow: slategrey;
 }
 
+.viewcart {
+    float: right;
+}
+
+.checkout {
+    float: center;
+}
+
 .left {
     float: left;
 }
