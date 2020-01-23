@@ -19,7 +19,6 @@
     </script>
     </head>
     <body>
-    <?php include '../../header.php'?>
     <?php session_start(); ?>
         
     </body>
