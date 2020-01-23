@@ -20,10 +20,12 @@
     </script>
     </head>
     <body>
-    <?php include '../../header.php'?>
+    <!-- <?php include '../../header.php'?> -->
     <?php session_start(); ?>
         <a href="viewcart.php"><button class="button">View your cart</button></a>
-        <h1>Browse to your heart's content!</h1>
+        <header>
+            <h1>Browse to your heart's content!</h1>
+        </header>
         <section>
             <nav>
                 <ul>
