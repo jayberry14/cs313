@@ -28,11 +28,11 @@
         <div class="column left">
             <h2><u>Personal Assignments</u></h2>
             <br>
-                <a href="Personal/hello.html"><button class="button center-block">Assignment 1</button></a>
+                <a href="../w1/hello.html"><button class="button center-block">Assignment 1</button></a>
                 <br><br>
                 <a href="#"><button class="button center-block">Assignment 2</button></a>
                 <br><br>
-                <a href="Personal/w3/browse.php"><button class="button center-block">Assignment 3</button></a>
+                <a href="../w3/browse.php"><button class="button center-block">Assignment 3</button></a>
                 <br><br>
                 <?php for ($i = 4; $i < 14; $i++) { ?>
                     <a href="Personal/construction.html"><button class="button center-block">Assignment <?php echo $i ?></button></a><br><br>
@@ -41,9 +41,9 @@
         <div class="column right">
             <h2><u>Team Activities</u></h2>
             <br>
-                <a href="Team/ta01.html"><button class="button center-block">Team Activity 1</button></a>
+                <a href="../../Team/ta01.html"><button class="button center-block">Team Activity 1</button></a>
                 <br><br>
-                <a href="Team/ta02.php"><button class="button center-block">Team Activity 2</button></a>
+                <a href="../../Team/ta02.php"><button class="button center-block">Team Activity 2</button></a>
                 <br><br>
                 <?php for ($i = 3; $i < 14; $i++) { ?>
                     <a href="Personal/construction.html"><button class="button center-block">Team Activity <?php echo $i ?></button></a><br><br>
