@@ -24,7 +24,7 @@
         <header>
             <h1>Browse to your heart's content!</h1>
         </header>
-        <a href="viewcart.php"><button class="viewcart">View your cart</button></a>
+        <a class="viewcart" href="viewcart.php"><button class="viewcart">View your cart</button></a>
         <section>
             <nav>
                 <ul>
