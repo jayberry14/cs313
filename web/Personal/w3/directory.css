@@ -14,6 +14,8 @@ div {
 
 p {
     font-size: 14pt;
+    text-align: center;
+    float: center;
 }
 
 footer {
