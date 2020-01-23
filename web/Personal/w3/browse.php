@@ -19,8 +19,17 @@
     </script>
     </head>
     <body>
+        <a href="viewcart.php"><button class="button">View your cart</button></a>
     <?php include '../../header.php'?>
     <?php session_start(); ?>
-        
+        <h1>Browse to your heart's content!</h1>
+        <div class="bg-2 column">
+            <li>Choice 1</li>
+            <li>Choice 2</li>
+            <li>Choice 3</li>
+        </div>
+        <div>
+            <a href="checkout.php"><button class="button">Checkout</button></a>
+        </div>
     </body>
 </html>
