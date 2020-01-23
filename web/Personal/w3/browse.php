@@ -40,7 +40,6 @@
         </div>
         <footer>
         <?php
-            echo "Hello World!";
             // set default timezone
             echo "<br>";
             date_default_timezone_set('America/Boise'); // MST
