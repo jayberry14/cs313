@@ -58,11 +58,11 @@ footer {
 }
 
 .viewcart {
-    float: right;
+    text-align: right;
 }
 
 .checkout {
-    float: center;
+    text-align: center;
 }
 
 .left {
