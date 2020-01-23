@@ -41,7 +41,7 @@
             <!-- <?php
                 // $continents = array("NA" => "North America", "SA" => "South America", "EU" => "Europe", "AS" => "Asia", "AU" => "Austrailia", "AF" => "Africa", "AN" => "Antarctica",);
             ?> -->
-                <label for="visited countries">Select the continents you have visited before:</label><br>
+                <label for="visited continents">Select the continents you have visited before:</label><br>
                     <input type="checkbox" name="visitedContinents[]" value="NA"> North America <br>
                     <input type="checkbox" name="visitedContinents[]" value="SA"> South America <br>
                     <input type="checkbox" name="visitedContinents[]" value="EU"> Europe <br>

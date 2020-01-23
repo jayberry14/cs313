@@ -9,7 +9,7 @@
     echo "Name: $name <br><br>";
     echo "Email: $email <br><br>";
     echo "Major: $major <br><br>";
-    echo "Visited Countries: <br>";
+    echo "Visited Continents: <br>";
     $continents = array("NA" => "North America", "SA" => "South America", "EU" => "Europe", "AS" => "Asia", "AU" => "Austrailia", "AF" => "Africa", "AN" => "Antarctica");
     foreach($_POST["visitedContinents"] as $value)
     {
