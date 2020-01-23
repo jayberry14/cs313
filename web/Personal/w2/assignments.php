@@ -20,7 +20,7 @@
     </script>
 </head>
 <body>
-    <?php include 'header.php';?>
+    <?php include '../..header.php';?>
     <?php session_start(); ?>
     <h1>Table of Contents</h1>
     <img src="Files/self-portrait.jpg" alt="Me" class="img-circle img-2 left">
