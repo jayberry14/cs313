@@ -19,7 +19,7 @@
   nav {
     float: left;
     width: 20%;
-    height: 20vw;
+    height: 25vw;
     background: #ccc;
     padding: 20px;
   }
@@ -34,7 +34,7 @@
     float: left;
     padding: 20px;
     width: 80%;
-    height: 20vw;
+    height: 25vw;
     background-color: #f1f1f1;
   }
   
