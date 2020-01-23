@@ -46,7 +46,7 @@
         </section>
         </div>
         <div>
-            <a href="checkout.php"><button class="checkout">Checkout</button></a>
+            <p><a href="checkout.php"><button class="checkout">Checkout</button></a></p>
         </div>
         <footer>
         <?php
