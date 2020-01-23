@@ -30,16 +30,22 @@
             <br>
                 <a href="hello.html"><button class="button center-block">Assignment 1</button></a>
                 <br><br>
-                <?php for ($i = 2; $i < 14; $i++) { ?>
+                <a href="#"><button class="button center-block">Assignment 2</button></a>
+                <br><br>
+                <a href="Personal/w3/browse.php"><button class="button center-block">Assignment 3</button></a>
+                <br><br>
+                <?php for ($i = 4; $i < 12; $i++) { ?>
                     <a href="Team/construction.html"><button class="button center-block">Assignment <?php echo $i ?></button></a><br><br>
                 <?php } ?>
         </div>
         <div class="column right">
             <h2><u>Team Activities</u></h2>
             <br>
-                <a href="Team/index.html"><button class="button center-block">Team Activity 1</button></a>
+                <a href="Team/ta01.html"><button class="button center-block">Team Activity 1</button></a>
                 <br><br>
-                <?php for ($i = 2; $i < 14; $i++) { ?>
+                <a href="Team/ta02.php"><button class="button center-block">Team Activity 2</button></a>
+                <br><br>
+                <?php for ($i = 3; $i < 13; $i++) { ?>
                     <a href="Team/construction.html"><button class="button center-block">Team Activity <?php echo $i ?></button></a><br><br>
                 <?php } ?>
         </div>
