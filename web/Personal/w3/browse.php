@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='directory.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='layout.css'>
     <script>
 			// prevents refresh from submitting form and clears out unneeded variables
             // Thank you Brother Birch for this section of JS!
@@ -19,14 +20,19 @@
     </script>
     </head>
     <body>
-        <a href="viewcart.php"><button class="button">View your cart</button></a>
     <?php include '../../header.php'?>
     <?php session_start(); ?>
+        <a href="viewcart.php"><button class="button">View your cart</button></a>
         <h1>Browse to your heart's content!</h1>
-        <div class="bg-2 column">
-            <li>Choice 1</li>
-            <li>Choice 2</li>
-            <li>Choice 3</li>
+        <section>
+            <nav>
+                <ul>
+                    <li>Choice 1</li>
+                    <li>Choice 2</li>
+                    <li>Choice 3</li>
+                </ul>
+            </nav>
+        </section>
         </div>
         <div>
             <a href="checkout.php"><button class="button">Checkout</button></a>
