@@ -24,9 +24,6 @@
         <header>
             <h1>Browse to your heart's content!</h1>
         </header>
-        <div>
-            <p class="p2"><a href="viewcart.php"><button>View your cart</button></a></p>
-        </div>
         <section>
             <nav>
                 <ul>
@@ -47,11 +44,10 @@
             </nav>
         </section>
         <article>
-            Hello yes I am real man you want to go skateboards?
-        </article>
-        <div>
+            <p class="p2"><a href="viewcart.php"><button>View your cart</button></a></p>
+                Hello yes I am real man you want to go skateboards?
             <p class="p1"><a href="checkout.php"><button>Checkout</button></a></p>
-        </div>
+        </article>
         <footer>
         <?php
             // set default timezone
