@@ -36,7 +36,7 @@
             <article>
                 <p class="p2"><a href="viewcart.php"><button onclick="addItems()">View your cart</button></a></p>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="thumbnail">
                             <a href="#" target="_blank">
                             <img src="#" alt="Lights" style="width:100%">
@@ -46,7 +46,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="thumbnail">
                             <a href="#" target="_blank">
                             <img src="#" alt="Nature" style="width:100%">
@@ -56,7 +56,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="thumbnail">
                             <a href="#" target="_blank">
                             <img src="#" alt="Fjords" style="width:100%">
@@ -66,7 +66,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="thumbnail">
                             <a href="#" target="_blank">
                             <img src="#" alt="Lights" style="width:100%">
@@ -76,7 +76,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="thumbnail">
                             <a href="#" target="_blank">
                             <img src="#" alt="Nature" style="width:100%">
@@ -86,7 +86,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="thumbnail">
                             <a href="#" target="_blank">
                             <img src="#" alt="Fjords" style="width:100%">
