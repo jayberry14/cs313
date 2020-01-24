@@ -14,12 +14,19 @@ div {
 
 p {
     font-size: 14pt;
-    text-align: right;
-    float: center;
+    /* text-align: right; */
 }
 
 footer {
     text-align: center;
+}
+
+.p1 {
+    text-align: center;
+}
+
+.p2 {
+    text-align: right;
 }
 
 .bg-1 {
