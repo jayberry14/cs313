@@ -66,6 +66,36 @@
                             </a>
                         </div>
                     </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#" target="_blank">
+                            <img src="#" alt="Lights" style="width:100%">
+                                <div class="caption">
+                                    <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#" target="_blank">
+                            <img src="#" alt="Nature" style="width:100%">
+                                <div class="caption">
+                                    <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#" target="_blank">
+                            <img src="#" alt="Fjords" style="width:100%">
+                                <div class="caption">
+                                    <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <p class="p1"><a href="checkout.php"><button>Checkout</button></a></p>
             </article>
