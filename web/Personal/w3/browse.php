@@ -46,7 +46,6 @@
                 </ul>
             </nav>
         </section>
-        </div>
         <div>
             <p class="p1"><a href="checkout.php"><button>Checkout</button></a></p>
         </div>
