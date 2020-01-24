@@ -42,12 +42,12 @@
                     <li>Choice 9</li>
                 </ul>
             </nav>
+            <article>
+                <p class="p2"><a href="viewcart.php"><button>View your cart</button></a></p>
+                    Hello yes I am real man you want to go skateboards?
+                <p class="p1"><a href="checkout.php"><button>Checkout</button></a></p>
+            </article>
         </section>
-        <article>
-            <p class="p2"><a href="viewcart.php"><button>View your cart</button></a></p>
-                Hello yes I am real man you want to go skateboards?
-            <p class="p1"><a href="checkout.php"><button>Checkout</button></a></p>
-        </article>
         <footer>
         <?php
             // set default timezone
