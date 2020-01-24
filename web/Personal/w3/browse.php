@@ -21,11 +21,16 @@
             }
     </script>
     </head>
-    <?php 
+    <body>
+        <header>
+            <h1>Browse to your heart's content!</h1>
+        </header>
+        <?php 
         $_SESSION["stuff1"];
         $_SESSION["stuff2"];
         $_SESSION["stuff3"];
-
+        ?>
+        <?php
         if(isset($_POST["stuff1"]))
             $_SESSION["stuff1"] += 1;
         if(isset($_POST["stuff2"]))
@@ -38,11 +43,7 @@
             $_SESSION["stuff5"] += 1;
         if(isset($_POST["stuff6"]))
             $_SESSION["stuff6"] += 1;
-    ?>
-    <body>
-        <header>
-            <h1>Browse to your heart's content!</h1>
-        </header>
+        ?>
         <section>
             <nav>
                 <ul>
