@@ -60,3 +60,12 @@
       height: auto;
     }
   }
+
+.p1 {
+    text-align: center;
+    margin-bottom: -5vw;
+}
+
+.p2 {
+    text-align: right;
+}
