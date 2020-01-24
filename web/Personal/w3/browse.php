@@ -11,6 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='directory.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='layout.css'>
+    <script src=checkout.js></script>
     <script>
 			// prevents refresh from submitting form and clears out unneeded variables
             // Thank you Brother Birch for this section of JS!
@@ -31,20 +32,41 @@
                     <li>Choice 2</li>
                     <li>Choice 3</li>
                 </ul>
-                <ul>
-                    <li>Choice 4</li>
-                    <li>Choice 5</li>
-                    <li>Choice 6</li>
-                </ul>
-                <ul>
-                    <li>Choice 7</li>
-                    <li>Choice 8</li>
-                    <li>Choice 9</li>
-                </ul>
             </nav>
             <article>
-                <p class="p2"><a href="viewcart.php"><button>View your cart</button></a></p>
-                    Hello yes I am real man you want to go skateboards?
+                <p class="p2"><a href="viewcart.php"><button onclick="addItems()">View your cart</button></a></p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#" target="_blank">
+                            <img src="#" alt="Lights" style="width:100%">
+                                <div class="caption">
+                                    <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#" target="_blank">
+                            <img src="#" alt="Nature" style="width:100%">
+                                <div class="caption">
+                                    <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="#" target="_blank">
+                            <img src="#" alt="Fjords" style="width:100%">
+                                <div class="caption">
+                                    <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <p class="p1"><a href="checkout.php"><button>Checkout</button></a></p>
             </article>
         </section>
