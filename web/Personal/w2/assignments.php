@@ -54,7 +54,6 @@
 <footer>
     <?php
         echo "Hello World!";
-        phpinfo();
         phpversion();
         // set default timezone
         echo "<br>";
