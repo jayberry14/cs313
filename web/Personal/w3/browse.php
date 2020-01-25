@@ -119,31 +119,32 @@
                             </div>
                         </div>
                     </div>
+                </form>
                 <p class="p1"><a href="checkout.php"><button>Checkout</button></a></p>
             </article>
         </section>
         <footer>
-        <?php
-            phpinfo();
-            phpversion();
-            // set default timezone
-            echo "<br>";
-            date_default_timezone_set('America/Boise'); // MST
+            <?php
+                phpinfo();
+                phpversion();
+                // set default timezone
+                echo "<br>";
+                date_default_timezone_set('America/Boise'); // MST
 
-            $info = getdate();
-            $date = $info['mday'];
-            $month = $info['mon'];
-            $year = $info['year'];
-            $hour = $info['hours'];
-            $min = $info['minutes'];
-            $sec = $info['seconds'];
+                $info = getdate();
+                $date = $info['mday'];
+                $month = $info['mon'];
+                $year = $info['year'];
+                $hour = $info['hours'];
+                $min = $info['minutes'];
+                $sec = $info['seconds'];
 
-            $current_date = "$date/$month/$year";
-            $current_time = "$hour:$min:$sec";
-            echo "$current_date";
-            echo "<br>";
-            echo "$current_time";
-        ?>
+                $current_date = "$date/$month/$year";
+                $current_time = "$hour:$min:$sec";
+                echo "$current_date";
+                echo "<br>";
+                echo "$current_time";
+            ?>
         </footer>
     </body>
 </html>
