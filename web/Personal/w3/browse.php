@@ -40,8 +40,8 @@
             $_SESSION["socks"] += 1;
         ?>
         <section>
-            <h2>Quick Cart</h2>
             <nav>
+            <h2>Quick Cart</h2>
                 <ul>
                     <?php if($_SESSION["shirt"] > 0) { ?>
                         <li># of Shirts: <?=$_SESSION["shirt"]?></li>
