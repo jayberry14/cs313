@@ -37,7 +37,7 @@
         <nav>
         </nav>
         <article>
-        <p><a href="viewcart.php"><button>Back to Cart</button></a></p>
+        <p class="p2"><a href="viewcart.php"><button>Back to Cart</button></a></p>
         <form method="post">
             <div class="row">
                 <div class="col"></div>
