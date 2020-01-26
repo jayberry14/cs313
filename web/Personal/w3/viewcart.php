@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en">
     <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -11,15 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='directory.css'>
-    <script>
-			// prevents refresh from submitting form and clears out unneeded variables
-            // Thank you Brother Birch for this section of JS!
-            if ( window.history.replaceState ) {
-                window.history.replaceState( null, null, window.location.href );
-            }
-    </script>
+    <link rel='stylesheet' type='text/css' media='screen' href='layout.css'>
     </head>
     <body>
-
+        <div>
+            
+        </div>
     </body>
 </html>
