@@ -129,7 +129,7 @@
                         </div>
                     </div>
                 </form>
-                <p class="p1"><a href="checkout.php"><button>Checkout</button></a></p>
+                <div class="col-md-1"><a href="checkout.php"><button>Checkout</button></a></div>
             </article>
         </section>
         <footer>
