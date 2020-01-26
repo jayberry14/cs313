@@ -26,7 +26,7 @@
             $_SESSION["city"] = htmlspecialchars($_POST["city"]);
             $_SESSION["state"] = htmlspecialchars($_POST["state"]);
             $_SESSION["zip"] = htmlspecialchars($_POST["zip"]);
-            echo "<h1>Address Saved!</h1>"
+            echo "<h1>Address Saved!</h1>";
         }
     ?>
         <h1>Checkout</h1>
