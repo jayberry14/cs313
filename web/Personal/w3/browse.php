@@ -119,7 +119,7 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="../../socks.jpg" alt="Socks" style="width:100%">
+                                <img src="../../Files/socks.jpg" alt="Socks" style="width:100%">
                                     <div class="caption">
                                         <p><button type="submit" name="socks">Add to Cart</button></p>
                                     </div>
