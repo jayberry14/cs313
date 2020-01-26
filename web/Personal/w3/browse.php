@@ -41,7 +41,7 @@
         ?>
         <section>
             <nav>
-            <h2>Quick Cart</h2>
+            <h2><u><strong>Quick Cart</strong></u></h2>
                 <ul>
                     <?php if($_SESSION["shirt"] > 0) { ?>
                         <li># of Shirts: <?=$_SESSION["shirt"]?></li>
