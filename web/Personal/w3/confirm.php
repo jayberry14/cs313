@@ -29,7 +29,7 @@
         </nav>
         <article>
         <form method="post">
-        <p class="p2"><a href="browse.php"><button type="submit" name="submit">Keep Shopping</button></a></p>
+        <p class="p2"><button onclick()="browse.php" type="submit" name="submit">Keep Shopping</button></p>
         </form>
             <ul>
                 <?php if($_SESSION["shirt"] > 0) { ?>
