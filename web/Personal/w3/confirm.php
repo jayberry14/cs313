@@ -13,6 +13,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='directory.css'>
     </head>
     <body>
+        <h1>Order Confirmation</h1>
         <nav>
             <ul>
                 <?php if($_SESSION["shirt"] > 0) { ?>
