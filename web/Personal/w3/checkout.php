@@ -30,7 +30,10 @@
             echo "<h1>Address Saved!</h1>";
         }
     ?>
-    <h1>Checkout</h1>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <section>
         <form method="post">
             <div class="row">
                 <div class="col"></div>
@@ -54,10 +57,11 @@
             </div>
             <button type="submit" name="submit">Save Address</button>
         </form>
-        <br>
-        <br>
-        <p><a href="viewcart.php"><button>Back to Cart</button></a></p>
-        <br>
-        <p><a href="confirm.php"><button>Place Order</button></a></p>
+    </session>
+    <br>
+    <br>
+    <p><a href="viewcart.php"><button>Back to Cart</button></a></p>
+    <br>
+    <p><a href="confirm.php"><button>Place Order</button></a></p>
     </body>
 </html>

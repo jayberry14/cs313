@@ -14,7 +14,10 @@
     <link rel='stylesheet' type='text/css' media='screen' href='layout.css'>
     </head>
     <body>
+    <header>
         <h1>Order Confirmation</h1>
+    </header>
+    <section>
         <nav>
             <ul>
                 <?php if($_SESSION["shirt"] > 0) { ?>
@@ -42,6 +45,7 @@
                 </li>
             </ul>
         </nav>
+    </section>
     </body>
     <footer>
         <p class="p2"><a href="browse.php"><button>Keep Shopping</button></a></p>
