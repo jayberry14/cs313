@@ -21,6 +21,7 @@
         <nav>
         </nav>
         <article>
+        <p class="p2"><a href="browse.php"><button>Keep Shopping</button></a></p>
             <ul>
                 <?php if($_SESSION["shirt"] > 0) { ?>
                     <li># of Shirts: <?=$_SESSION["shirt"]?></li>
@@ -50,6 +51,24 @@
     </section>
     </body>
     <footer>
-        <p class="p2"><a href="browse.php"><button>Keep Shopping</button></a></p>
+        <?php
+            // set default timezone
+            echo "<br>";
+            date_default_timezone_set('America/Boise'); // MST
+
+            $info = getdate();
+            $date = $info['mday'];
+            $month = $info['mon'];
+            $year = $info['year'];
+            $hour = $info['hours'];
+            $min = $info['minutes'];
+            $sec = $info['seconds'];
+
+            $current_date = "$date/$month/$year";
+            $current_time = "$hour:$min:$sec";
+            echo "$current_date";
+            echo "<br>";
+            echo "$current_time";
+        ?>
     </footer>
 </html>

@@ -37,6 +37,7 @@
         <nav>
         </nav>
         <article>
+        <p><a href="viewcart.php"><button>Back to Cart</button></a></p>
         <form method="post">
             <div class="row">
                 <div class="col"></div>
@@ -60,12 +61,29 @@
             </div>
             <button type="submit" name="submit">Save Address</button>
         </form>
-        <p><a href="viewcart.php"><button>Back to Cart</button></a></p>
-        <br>
-        <p><a href="confirm.php"><button>Place Order</button></a></p>
+        <div class="col-md-1 p3"><a href="confirm.php"><button>Place Order</button></a></p>
         </article>
     </section>
     <footer>
+        <?php
+            // set default timezone
+            echo "<br>";
+            date_default_timezone_set('America/Boise'); // MST
+
+            $info = getdate();
+            $date = $info['mday'];
+            $month = $info['mon'];
+            $year = $info['year'];
+            $hour = $info['hours'];
+            $min = $info['minutes'];
+            $sec = $info['seconds'];
+
+            $current_date = "$date/$month/$year";
+            $current_time = "$hour:$min:$sec";
+            echo "$current_date";
+            echo "<br>";
+            echo "$current_time";
+        ?>
     </footer>
     </body>
 </html>
