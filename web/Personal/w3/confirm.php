@@ -18,7 +18,7 @@
         <h1>Order Confirmation</h1>
     </header>
     <section>
-        <nav>
+        <article>
             <ul>
                 <?php if($_SESSION["shirt"] > 0) { ?>
                     <li># of Shirts: <?=$_SESSION["shirt"]?></li>
@@ -44,7 +44,7 @@
                                 <?=$_SESSION["zip"]?>
                 </li>
             </ul>
-        </nav>
+        </article>
     </section>
     </body>
     <footer>

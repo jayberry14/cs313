@@ -34,6 +34,7 @@
         <h1>Checkout</h1>
     </header>
     <section>
+        <article>
         <form method="post">
             <div class="row">
                 <div class="col"></div>
@@ -57,6 +58,7 @@
             </div>
             <button type="submit" name="submit">Save Address</button>
         </form>
+        </article>
     </session>
     <br>
     <br>
