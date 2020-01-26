@@ -62,9 +62,9 @@
             <button type="submit" name="submit1">Save Address</button>
         </form>
         <?php if($_SESSION["shirt"] > 0 ||
-                         $_SESSION["street"] > 0 ||
-                         $_SESSION["city"] > 0 ||
-                         $_SESSION["state"] > 0 ||
+                         $_SESSION["street"] > 0 &&
+                         $_SESSION["city"] > 0 &&
+                         $_SESSION["state"] > 0 &&
                          $_SESSION["zip"] > 0) { ?>
         <div class="col-md-1 p3"><a href="confirm.php"><button type="submit" name="submit2">Place Order</button></a></p>
         <?php } ?>
