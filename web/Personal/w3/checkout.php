@@ -60,12 +60,10 @@
             </div>
             <button type="submit" name="submit">Save Address</button>
         </form>
+        <p><a href="viewcart.php"><button>Back to Cart</button></a></p>
+        <br>
+        <p><a href="confirm.php"><button>Place Order</button></a></p>
         </article>
     </session>
-    <br>
-    <br>
-    <p><a href="viewcart.php"><button>Back to Cart</button></a></p>
-    <br>
-    <p><a href="confirm.php"><button>Place Order</button></a></p>
     </body>
 </html>
