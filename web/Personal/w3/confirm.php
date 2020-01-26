@@ -18,10 +18,19 @@
         <h1>Order Confirmation</h1>
     </header>
     <section>
+    <?php if(isset($_POST["submit"])){
+        // remove all session variables
+        session_unset();
+
+        // destroy the session
+        session_destroy();
+    }?>
         <nav>
         </nav>
         <article>
-        <p class="p2"><a href="browse.php"><button>Keep Shopping</button></a></p>
+        <form method="post">
+        <p class="p2"><a href="browse.php"><button type="submit" name="submit">Keep Shopping</button></a></p>
+        </form>
             <ul>
                 <?php if($_SESSION["shirt"] > 0) { ?>
                     <li># of Shirts: <?=$_SESSION["shirt"]?></li>
