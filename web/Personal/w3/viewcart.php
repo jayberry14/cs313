@@ -101,7 +101,12 @@
             <p class="p2"><a href="browse.php"><button>Keep Shopping</button></a></p>
                 <form method="post">
                     <div class="row">
-                        <?php if($_SESSION == 0) { ?>
+                        <?php if($_SESSION["shirt"] == 0 &&
+                                 $_SESSION["slacks"] == 0 &&
+                                 $_SESSION["sneakers"] == 0 &&
+                                 $_SESSION["jacket"] == 0 &&
+                                 $_SESSION["shorts"] == 0 &&
+                                 $_SESSION["socks"] == 0) { ?>
                             <h1>You currently have no items in your cart!</h1>
                         <?php } ?>
                     </div>
