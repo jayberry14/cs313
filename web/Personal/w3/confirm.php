@@ -21,7 +21,6 @@
         <nav>
         </nav>
         <article>
-        <form method="post">
         <p class="p2"><a href="browse.php"><button>Keep Shopping</button></a></p>
             <ul>
                 <?php if($_SESSION["shirt"] > 0) { ?>
