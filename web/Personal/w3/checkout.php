@@ -52,6 +52,6 @@
             <button type="submit" name="submit">Save Address</button>
         </form>
         <p class="p2"><a href="viewcart.php"><button>Back to Cart</button></a></p>
-        <p class="p1"><a href="confrim.php"><button>Place Order</button></a></p>
+        <p class="p1"><a href="confirm.php"><button>Place Order</button></a></p>
     </body>
 </html>
