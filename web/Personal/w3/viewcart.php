@@ -116,6 +116,7 @@
                             </div>
                         </div>
                         <?php } ?>
+                        <?php if($_SESSION["shirt"] > 0) { ?>
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
@@ -130,6 +131,8 @@
                                 </a>
                             </div>
                         </div>
+                        <?php } ?>
+                        <?php if($_SESSION["shirt"] > 0) { ?>
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
@@ -144,6 +147,8 @@
                                 </a>
                             </div>
                         </div>
+                        <?php } ?>
+                        <?php if($_SESSION["shirt"] > 0) { ?>
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
@@ -158,6 +163,8 @@
                                 </a>
                             </div>
                         </div>
+                        <?php } ?>
+                        <?php if($_SESSION["shirt"] > 0) { ?>
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
@@ -172,6 +179,8 @@
                                 </a>
                             </div>
                         </div>
+                        <?php } ?>
+                        <?php if($_SESSION["shirt"] > 0) { ?>
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
@@ -186,6 +195,7 @@
                                 </a>
                             </div>
                         </div>
+                        <?php } ?>
                     </div>
                 </form>
                 <p><a href="browse.php"><button>Keep Shopping</button></a></p>
