@@ -21,15 +21,6 @@
     ?>
     
     <body>
-    <?php
-        if(isset($_POST["submit1"]) || isset($_POST["submit2"])){
-            $_SESSION["street"] = htmlspecialchars($_POST["street"]);
-            $_SESSION["city"] = htmlspecialchars($_POST["city"]);
-            $_SESSION["state"] = htmlspecialchars($_POST["state"]);
-            $_SESSION["zip"] = htmlspecialchars($_POST["zip"]);
-            echo "<h1>Address Saved!</h1>";
-        }
-    ?>
     <header>
         <h1>Checkout</h1>
     </header>
@@ -37,6 +28,15 @@
         <nav>
         </nav>
         <article>
+        <?php
+            if(isset($_POST["submit1"]) || isset($_POST["submit2"])){
+                $_SESSION["street"] = htmlspecialchars($_POST["street"]);
+                $_SESSION["city"] = htmlspecialchars($_POST["city"]);
+                $_SESSION["state"] = htmlspecialchars($_POST["state"]);
+                $_SESSION["zip"] = htmlspecialchars($_POST["zip"]);
+                echo "<h3>Address Saved!</h3>";
+            }
+        ?>
         <p class="p2"><a href="viewcart.php"><button>Back to Cart</button></a></p>
         <form method="post">
             <div class="row">
