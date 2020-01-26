@@ -41,7 +41,7 @@
         <form method="post">
             <div class="row">
                 <div class="col"></div>
-                <div class="col"><label>Street:</label> <input type="text" name="street" size="30"><br><br></div>
+                <div class="col"><label>Street:</label><input type="text" name="street" size="30"><br><br></div>
                 <div class="col"></div>
             </div>
             <div class="row">
@@ -51,7 +51,7 @@
             </div>
             <div class="row">
                 <div class="col"></div>
-                <div class="col"><label>State:</label>  <input type="text" name="state" size="30"><br><br></div>
+                <div class="col"><label>State:</label><input type="text" name="state" size="30"><br><br></div>
                 <div class="col"></div>
             </div>
             <div class="row">
