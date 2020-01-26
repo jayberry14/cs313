@@ -14,6 +14,30 @@
     
     </head>
     <body>
-
+        <nav>
+            <ul>
+                <?php if($_SESSION["shirt"] > 0) { ?>
+                    <li># of Shirts: <?=$_SESSION["shirt"]?></li>
+                <?php } ?>
+                <?php if($_SESSION["slacks"] > 0) { ?>
+                    <li># of Slacks: <?=$_SESSION["slacks"]?></li>
+                <?php } ?>
+                <?php if($_SESSION["sneakers"] > 0) { ?>
+                    <li># of Sneakers: <?=$_SESSION["sneakers"]?></li>
+                <?php } ?>
+                <?php if($_SESSION["jacket"] > 0) { ?>
+                    <li># of Jackets: <?=$_SESSION["jacket"]?></li>
+                <?php } ?>
+                <?php if($_SESSION["shorts"] > 0) { ?>
+                    <li># of Shorts: <?=$_SESSION["shorts"]?></li>
+                <?php } ?>
+                <?php if($_SESSION["socks"] > 0) { ?>
+                    <li># of Socks: <?=$_SESSION["socks"]?></li>
+                <?php } ?>
+            </ul>
+        </nav>
     </body>
+    <footer>
+        <p class="p2"><a href="browse.php"><button>Keep Shopping</button></a></p>
+    </footer>
 </html>
