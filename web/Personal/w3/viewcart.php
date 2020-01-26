@@ -17,8 +17,137 @@
         <header>
             <h1>View Your Cart</h1>
         </header>
+        <?php
+        if(isset($_POST["minusShirt"])){
+            $_SESSION["shirt"] -= 1;
+            // $_SESSION["shirtCost"] = $_SESSION["shirt"] * 7;
+        }
+
+        if(isset($_POST["slacks"]))
+            $_SESSION["slacks"] += 1;
+        if(isset($_POST["sneakers"]))
+            $_SESSION["sneakers"] += 1;
+        if(isset($_POST["jacket"]))
+            $_SESSION["jacket"] += 1;
+        if(isset($_POST["shorts"]))
+            $_SESSION["shorts"] += 1;
+        if(isset($_POST["socks"]))
+            $_SESSION["socks"] += 1;
+        ?>
         <section>
+            <nav>
+                <ul>
+                    <?php if($_SESSION["shirt"] > 0) { ?>
+                        <li># of Shirts: <?=$_SESSION["shirt"]?></li>
+                    <?php } ?>
+                    <?php if($_SESSION["slacks"] > 0) { ?>
+                        <li># of Slacks: <?=$_SESSION["slacks"]?></li>
+                    <?php } ?>
+                    <?php if($_SESSION["sneakers"] > 0) { ?>
+                        <li># of Sneakers: <?=$_SESSION["sneakers"]?></li>
+                    <?php } ?>
+                    <?php if($_SESSION["jacket"] > 0) { ?>
+                        <li># of Jackets: <?=$_SESSION["jacket"]?></li>
+                    <?php } ?>
+                    <?php if($_SESSION["shorts"] > 0) { ?>
+                        <li># of Shorts: <?=$_SESSION["shorts"]?></li>
+                    <?php } ?>
+                    <?php if($_SESSION["socks"] > 0) { ?>
+                        <li># of Socks: <?=$_SESSION["socks"]?></li>
+                    <?php } ?>
+                </ul>
+            </nav>
             <article>
+                <p class="p2"><a href="viewcart.php"><button>View your cart</button></a></p>
+                <form method="post">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#" target="_blank">
+                                <img src="#" alt="Shirt" style="width:100%">
+                                    <div class="caption">
+                                        <p>
+                                            <button type="submit" name="minusShirt">-</button>
+                                            <span><?=$_SESSION["shirt"]?></span>
+                                            <button type="submit" name="plusShirt">+</button>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#" target="_blank">
+                                <img src="#" alt="Slacks" style="width:100%">
+                                    <div class="caption">
+                                        <p>
+                                            <button type="submit" name="minusShirt">-</button>
+                                            <span><?=$_SESSION["shirt"]?></span>
+                                            <button type="submit" name="plusShirt">+</button>
+                                        </p>                                    
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#" target="_blank">
+                                <img src="#" alt="Sneakers" style="width:100%">
+                                    <div class="caption">
+                                        <p>
+                                            <button type="submit" name="minusShirt">-</button>
+                                            <span><?=$_SESSION["shirt"]?></span>
+                                            <button type="submit" name="plusShirt">+</button>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#" target="_blank">
+                                <img src="#" alt="Jacket" style="width:100%">
+                                    <div class="caption">
+                                        <p>
+                                            <button type="submit" name="minusShirt">-</button>
+                                            <span><?=$_SESSION["shirt"]?></span>
+                                            <button type="submit" name="plusShirt">+</button>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#" target="_blank">
+                                <img src="#" alt="Shorts" style="width:100%">
+                                    <div class="caption">
+                                        <p>
+                                            <button type="submit" name="minusShirt">-</button>
+                                            <span><?=$_SESSION["shirt"]?></span>
+                                            <button type="submit" name="plusShirt">+</button>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="thumbnail">
+                                <a href="#" target="_blank">
+                                <img src="#" alt="Socks" style="width:100%">
+                                    <div class="caption">
+                                        <p>
+                                            <button type="submit" name="minusShirt">-</button>
+                                            <span><?=$_SESSION["shirt"]?></span>
+                                            <button type="submit" name="plusShirt">+</button>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p class="p1"><a href="checkout.php"><button>Checkout</button></a></p>
             </article>
         </section>
         <footer>
