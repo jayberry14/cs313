@@ -46,17 +46,17 @@
             </div>
             <div class="row">
                 <div class="col"></div>
-                <div class="col"><label>  City:</label><input type="text" name="city" size="30"><br><br></div>
+                <div class="col"><label>City:</label><input type="text" name="city" size="30"><br><br></div>
                 <div class="col"></div>
             </div>
             <div class="row">
                 <div class="col"></div>
-                <div class="col"><label> State:</label><input type="text" name="state" size="30"><br><br></div>
+                <div class="col"><label>State:</label><input type="text" name="state" size="30"><br><br></div>
                 <div class="col"></div>
             </div>
             <div class="row">
                 <div class="col"></div>
-                <div class="col"><label>   Zip:</label><input type="text" name="zip" size="30"><br><br></div>
+                <div class="col"><label>Zip:</label><input type="text" name="zip" size="30"><br><br></div>
                 <div class="col"></div>
             </div>
             <button type="submit" name="submit">Save Address</button>

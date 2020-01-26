@@ -69,62 +69,50 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="thumbnail">
-                                <a href="#" target="_blank">
                                 <img src="../../Files/whiteT.png" alt="Shirt" style="width:100%">
                                     <div class="caption">
                                         <p><button type="submit" name="shirt">Add to Cart</button></p>
                                     </div>
-                                </a>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="thumbnail">
-                                <a href="#" target="_blank">
                                 <img src="../../Files/slacks.jpg" alt="Slacks" style="width:100%">
                                     <div class="caption">
                                         <p><button type="submit" name="slacks">Add to Cart</button></p>
                                     </div>
-                                </a>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="thumbnail">
-                                <a href="#" target="_blank">
                                 <img src="../../Files/sneakers.jpg" alt="Sneakers" style="width:100%">
                                     <div class="caption">
                                         <p><button type="submit" name="sneakers">Add to Cart</button></p>
                                     </div>
-                                </a>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="thumbnail">
-                                <a href="#" target="_blank">
                                 <img src="../../Files/jacket.jpg" alt="Jacket" style="width:100%">
                                     <div class="caption">
                                         <p><button type="submit" name="jacket">Add to Cart</button></p>
                                     </div>
-                                </a>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="thumbnail">
-                                <a href="#" target="_blank">
                                 <img src="../../Files/shorts.jpg" alt="Shorts" style="width:100%">
                                     <div class="caption">
                                         <p><button type="submit" name="shorts">Add to Cart</button></p>
                                     </div>
-                                </a>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="thumbnail">
-                                <a href="#" target="_blank">
                                 <img src="../../Files/socks.jpg" alt="Socks" style="width:100%">
                                     <div class="caption">
                                         <p><button type="submit" name="socks">Add to Cart</button></p>
                                     </div>
-                                </a>
                             </div>
                         </div>
                     </div>
