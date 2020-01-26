@@ -34,6 +34,13 @@
                 <?php if($_SESSION["socks"] > 0) { ?>
                     <li># of Socks: <?=$_SESSION["socks"]?></li>
                 <?php } ?>
+                <?php if($_SESSION["street"] > 0) { ?>
+                    <li>Address: <?=$_SESSION["street"]?>
+                                 <?=$_SESSION["city"]?>
+                                 <?=$_SESSION["state"]?>
+                                 <?=$_SESSION["zip"]?>
+                    </li>
+                <?php } ?>
             </ul>
         </nav>
     </body>
