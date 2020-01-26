@@ -22,7 +22,7 @@
     
     <body>
     <?php
-        if(isset($_POST["submit"])){
+        if(isset($_POST["submit1"]) || isset($_POST["submit2"])){
             $_SESSION["street"] = htmlspecialchars($_POST["street"]);
             $_SESSION["city"] = htmlspecialchars($_POST["city"]);
             $_SESSION["state"] = htmlspecialchars($_POST["state"]);
@@ -59,9 +59,9 @@
                 <div class="col"><label>Zip:</label><input type="text" name="zip" size="30"><br><br></div>
                 <div class="col"></div>
             </div>
-            <button type="submit" name="submit">Save Address</button>
+            <button type="submit" name="submit1">Save Address</button>
         </form>
-        <div class="col-md-1 p3"><a href="confirm.php"><button>Place Order</button></a></p>
+        <div class="col-md-1 p3"><a href="confirm.php"><button type="submit" name="submit2">Place Order</button></a></p>
         </article>
     </section>
     <footer>
