@@ -12,51 +12,53 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='directory.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='layout.css'>
-    <script src=checkout.js></script>
     </head>
     <body>
         <header>
             <h1>Browse to your heart's content!</h1>
         </header>
         <?php 
-        $_SESSION["stuff1"];
-        $_SESSION["stuff2"];
-        $_SESSION["stuff3"];
+        $_SESSION["shirt"];
+        $_SESSION["slacks"];
+        $_SESSION["sneakers"];
+        $_SESSION["jacket"];
+        $_SESSION["shorts"];
+        $_SESSION["socks"];
         ?>
         <?php
-        if(isset($_POST["stuff1"]))
-            $_SESSION["stuff1"] += 1;
-        if(isset($_POST["stuff2"]))
-            $_SESSION["stuff2"] += 1;
-        if(isset($_POST["stuff3"]))
-            $_SESSION["stuff3"] += 1;
-        if(isset($_POST["stuff4"]))
-            $_SESSION["stuff4"] += 1;
-        if(isset($_POST["stuff5"]))
-            $_SESSION["stuff5"] += 1;
-        if(isset($_POST["stuff6"]))
-            $_SESSION["stuff6"] += 1;
+        if(isset($_POST["shirt"]))
+            $_SESSION["shirt"] += 1;
+        if(isset($_POST["slacks"]))
+            $_SESSION["slacks"] += 1;
+        if(isset($_POST["sneakers"]))
+            $_SESSION["sneakers"] += 1;
+        if(isset($_POST["jacket"]))
+            $_SESSION["jacket"] += 1;
+        if(isset($_POST["shorts"]))
+            $_SESSION["shorts"] += 1;
+        if(isset($_POST["socks"]))
+            $_SESSION["socks"] += 1;
         ?>
         <section>
             <nav>
                 <ul>
-                    <?php if($_SESSION["stuff1"] > 0) { ?>
-                        <li>Stuff1: <?=$_SESSION["stuff1"]?></li>
+                    <?php if($_SESSION["shirt"] > 0) { ?>
+                        <li># of Shirts: <?=$_SESSION["shirt"]?></li>
                     <?php } ?>
-                    <?php if($_SESSION["stuff2"] > 0) { ?>
-                        <li>Stuff1: <?=$_SESSION["stuff2"]?></li>
+                    <?php if($_SESSION["slacks"] > 0) { ?>
+                        <li># of Slacks: <?=$_SESSION["slacks"]?></li>
                     <?php } ?>
-                    <?php if($_SESSION["stuff3"] > 0) { ?>
-                        <li>Stuff1: <?=$_SESSION["stuff3"]?></li>
+                    <?php if($_SESSION["sneakers"] > 0) { ?>
+                        <li># of Sneakers: <?=$_SESSION["sneakers"]?></li>
                     <?php } ?>
-                    <?php if($_SESSION["stuff4"] > 0) { ?>
-                        <li>Stuff1: <?=$_SESSION["stuff4"]?></li>
+                    <?php if($_SESSION["jacket"] > 0) { ?>
+                        <li># of Jackets: <?=$_SESSION["jacket"]?></li>
                     <?php } ?>
-                    <?php if($_SESSION["stuff5"] > 0) { ?>
-                        <li>Stuff1: <?=$_SESSION["stuff5"]?></li>
+                    <?php if($_SESSION["shorts"] > 0) { ?>
+                        <li># of Shorts: <?=$_SESSION["shorts"]?></li>
                     <?php } ?>
-                    <?php if($_SESSION["stuff6"] > 0) { ?>
-                        <li>Stuff1: <?=$_SESSION["stuff6"]?></li>
+                    <?php if($_SESSION["socks"] > 0) { ?>
+                        <li># of Socks: <?=$_SESSION["socks"]?></li>
                     <?php } ?>
                 </ul>
             </nav>
@@ -67,9 +69,9 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Lights" style="width:100%">
+                                <img src="#" alt="Shirt" style="width:100%">
                                     <div class="caption">
-                                        <p><button type="submit" name="stuff1">Lorem ipsum donec id elit non mi porta gravida at eget metus.</button></p>
+                                        <p><button type="submit" name="shirt">Add to Cart</button></p>
                                     </div>
                                 </a>
                             </div>
@@ -77,9 +79,9 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Nature" style="width:100%">
+                                <img src="#" alt="Slacks" style="width:100%">
                                     <div class="caption">
-                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                        <p><button type="submit" name="slacks">Add to Cart</button></p>
                                     </div>
                                 </a>
                             </div>
@@ -87,9 +89,9 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Fjords" style="width:100%">
+                                <img src="#" alt="Sneakers" style="width:100%">
                                     <div class="caption">
-                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                        <p><button type="submit" name="sneakers">Add to Cart</button></p>
                                     </div>
                                 </a>
                             </div>
@@ -97,9 +99,9 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Lights" style="width:100%">
+                                <img src="#" alt="Jacket" style="width:100%">
                                     <div class="caption">
-                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                        <p><button type="submit" name="jacket">Add to Cart</button></p>
                                     </div>
                                 </a>
                             </div>
@@ -107,9 +109,9 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Nature" style="width:100%">
+                                <img src="#" alt="Shorts" style="width:100%">
                                     <div class="caption">
-                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                        <p><button type="submit" name="shorts">Add to Cart</button></p>
                                     </div>
                                 </a>
                             </div>
@@ -117,9 +119,9 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Fjords" style="width:100%">
+                                <img src="#" alt="Socks" style="width:100%">
                                     <div class="caption">
-                                        <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                                        <p><button type="submit" name="socks">Add to Cart</button></p>
                                     </div>
                                 </a>
                             </div>
