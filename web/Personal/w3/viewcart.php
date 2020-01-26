@@ -101,6 +101,11 @@
             <p class="p2"><a href="browse.php"><button>Keep Shopping</button></a></p>
                 <form method="post">
                     <div class="row">
+                        <?php if($_SESSION == 0) { ?>
+                            <h1>You currently have no items in your cart!</h1>
+                        <?php } ?>
+                    </div>
+                    <div class="row">
                         <?php if($_SESSION["shirt"] > 0) { ?>
                         <div class="col-md-3">
                             <div class="thumbnail">
