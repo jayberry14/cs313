@@ -69,7 +69,7 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Shirt" style="width:100%">
+                                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dstld.com%2Fproducts%2Fmens-white-crew-neck-tee&psig=AOvVaw2NSQMl36kekhDvyXpOurBq&ust=1580092295986000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLCcytacoOcCFQAAAAAdAAAAABAG" alt="Shirt" style="width:100%">
                                     <div class="caption">
                                         <p><button type="submit" name="shirt">Add to Cart</button></p>
                                     </div>
@@ -79,7 +79,7 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Slacks" style="width:100%">
+                                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.aliexpress.com%2Fi%2F33004747621.html&psig=AOvVaw0bVy0spaA9ZOkP3MtMtSaO&ust=1580092334741000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODr8facoOcCFQAAAAAdAAAAABAF" alt="Slacks" style="width:100%">
                                     <div class="caption">
                                         <p><button type="submit" name="slacks">Add to Cart</button></p>
                                     </div>
@@ -89,7 +89,7 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Sneakers" style="width:100%">
+                                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.buyma.us%2Fitems%2F087839ea-2e34-46ce-a346-10829c173fdf%2F&psig=AOvVaw2lv0a1jNC-GTjiPRenImHC&ust=1580092802617000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDv6sOeoOcCFQAAAAAdAAAAABAK" alt="Sneakers" style="width:100%">
                                     <div class="caption">
                                         <p><button type="submit" name="sneakers">Add to Cart</button></p>
                                     </div>
