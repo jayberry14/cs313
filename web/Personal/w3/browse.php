@@ -71,6 +71,7 @@
                             <div class="thumbnail">
                                 <img src="../../Files/whiteT.png" alt="Shirt" style="width:100%">
                                     <div class="caption">
+                                        Shirt
                                         <p><button type="submit" name="shirt">Add to Cart</button></p>
                                     </div>
                             </div>
