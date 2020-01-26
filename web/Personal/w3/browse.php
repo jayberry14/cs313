@@ -117,7 +117,14 @@
                         </div>
                     </div>
                 </form>
+                <?php if($_SESSION["shirt"] > 0 ||
+                         $_SESSION["slacks"] > 0 ||
+                         $_SESSION["sneakers"] > 0 ||
+                         $_SESSION["jacket"] > 0 ||
+                         $_SESSION["shorts"] > 0 ||
+                         $_SESSION["socks"] > 0) { ?>
                 <div class="col-md-1 p3"><a href="checkout.php"><button>Checkout</button></a></div>
+                <?php } ?>
             </article>
         </section>
         <footer>
