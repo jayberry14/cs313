@@ -23,6 +23,11 @@
             // $_SESSION["shirtCost"] = $_SESSION["shirt"] * 7;
         }
 
+        if(isset($_POST["plusShirt"])){
+            $_SESSION["shirt"] += 1;
+            // $_SESSION["shirtCost"] = $_SESSION["shirt"] * 7;
+        }
+
         if(isset($_POST["slacks"]))
             $_SESSION["slacks"] += 1;
         if(isset($_POST["sneakers"]))
@@ -60,6 +65,7 @@
             <article>
                 <form method="post">
                     <div class="row">
+                        <?php if($_SESSION["shirt"] > 0) { ?>
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
@@ -74,6 +80,7 @@
                                 </a>
                             </div>
                         </div>
+                        <?php } ?>
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
