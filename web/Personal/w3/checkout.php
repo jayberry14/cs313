@@ -30,7 +30,7 @@
         }
     ?>
         <h1>Checkout</h1>
-        <form mehtod="post">
+        <form method="post">
             <div class="row">
                 <div class="col"></div>
                 <div class="col"><label>Street: </label><input type="text" name="street" size="30"><br><br></div>
