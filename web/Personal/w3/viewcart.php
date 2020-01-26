@@ -14,8 +14,33 @@
     <link rel='stylesheet' type='text/css' media='screen' href='layout.css'>
     </head>
     <body>
-        <div>
-            
-        </div>
+        <header>
+            <h1>View Your Cart</h1>
+        </header>
+        <section>
+            <article>
+            </article>
+        </section>
+        <footer>
+            <?php
+                // set default timezone
+                echo "<br>";
+                date_default_timezone_set('America/Boise'); // MST
+
+                $info = getdate();
+                $date = $info['mday'];
+                $month = $info['mon'];
+                $year = $info['year'];
+                $hour = $info['hours'];
+                $min = $info['minutes'];
+                $sec = $info['seconds'];
+
+                $current_date = "$date/$month/$year";
+                $current_time = "$hour:$min:$sec";
+                echo "$current_date";
+                echo "<br>";
+                echo "$current_time";
+            ?>
+        </footer>
     </body>
 </html>
