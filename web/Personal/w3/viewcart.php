@@ -104,7 +104,7 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Shirt" style="width:100%">
+                                <img src="../../Files/whiteT.png" alt="Shirt" style="width:100%">
                                     <div class="caption">
                                         <p>
                                             <button type="submit" name="minusShirt">-</button>
@@ -120,7 +120,7 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Slacks" style="width:100%">
+                                <img src="../../Files/slacks.jpg" alt="Slacks" style="width:100%">
                                     <div class="caption">
                                         <p>
                                             <button type="submit" name="minusSlacks">-</button>
@@ -136,7 +136,7 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Sneakers" style="width:100%">
+                                <img src="../../Files/sneakers.jpg" alt="Sneakers" style="width:100%">
                                     <div class="caption">
                                         <p>
                                             <button type="submit" name="minusSneakers">-</button>
@@ -152,7 +152,7 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Jacket" style="width:100%">
+                                <img src="../../Files/jacket.jpg" alt="Jacket" style="width:100%">
                                     <div class="caption">
                                         <p>
                                             <button type="submit" name="minusJacket">-</button>
@@ -168,7 +168,7 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Shorts" style="width:100%">
+                                <img src="../../Files/shorts.jpg" alt="Shorts" style="width:100%">
                                     <div class="caption">
                                         <p>
                                             <button type="submit" name="minusShorts">-</button>
@@ -184,7 +184,7 @@
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
-                                <img src="#" alt="Socks" style="width:100%">
+                                <img src="../../Files/socks.jpg" alt="Socks" style="width:100%">
                                     <div class="caption">
                                         <p>
                                             <button type="submit" name="minusSocks">-</button>
