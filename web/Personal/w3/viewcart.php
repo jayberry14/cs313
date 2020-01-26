@@ -28,16 +28,51 @@
             // $_SESSION["shirtCost"] = $_SESSION["shirt"] * 7;
         }
 
-        if(isset($_POST["slacks"]))
+        if(isset($_POST["minusSlacks"])){
+            $_SESSION["slacks"] -= 1;
+            // $_SESSION["shirtCost"] = $_SESSION["shirt"] * 7;
+        }
+
+        if(isset($_POST["plusSlacks"])){
             $_SESSION["slacks"] += 1;
-        if(isset($_POST["sneakers"]))
+            // $_SESSION["shirtCost"] = $_SESSION["shirt"] * 7;
+        }
+        if(isset($_POST["minusSneakers"])){
+            $_SESSION["sneakers"] -= 1;
+            // $_SESSION["shirtCost"] = $_SESSION["shirt"] * 7;
+        }
+
+        if(isset($_POST["plusSneakers"])){
             $_SESSION["sneakers"] += 1;
-        if(isset($_POST["jacket"]))
+            // $_SESSION["shirtCost"] = $_SESSION["shirt"] * 7;
+        }
+        if(isset($_POST["minusJacket"])){
+            $_SESSION["jacket"] -= 1;
+            // $_SESSION["shirtCost"] = $_SESSION["shirt"] * 7;
+        }
+
+        if(isset($_POST["plusJacket"])){
             $_SESSION["jacket"] += 1;
-        if(isset($_POST["shorts"]))
+            // $_SESSION["shirtCost"] = $_SESSION["shirt"] * 7;
+        }
+        if(isset($_POST["minusShorts"])){
+            $_SESSION["shorts"] -= 1;
+            // $_SESSION["shirtCost"] = $_SESSION["shirt"] * 7;
+        }
+
+        if(isset($_POST["plusShorts"])){
             $_SESSION["shorts"] += 1;
-        if(isset($_POST["socks"]))
+            // $_SESSION["shirtCost"] = $_SESSION["shirt"] * 7;
+        }
+        if(isset($_POST["minusSocks"])){
+            $_SESSION["socks"] -= 1;
+            // $_SESSION["shirtCost"] = $_SESSION["shirt"] * 7;
+        }
+
+        if(isset($_POST["plusSocks"])){
             $_SESSION["socks"] += 1;
+            // $_SESSION["shirtCost"] = $_SESSION["shirt"] * 7;
+        }
         ?>
         <section>
             <nav>
@@ -153,8 +188,8 @@
                         </div>
                     </div>
                 </form>
-                <p class="p2"><a href="browse.php"><button>Keep Shopping</button></a></p>
-                <p class="p1"><a href="checkout.php"><button>Proceed to Checkout</button></a></p>
+                <p><a href="browse.php"><button>Keep Shopping</button></a></p>
+                <p><a href="checkout.php"><button>Proceed to Checkout</button></a></p>
             </article>
         </section>
         <footer>
