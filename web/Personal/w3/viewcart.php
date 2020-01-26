@@ -98,6 +98,7 @@
                 </ul>
             </nav>
             <article>
+            <p class="p2"><a href="browse.php"><button>Keep Shopping</button></a></p>
                 <form method="post">
                     <div class="row">
                         <?php if($_SESSION["shirt"] > 0) { ?>
@@ -198,8 +199,7 @@
                         <?php } ?>
                     </div>
                 </form>
-                <p><a href="browse.php"><button>Keep Shopping</button></a></p>
-                <p><a href="checkout.php"><button>Proceed to Checkout</button></a></p>
+                <div class="col-md-1 p3"><a href="checkout.php"><button>Proceed to Checkout</button></a></p>
             </article>
         </section>
         <footer>
