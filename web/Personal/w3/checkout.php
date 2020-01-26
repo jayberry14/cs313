@@ -64,6 +64,8 @@
         <br>
         <p><a href="confirm.php"><button>Place Order</button></a></p>
         </article>
-    </session>
+    </section>
+    <footer>
+    </footer>
     </body>
 </html>
