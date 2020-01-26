@@ -58,7 +58,6 @@
                 </ul>
             </nav>
             <article>
-                <p class="p2"><a href="viewcart.php"><button>View your cart</button></a></p>
                 <form method="post">
                     <div class="row">
                         <div class="col-md-3">
@@ -147,7 +146,8 @@
                         </div>
                     </div>
                 </form>
-                <p class="p1"><a href="checkout.php"><button>Checkout</button></a></p>
+                <p class="p2"><a href="browse.php"><button>Keep Shopping</button></a></p>
+                <p class="p1"><a href="checkout.php"><button>Proceed to Checkout</button></a></p>
             </article>
         </section>
         <footer>
