@@ -18,6 +18,8 @@
         <h1>Order Confirmation</h1>
     </header>
     <section>
+        <nav>
+        </nav>
         <article>
             <ul>
                 <?php if($_SESSION["shirt"] > 0) { ?>

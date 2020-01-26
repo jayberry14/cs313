@@ -34,6 +34,8 @@
         <h1>Checkout</h1>
     </header>
     <section>
+        <nav>
+        </nav>
         <article>
         <form method="post">
             <div class="row">
