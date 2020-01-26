@@ -53,7 +53,10 @@
             </div>
             <button type="submit" name="submit">Save Address</button>
         </form>
+        <br>
+        <br>
         <p class="p2"><a href="viewcart.php"><button>Back to Cart</button></a></p>
+        <br>
         <p class="p1"><a href="confirm.php"><button>Place Order</button></a></p>
     </body>
 </html>
