@@ -122,9 +122,9 @@
                                 <img src="#" alt="Slacks" style="width:100%">
                                     <div class="caption">
                                         <p>
-                                            <button type="submit" name="minusShirt">-</button>
-                                            <span><?=$_SESSION["shirt"]?></span>
-                                            <button type="submit" name="plusShirt">+</button>
+                                            <button type="submit" name="minusSlacks">-</button>
+                                            <span><?=$_SESSION["slacks"]?></span>
+                                            <button type="submit" name="plusSlacks">+</button>
                                         </p>                                    
                                     </div>
                                 </a>
@@ -136,9 +136,9 @@
                                 <img src="#" alt="Sneakers" style="width:100%">
                                     <div class="caption">
                                         <p>
-                                            <button type="submit" name="minusShirt">-</button>
-                                            <span><?=$_SESSION["shirt"]?></span>
-                                            <button type="submit" name="plusShirt">+</button>
+                                            <button type="submit" name="minusSneakers">-</button>
+                                            <span><?=$_SESSION["sneakers"]?></span>
+                                            <button type="submit" name="plusSneakers">+</button>
                                         </p>
                                     </div>
                                 </a>
@@ -150,9 +150,9 @@
                                 <img src="#" alt="Jacket" style="width:100%">
                                     <div class="caption">
                                         <p>
-                                            <button type="submit" name="minusShirt">-</button>
-                                            <span><?=$_SESSION["shirt"]?></span>
-                                            <button type="submit" name="plusShirt">+</button>
+                                            <button type="submit" name="minusJacket">-</button>
+                                            <span><?=$_SESSION["jacket"]?></span>
+                                            <button type="submit" name="plusJacket">+</button>
                                         </p>
                                     </div>
                                 </a>
@@ -164,9 +164,9 @@
                                 <img src="#" alt="Shorts" style="width:100%">
                                     <div class="caption">
                                         <p>
-                                            <button type="submit" name="minusShirt">-</button>
-                                            <span><?=$_SESSION["shirt"]?></span>
-                                            <button type="submit" name="plusShirt">+</button>
+                                            <button type="submit" name="minusShorts">-</button>
+                                            <span><?=$_SESSION["shorts"]?></span>
+                                            <button type="submit" name="plusShorts">+</button>
                                         </p>
                                     </div>
                                 </a>
@@ -178,9 +178,9 @@
                                 <img src="#" alt="Socks" style="width:100%">
                                     <div class="caption">
                                         <p>
-                                            <button type="submit" name="minusShirt">-</button>
-                                            <span><?=$_SESSION["shirt"]?></span>
-                                            <button type="submit" name="plusShirt">+</button>
+                                            <button type="submit" name="minusSocks">-</button>
+                                            <span><?=$_SESSION["socks"]?></span>
+                                            <button type="submit" name="plusSocks">+</button>
                                         </p>
                                     </div>
                                 </a>
