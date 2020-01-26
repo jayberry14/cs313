@@ -116,7 +116,7 @@
                             </div>
                         </div>
                         <?php } ?>
-                        <?php if($_SESSION["shirt"] > 0) { ?>
+                        <?php if($_SESSION["slacks"] > 0) { ?>
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
@@ -132,7 +132,7 @@
                             </div>
                         </div>
                         <?php } ?>
-                        <?php if($_SESSION["shirt"] > 0) { ?>
+                        <?php if($_SESSION["sneakers"] > 0) { ?>
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
@@ -148,7 +148,7 @@
                             </div>
                         </div>
                         <?php } ?>
-                        <?php if($_SESSION["shirt"] > 0) { ?>
+                        <?php if($_SESSION["jacket"] > 0) { ?>
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
@@ -164,7 +164,7 @@
                             </div>
                         </div>
                         <?php } ?>
-                        <?php if($_SESSION["shirt"] > 0) { ?>
+                        <?php if($_SESSION["shorts"] > 0) { ?>
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
@@ -180,7 +180,7 @@
                             </div>
                         </div>
                         <?php } ?>
-                        <?php if($_SESSION["shirt"] > 0) { ?>
+                        <?php if($_SESSION["socks"] > 0) { ?>
                         <div class="col-md-3">
                             <div class="thumbnail">
                                 <a href="#" target="_blank">
