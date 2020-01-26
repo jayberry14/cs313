@@ -18,15 +18,17 @@
         $_SESSION["state"];
         $_SESSION["zip"];
     ?>
+    
+    <body>
     <?php
         if(isset($_POST["submit"])){
             $_SESSION["street"] = htmlspecialchars($_POST["street"]);
             $_SESSION["city"] = htmlspecialchars($_POST["city"]);
             $_SESSION["state"] = htmlspecialchars($_POST["state"]);
             $_SESSION["zip"] = htmlspecialchars($_POST["zip"]);
+            echo "<h1>Address Saved!</h1>"
         }
     ?>
-    <body>
         <h1>Checkout</h1>
         <form mehtod="post">
             <div class="row">
