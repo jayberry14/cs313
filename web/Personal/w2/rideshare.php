@@ -21,6 +21,7 @@
 </head>
 <body>
     <?php include '../../header.php';?>
+    <h1>Ride Share</h1>
     <img src="../../Files/self-portrait.jpg" alt="Me" class="img-circle img-2 left">
 </body>
 </html>
