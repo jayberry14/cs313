@@ -26,6 +26,6 @@
     </div>
 </body>
 <footer class="container-fluid bg-3">
-    <h3>Copyright ©2019 Brigham Young University - Idaho</h3>
+    <h4>Copyright ©2019 Brigham Young University - Idaho</h4>
 </footer>
 </html>
