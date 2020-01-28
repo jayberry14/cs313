@@ -22,7 +22,7 @@
 <body>
     <div class="container-fluid bg-3"><h1>Ride Share</h1></div>
 </body>
-<footer>
-    Stuff
+<footer class="container-fluid bg-3">
+    <h3>Copyright ©2019 Brigham Young University - Idaho
 </footer>
 </html>
