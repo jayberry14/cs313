@@ -24,7 +24,7 @@
     <h1>Ride Share</h1>
     <img src="../../Files/self-portrait.jpg" alt="Me" class="img-circle img-2 left">
     <div class="container-fluid bg-3">
-        <p>Ride Share</p>
+        Ride Share
     </div>
 </body>
 <footer>
