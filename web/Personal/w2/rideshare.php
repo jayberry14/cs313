@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Josh's Assignment Directory</title>
-    <link rel="icon" type="image/ico" href="https://cdn3.iconfinder.com/data/icons/round-icons-vol-2/512/j-512.png">
+    <link rel="icon" type="image/ico" href="/mybyui/img/header/byui_logo.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -20,6 +20,9 @@
     </script>
 </head>
 <body>
+    <header>
+        <img src="/mybyui/img/header/byui_logo.png" width="82" height="82" alt="BYU-IDAHO in white letters on black background" />
+    </header>
     <div class="container-fluid bg-3"><h1>Ride Share</h1></div>
     <div class="container-fluid bg-1" style="height:35vw">
 
