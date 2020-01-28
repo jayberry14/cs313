@@ -20,10 +20,7 @@
     </script>
 </head>
 <body>
-    <?php include '../../header.php';?>
     <div class="container-fluid bg-3"><h1>Ride Share</h1></div>
-    <img src="../../Files/self-portrait.jpg" alt="Me" class="img-circle img-2 left">
-    
 </body>
 <footer>
     Stuff
