@@ -21,6 +21,9 @@
 </head>
 <body>
     <div class="container-fluid bg-3"><h1>Ride Share</h1></div>
+    <div class="container-fluid bg-1" style="height:100%">
+
+    </div>
 </body>
 <footer class="container-fluid bg-3">
     <h3>Copyright ©2019 Brigham Young University - Idaho
