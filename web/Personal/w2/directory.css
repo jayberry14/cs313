@@ -28,26 +28,32 @@ footer {
 .bg-1 {
     background-color: whitesmoke;
     color: lightslategray;
+    text-align: center;
 }
 .bg-2 {
     background-color: rgb(226, 226, 226);
     color: white;
+    text-align: center;
 }
 .bg-3 {
     background-color: #1abc9c; /* Green */
     color: #ffffff;
+    text-align: center;
 }
 .bg-4 {
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
+    text-align: center;
 }
 .bg-5 {
     background-color: #ffffff; /* White */
     color: #555555;
+    text-align: center;
 }
 .bg-6 {
     background-color: #7af1ec; /* Light Teal */
     color: #555555;
+    text-align: center;
   }
 
 .img-1 {
