@@ -25,35 +25,35 @@
         <img src="../../Files/self-portrait.jpg" alt="Me" class="img-circle img-1">
         <br>
     </div>
-    <div class="bg-3">
+    <div class="container-fluid bg-1">
         <p>
             I am a dynamic figure often seen crushing noobs or playing chess.
         </p>
     </div>
-    <div class="bg-4">
+    <div class="container-fluid bg-2">
         <p>
             I once conquered an entire classroom of students, becoming their Project Manager
             by using only my laptop and sheer unstoppable willpower. 
         </p>
     </div>
-    <div class="bg-5">
+    <div class="container-fluid bg-3">
         <p>
             I spend my off-time defending your credit cards to the death and whipping the
             Wi-Fi back into shape in the on-campus IT Security Office.
         </p>
     </div>
-    <div class="bg-1">
+    <div class="container-fluid bg-4">
         <p>
             I don't get stressed.
         </p>
     </div>
-    <div class="bg-2">
+    <div class="container-fluid bg-5">
         <p>
             On weekends I pamper myself with the sounds of pain exiting my body as the bench
             press ascends and descends in my arms.
         </p>
     </div>
-    <div class="bg-6">
+    <div class="container-fluid bg-6">
         <p>
             Jack Wilder, from the hit blockbuster "Now You See Me" wishes he could throw
             playing cards as well as I do.
