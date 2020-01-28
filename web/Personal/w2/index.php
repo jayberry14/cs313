@@ -26,7 +26,7 @@
         <img src="../../Files/self-portrait.jpg" alt="Me" class="img-circle img-1">
         <br>
     </div>
-    <div>
+    <div class="bg-3">
         <p>
             I am a dynamic figure often seen crushing noobs or playing chess.
             <br>
@@ -42,7 +42,7 @@
             playing cards as well as I do.
         </p>
     </div>
-    <div>
+    <div class="bg-4">
         I once conquered an entire classroom of students, becoming their Project Manager
         by using only my laptop and sheer unstoppable willpower. 
         <br>
