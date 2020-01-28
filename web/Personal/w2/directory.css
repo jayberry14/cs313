@@ -46,6 +46,11 @@ footer {
 .bg-5 {
     background-color: #ffffff; /* White */
     color: #555555;
+}
+
+.bg-5 {
+    background-color: #7af1ec; /* Light Teal */
+    color: #555555;
   }
 
 .img-1 {
