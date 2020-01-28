@@ -22,7 +22,7 @@
 <body>
     <header>
         <div class="container-fluid bg-3">
-            <img src="https://web.byui.edu/mybyui/img/header/byui_logo.png" width="82" height="82" float="left" alt="BYU-IDAHO in white letters on black background" />
+            <img src="https://web.byui.edu/mybyui/img/header/byui_logo.png" class="img-3" width="82" height="82" alt="BYU-IDAHO in white letters on black background" />
             <h1>Ride Share</h1>
         </div>
     </header>

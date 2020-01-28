@@ -69,6 +69,11 @@ footer {
     margin-top: -3vw;
 }
 
+.img-3 {
+    max-width: 100%;
+    float: left;
+}
+
 .divHover {
     visibility: visible;
     color: black;
