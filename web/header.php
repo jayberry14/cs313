@@ -33,7 +33,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="assignments.php">Assignments</a></li>
                     <li><a href="josh's_resume.pdf">Resume</a></li>
-                    <li><a href="#">Ride Share</a></li>
+                    <li><a href="rideshare.php">Ride Share</a></li>
                 </ul>
             </div>
         </div>
