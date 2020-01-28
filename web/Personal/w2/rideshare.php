@@ -28,6 +28,6 @@
     </div>
 </body>
 <footer>
-
+    Stuff
 </footer>
 </html>
