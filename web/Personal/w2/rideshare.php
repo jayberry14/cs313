@@ -21,7 +21,7 @@
 </head>
 <body>
     <div class="container-fluid bg-3"><h1>Ride Share</h1></div>
-    <div class="container-fluid bg-1" style="height:100%">
+    <div class="container-fluid bg-1" style="height:25vw">
 
     </div>
 </body>
