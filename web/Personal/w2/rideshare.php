@@ -22,8 +22,8 @@
 <body>
     <header>
         <img src="https://web.byui.edu/mybyui/img/header/byui_logo.png" width="82" height="82" alt="BYU-IDAHO in white letters on black background" />
+        <div class="container-fluid bg-3"><h1>Ride Share</h1></div>
     </header>
-    <div class="container-fluid bg-3"><h1>Ride Share</h1></div>
     <div class="container-fluid bg-1" style="height:35vw">
 
     </div>
