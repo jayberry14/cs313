@@ -1,0 +1,15 @@
+heroku addons:create heroku-postgresql:hobby-dev -a infinite caverns
+
+heroku config -s -a infinite-caverns
+
+heroku pg:psql -a infinite-caverns
+
+CREATE TABLE cities (
+name varchar(80),
+location point
+);
+
+INSERT INTO cities VALUES('San Fransisco', '(110, 30)');
+INSERT INTO cities VALUES('Tenino', '(1, 1)');
+
+SELECT * FROM cities;
