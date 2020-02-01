@@ -1,15 +1,21 @@
 CREATE TABLE riders
-(
-    id SERIAL NOT NULL PRIMARY KEY,
-    name VARCHAR(80) NOT NULL,
-    password VARCHAR(80) NOT NULL,
-    display_name VARCHAR(80) NOT NULL
+( id SERIAL NOT NULL PRIMARY KEY
+, name VARCHAR(80) NOT NULL
+, password VARCHAR(80) NOT NULL
+, display_name VARCHAR(80) NOT NULL
 );
 
 CREATE TABLE drivers
-(
-    id SERIAL NOT NULL PRIMARY KEY,
-    name VARCHAR(80) NOT NULL,
-    display_name VARCHAR(80) NOT NULL
+( id SERIAL NOT NULL PRIMARY KEY
+, name VARCHAR(80) NOT NULL
+, display_name VARCHAR(80) NOT NULL
 );
 
+CREATE TABLE rides
+( id SERIAL NOT NULL PRIMARY KEY
+, destination VARCHAR(80) NOT NULL
+, location VARCHAR (80) NOT NULL
+, time VARCHAR (80) NOT NULL
+, driver_id VARCHAR(80) NOT NULL
+, rider_id VARCHAR(80) NOT NULL
+);
