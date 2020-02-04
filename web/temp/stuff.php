@@ -15,7 +15,7 @@
         $relationships->execute();
         while($rrow = $relationships->fetch(PDO::FETCH_ASSOC))
         {
-            $relationship = $rrow["description"]
+            $relationship = $rrow["description"];
         }
 
         echo "<p>$first_name $last_name is my $relationship ($relationship_id)</p>";
