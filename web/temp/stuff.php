@@ -10,7 +10,7 @@
         $first_name = $frow["first_name"];
         $last_name = $frow["last_name"];
         $relationship_id = $frow["relationship_id"];
-    }
 
-    echo "<p>$first_name $last_name is my $relationship_id</p>";
+        echo "<p>$first_name $last_name is my $relationship_id</p>";
+    }
 ?>
