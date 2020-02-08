@@ -39,9 +39,9 @@
     
     <div class="container-fluid bg-1" style="height:35vw">
     <form action="" method="post">
-        <input type="text" id="location" placeholder="Where from..?" name="location">
+        Where from...?<input type="text" id="location" placeholder="Provo" name="location">
         <br>
-        <input type="text" id="destination" placeholder="Going to..?" name="destination">
+        Going to..?<input type="text" id="destination" placeholder="Rexburg" name="destination">
         <br>
         <input type="submit" id="submit" name="submit">
         <?php
@@ -64,8 +64,8 @@
                     echo "<td>Location</td>";
                     echo "<td>Destination</td>";
                     // echo "<td>Seats</td>";
-                    echo "<td>Date</td>";
                     echo "<td>Time</td>";
+                    echo "<td>Date</td>";
                     // echo "<td>Price</td>";
                 echo "</tr>";
                 while ($row = $rides->fetch(PDO::FETCH_ASSOC))
