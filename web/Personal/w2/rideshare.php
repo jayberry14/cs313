@@ -48,16 +48,16 @@
             if(isset($_POST["submit"])){
                 $_SESSION["location"] = $_POST["location"];
                 $_SESSION["destination"] = $_POST["destination"];
-                $_SESSION["date"] = $_POST["date"];
-                $_SESSION["time"] = $_POST["time"];
+                // $_SESSION["date"] = $_POST["date"];
+                // $_SESSION["time"] = $_POST["time"];
                 $location = $_SESSION["location"];
                 $destination = $_SESSION["destination"];
-                $date = $_SESSION["date"];
-                $time = $_SESSION["time"];
+                // $date = $_SESSION["date"];
+                // $time = $_SESSION["time"];
 
                 $rides = $db->prepare("SELECT location, destination, date, time 
                                     FROM rides 
-                                    WHERE location = '$location' AND destination = '$destination' AND date = '$date' AND time = '$time'");
+                                    WHERE location = '$location' AND destination = '$destination'");
                 $rides->execute();
                 echo "<table class='table'>";
                 echo "<tr>";
