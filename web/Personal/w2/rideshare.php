@@ -1,6 +1,12 @@
 <?php
+    session_start();
     require "dbConnect.php";
     $db = get_db();
+
+    $_SESSION["location"];
+    $_SESSION["destination"];
+    $_SESSION["date"];
+    $_SESSION["time"];
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,25 +37,35 @@
         </div>
     </header>
     <?php
-        // $_SESSION["location"];
-        // $_SESSION["destination"];
-        // $_SESSION["date"];
-        // $_SESSION["time"];
+        if(isset($_POST["submit"])){
+            $_SESSION["location"] = $_POST["location"];
+            $_SESSION["destination"] = $_POST["destination"];
+            $_SESSION["date"] = $_POST["date"];
+            $_SESSION["time"] = $_POST["time"];
+            $location = $_SESSION["location"];
+            $destination = $_SESSION["destination"];
+            $date = $_SESSION["date"];
+            $time = $_SESSION["time"];
+
+            $rides = $db->prepare("SELECT location, destination, date, time 
+                                   FROM rides 
+                                   WHERE location = '$location', destination = '$destination', date = '$date', time = '$time'");
+            $rides->execute();
+            while ($row = $rides->fetch(PDO::FETCH_ASSOC))
+            {
+                echo "Your trip begins at $location<br>and is going to $destination.<br>";
+                echo "Please be at your pickup location at $time on $date.<br>";
+            }
+        }       
     ?>
     <div class="container-fluid bg-1" style="height:35vw">
-        <?php
-        $rides = $db->prepare("SELECT * FROM rides");
-        $rides->execute();
-        while ($row = $rides->fetch(PDO::FETCH_ASSOC))
-        {
-            $location = $row["location"];
-            $destination = $row["destination"];
-            $date = $row["date"];
-            $time = $row["time"];
-            echo "Your trip begins at $location<br>and is going to $destination.<br>";
-            echo "Please be at your pickup location at $time on $date.<br>";
-        }
-        ?>
+    <form action="submit" method="post">
+        <input type="text" id="location" placeholder="Where from..?">
+        <br>
+        <input type="text" id="destination" placeholder="Going to..?">
+        <br>
+        <input type="submit">
+    </form>
     </div>
 </body>
 <footer class="container-fluid bg-3">
