@@ -27,10 +27,10 @@
         </div>
     </header>
     <?php
-        $_SESSION["location"];
-        $_SESSION["destination"];
-        $_SESSION["date"];
-        $_SESSION["time"];
+        // $_SESSION["location"];
+        // $_SESSION["destination"];
+        // $_SESSION["date"];
+        // $_SESSION["time"];
     ?>
     <div class="container-fluid bg-1" style="height:35vw">
         <?php
