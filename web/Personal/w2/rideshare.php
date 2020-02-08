@@ -43,7 +43,7 @@
         <br>
         <input type="text" id="destination" placeholder="Going to..?">
         <br>
-        <input type="submit">
+        <input type="submit" id="submit">
         <?php
             if(isset($_POST["submit"])){
                 $_SESSION["location"] = $_POST["location"];
