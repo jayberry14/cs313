@@ -39,9 +39,9 @@
     
     <div class="container-fluid bg-1" style="height:35vw">
     <form action="" method="post">
-        <input type="text" id="location" placeholder="Where from..?">
+        <input type="text" id="location" placeholder="Where from..?" name="location">
         <br>
-        <input type="text" id="destination" placeholder="Going to..?">
+        <input type="text" id="destination" placeholder="Going to..?" name="destination">
         <br>
         <input type="submit" id="submit" name="submit">
         <?php
