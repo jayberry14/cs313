@@ -59,7 +59,7 @@
         }       
     ?>
     <div class="container-fluid bg-1" style="height:35vw">
-    <form action="submit" method="post">
+    <form action="" method="post">
         <input type="text" id="location" placeholder="Where from..?">
         <br>
         <input type="text" id="destination" placeholder="Going to..?">
