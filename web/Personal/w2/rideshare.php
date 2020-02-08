@@ -1,3 +1,7 @@
+<?php
+    require “web\Personal\w2\dbConnect.php”;
+    $db = get_db();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,8 +38,6 @@
     ?>
     <div class="container-fluid bg-1" style="height:35vw">
         <?php
-        require “web\Personal\w2\dbConnect.php”;
-        $db = get_db();
         $rides = $db->prepare(“SELECT * FROM rides”);
         $rides->execute();
         while ($row = $rides->fetch(PDO::FETCH_ASSOC))
