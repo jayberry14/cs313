@@ -57,7 +57,7 @@
 
                 $rides = $db->prepare("SELECT location, destination, date, time 
                                     FROM rides 
-                                    WHERE location = '$location', destination = '$destination', date = '$date', time = '$time'");
+                                    WHERE location = '$location' AND destination = '$destination' AND date = '$date' AND time = '$time'");
                 $rides->execute();
                 echo "<table class='table'>";
                 echo "<tr>";
@@ -79,7 +79,7 @@
                     echo "</tr>";
                 }
                 echo "</table>";
-            }       
+            }     
         ?>
     </form>
     </div>
