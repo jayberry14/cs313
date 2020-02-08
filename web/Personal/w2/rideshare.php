@@ -34,7 +34,7 @@
     ?>
     <div class="container-fluid bg-1" style="height:35vw">
         <?php
-        require “dbConnect.php”;
+        require “web\Personal\w2\dbConnect.php”;
         $db = get_db();
         $rides = $db->prepare(“SELECT * FROM rides”);
         $rides->execute();
