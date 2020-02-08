@@ -61,21 +61,20 @@
                 $rides->execute();
                 echo "<table class='table'>";
                 echo "<tr>";
-                    echo "<td>ID</td>";
-                    echo "<td>City From</td>";
-                    echo "<td>City To</td>";
-                    echo "<td>Seats</td>";
+                    echo "<td>Location</td>";
+                    echo "<td>Destination</td>";
+                    // echo "<td>Seats</td>";
                     echo "<td>Date</td>";
                     echo "<td>Time</td>";
-                    echo "<td>Price</td>";
+                    // echo "<td>Price</td>";
                 echo "</tr>";
                 while ($row = $rides->fetch(PDO::FETCH_ASSOC))
                 {
                     echo "<tr>";
-                        echo "<td>" . $row['location'] . "</td>";
-                        echo "<td>" . $row['destination'] . "</td>";
-                        echo "<td>" . $row['time'] . "</td>";
-                        echo "<td>" . $row['date'] . "</td>";
+                        echo "<td>" . $row["location"] . "</td>";
+                        echo "<td>" . $row["destination"] . "</td>";
+                        echo "<td>" . $row["time"] . "</td>";
+                        echo "<td>" . $row["date"] . "</td>";
                     echo "</tr>";
                 }
                 echo "</table>";
