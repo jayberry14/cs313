@@ -36,28 +36,7 @@
             <h1>Ride Share</h1>
         </div>
     </header>
-    <?php
-        if(isset($_POST["submit"])){
-            $_SESSION["location"] = $_POST["location"];
-            $_SESSION["destination"] = $_POST["destination"];
-            $_SESSION["date"] = $_POST["date"];
-            $_SESSION["time"] = $_POST["time"];
-            $location = $_SESSION["location"];
-            $destination = $_SESSION["destination"];
-            $date = $_SESSION["date"];
-            $time = $_SESSION["time"];
-
-            $rides = $db->prepare("SELECT location, destination, date, time 
-                                   FROM rides 
-                                   WHERE location = '$location', destination = '$destination', date = '$date', time = '$time'");
-            $rides->execute();
-            while ($row = $rides->fetch(PDO::FETCH_ASSOC))
-            {
-                echo "Your trip begins at $location<br>and is going to $destination.<br>";
-                echo "Please be at your pickup location at $time on $date.<br>";
-            }
-        }       
-    ?>
+    
     <div class="container-fluid bg-1" style="height:35vw">
     <form action="" method="post">
         <input type="text" id="location" placeholder="Where from..?">
@@ -65,6 +44,43 @@
         <input type="text" id="destination" placeholder="Going to..?">
         <br>
         <input type="submit">
+        <?php
+            if(isset($_POST["submit"])){
+                $_SESSION["location"] = $_POST["location"];
+                $_SESSION["destination"] = $_POST["destination"];
+                $_SESSION["date"] = $_POST["date"];
+                $_SESSION["time"] = $_POST["time"];
+                $location = $_SESSION["location"];
+                $destination = $_SESSION["destination"];
+                $date = $_SESSION["date"];
+                $time = $_SESSION["time"];
+
+                $rides = $db->prepare("SELECT location, destination, date, time 
+                                    FROM rides 
+                                    WHERE location = '$location', destination = '$destination', date = '$date', time = '$time'");
+                $rides->execute();
+                echo "<table class='table'>";
+                echo "<tr>";
+                    echo "<td>ID</td>";
+                    echo "<td>City From</td>";
+                    echo "<td>City To</td>";
+                    echo "<td>Seats</td>";
+                    echo "<td>Date</td>";
+                    echo "<td>Time</td>";
+                    echo "<td>Price</td>";
+                echo "</tr>";
+                while ($row = $rides->fetch(PDO::FETCH_ASSOC))
+                {
+                    echo "<tr>";
+                        echo "<td>" . $row['location'] . "</td>";
+                        echo "<td>" . $row['destination'] . "</td>";
+                        echo "<td>" . $row['time'] . "</td>";
+                        echo "<td>" . $row['date'] . "</td>";
+                    echo "</tr>";
+                }
+                echo "</table>";
+            }       
+        ?>
     </form>
     </div>
 </body>
