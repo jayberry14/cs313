@@ -26,19 +26,28 @@ INSERT INTO w5_family_members ( first_name
                               , relationship_id)
                       VALUES  ( 'Sarah'
                               , 'Birch'
-                              , 3);
+                              , (SELECT id FROM w5_relationships WHERE description = 'Wife'));
                               
 INSERT INTO w5_family_members ( first_name
                               , last_name 
                               , relationship_id)
                       VALUES  ( 'Teresa'
                               , 'Birch'
-                              , 1);
+                              , (SELECT id FROM w5_relationships WHERE description = 'Mother'));
 
 INSERT INTO w5_family_members ( first_name
                               , last_name 
                               , relationship_id)
                       VALUES  ( 'Hannah'
                               , 'Birch'
-                              , 6);
+                              , (SELECT id FROM w5_relationships WHERE description = 'Daughter'));
 
+INSERT INTO w5_family_members ( first_name
+                              , last_name 
+                              , relationship_id)
+                      VALUES  ( 'Joshua'
+                              , 'Birch'
+                              , (SELECT id FROM w5_relationships WHERE description = 'Father'));
+
+SELECT * FROM w5_family_members;
+SELECT * FROM w5_relationships;
