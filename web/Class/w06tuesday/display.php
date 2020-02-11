@@ -12,8 +12,8 @@
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             {
                $id      = $row['id'];
-               $first   = $row['first'];
-               $last    = $row['last'];
+               $first   = $row['first_name'];
+               $last    = $row['last_name'];
                $food_id = $row['food_type'];
 
                $foods = $db->prepare("SELECT food FROM w6_food WHERE ID = $food_id");
