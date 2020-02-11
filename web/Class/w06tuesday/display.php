@@ -20,7 +20,7 @@
                $foods->execute();
                while ($fRow = $foods->fetch(PDO::FETCH_ASSOC))
                {
-                  $food = $fRow['food']''
+                  $food = $fRow['food'];
                }
                echo "<h1>$first $last's favorite food is $food</h1>";
             }
