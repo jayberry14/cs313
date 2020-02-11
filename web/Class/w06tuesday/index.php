@@ -20,9 +20,9 @@
                         $statement->execute();
                         while ($row = $statement->fetch(PDO::FETCH_ASSOC))
                         {
-                           $id = $row['id'];
+                           $id   = $row['id'];
                            $food = $row['food'];
-                           echo "<option value='$id'>food</option>";
+                           echo "<option value='$id'>$food</option>";
                         }
                      ?>
                   </select>
