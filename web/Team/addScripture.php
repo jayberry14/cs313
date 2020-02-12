@@ -1,5 +1,5 @@
 <?php
-	require("./dbConnect.php");
+	require("../Class/w06Tuesday/dbConnect.php");
     $db = get_db();
 ?>
 
