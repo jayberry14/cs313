@@ -1,17 +1,10 @@
-DROP TABLE topics;
 DROP TABLE scripture_topics;
+DROP TABLE topics;
 DROP TABLE scriptures;
 
 CREATE TABLE topics
 (   id          SERIAL       NOT NULL PRIMARY KEY,
     name        VARCHAR(500) NOT NULL);
-
-CREATE TABLE scripture_topics
-(
-    id            SERIAL   NOT NULL PRIMARY KEY,
-    scripture_id  INT      NOT NULL REFERENCES scriptures(id),
-    topic_id      INT      NOT NULL REFERENCES topics(id)
-);
 
 CREATE TABLE scriptures
 (   id          SERIAL       NOT NULL PRIMARY KEY,
@@ -19,6 +12,13 @@ CREATE TABLE scriptures
     chapter     INT          NOT NULL,
     verse       INT          NOT NULL,
     content     VARCHAR(500) NOT NULL);
+
+CREATE TABLE scripture_topics
+(
+    id            SERIAL   NOT NULL PRIMARY KEY,
+    scripture_id  INT      NOT NULL REFERENCES scriptures(id),
+    topic_id      INT      NOT NULL REFERENCES topics(id)
+);
 
 INSERT INTO topics (name) VALUES('Faith');
 INSERT INTO topics (name) VALUES('Sacrifice');

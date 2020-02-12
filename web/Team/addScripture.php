@@ -1,16 +1,16 @@
 <?php
-	require("../Class/w06tuesday/dbConnect.php");
+	require("dbConnect.php");
     $db = get_db();
 ?>
 
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Stuff</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
 </head>
 <body>
     <form action="" method="post">
@@ -20,12 +20,8 @@
         Content: <textarea name="content" rows="5" cols="20"></textarea><br>
 
         <?php 
-            echo "Before SQL prepare!<br>";
             $statement = $db->prepare('SELECT * FROM topics');
-            echo "In the middle!<br>";
             $statement->execute();
-            var_dump($statement);
-            echo "after execute()<br>";
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             {
                 $id   = $row['id'];
