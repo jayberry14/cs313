@@ -1,7 +1,6 @@
 <?php
 	require("dbConnect.php");
     $db = get_db();
-    $topic = $_POST['topic'];
 ?>
 
 <!DOCTYPE html>
@@ -16,10 +15,10 @@
 </head>
 <body>
     <form action="insertScripture.php" method="post">
-        Book: <input type="text" name="book">
-        Chapter: <input type="text" name="chapter">
-        Verse: <input type="text" name="verse">
-        Content: <textarea name="content" rows="5" cols="20"></textarea>
+        Book: <input type="text" name="book"><br>
+        Chapter: <input type="text" name="chapter"><br>
+        Verse: <input type="text" name="verse"><br>
+        Content: <textarea name="content" rows="5" cols="20"></textarea><br>
 
         <?php 
             $statement = $db->prepare("SELECT * FROM topics");
