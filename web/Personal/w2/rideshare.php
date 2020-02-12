@@ -64,10 +64,10 @@
                 $rides = $db->prepare("SELECT location, destination, date, time, price 
                                        FROM rides 
                                        WHERE location = '$location' 
-                                        AND destination = '$destination' 
-                                        AND price = '$price'
-                                        AND date = '$date'
-                                        AND time = '$time'");
+                                        OR destination = '$destination' 
+                                        OR price = '$price'
+                                        OR date = '$date'
+                                        OR time = '$time'");
                 $rides->execute();
                 echo "<table class='table'>";
                 echo "<tr>";
