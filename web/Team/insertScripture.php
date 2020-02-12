@@ -12,7 +12,12 @@
     try 
     {
         $query = 'INSERT INTO scriptures (book, chapter, verse, content) VALUES (:book, :chapter, :verse, :content)';	
-	    $statement = $db->prepare($query);
+        $statement = $db->prepare($query);
+        $statement->bindValue(':book', $book);
+	    $statement->bindValue(':chapter', $chapter);
+        $statement->bindValue(':verse', $verse);
+        $statement->bindValue(':content', $content);
+        $statement->execute();
     }
 
     catch (Exception $ex)
@@ -21,6 +26,6 @@
         die();
     }
     
-    //header("Location: addScripture.php");
+    header("Location: addScripture.php");
     die();
 ?>
