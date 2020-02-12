@@ -7,6 +7,7 @@
     $_SESSION["destination"];
     $_SESSION["date"];
     $_SESSION["time"];
+    $_SESSION["price"];
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,6 +44,8 @@
         <br>
         Going to..?<input type="text" id="destination" placeholder="Rexburg" name="destination">
         <br>
+        When to depart..?<input>
+        How much to pay..?<input>
         <input type="submit" id="submit" name="submit">
         <?php
             if(isset($_POST["submit"])){
@@ -55,9 +58,9 @@
                 // $date = $_SESSION["date"];
                 // $time = $_SESSION["time"];
 
-                $rides = $db->prepare("SELECT location, destination, date, time 
-                                    FROM rides 
-                                    WHERE location = '$location' AND destination = '$destination'");
+                $rides = $db->prepare("SELECT location, destination, date, time, price 
+                                       FROM rides 
+                                       WHERE location = '$location' AND destination = '$destination'");
                 $rides->execute();
                 echo "<table class='table'>";
                 echo "<tr>";
@@ -66,7 +69,7 @@
                     // echo "<td>Seats</td>";
                     echo "<td>Time</td>";
                     echo "<td>Date</td>";
-                    // echo "<td>Price</td>";
+                    echo "<td>Price</td>";
                 echo "</tr>";
                 while ($row = $rides->fetch(PDO::FETCH_ASSOC))
                 {
