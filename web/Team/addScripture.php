@@ -22,6 +22,7 @@
         <?php 
             echo "Before SQL prepare!<br>";
             $statement = $db->prepare('SELECT * FROM topics');
+            var_dump($statement);
             echo "In the middle!<br>";
             $statement->execute();
             echo "after execute()<br>";
