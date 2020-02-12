@@ -22,8 +22,8 @@ CREATE TABLE rides
 ( id            SERIAL       NOT NULL PRIMARY KEY
 , location      VARCHAR (80) NOT NULL
 , destination   VARCHAR (80) NOT NULL
-, date          INT          NOT NULL
-, time          INT          NOT NULL
+, date          VARCHAR (80) NOT NULL
+, time          VARCHAR (80) NOT NULL
 , price         INT          NOT NULL
 , driver_id     INT          NOT NULL REFERENCES drivers(id)
 , rider_id      INT          NOT NULL REFERENCES riders(id)
@@ -42,17 +42,17 @@ INSERT INTO riders (name, password, email, phone) VALUES ('Frank'  , 'W0aHe#4$o'
 INSERT INTO riders (name, password, email, phone) VALUES ('Jenny'  , 'tr7&fffks', 'jennysemail@google.com', '2084960003');
 
 INSERT INTO rides (location, destination, date, time, price, driver_id, rider_id) 
-            VALUES ('Provo', 'Rexburg', '02/20/2020', '18:30', '$10', '1', '1');
-INSERT INTO rides (location, destination, date, time, price, driver_id)
-            VALUES ('Rexburg', 'Salt Lake City', '03/15/2020', '05:00', '$12', '1');
+            VALUES ('Provo', 'Rexburg', '02-20-2020', '18:30', '10', '1', '1');
 INSERT INTO rides (location, destination, date, time, price, driver_id, rider_id)
-            VALUES ('Rexburg', 'Logan', '02/29/2020', '12:00', '$9', '2', '3');
-INSERT INTO rides (location, destination, date, time, price, driver_id)
-            VALUES ('Rexburg', 'Provo', '02/21/2020', '11:30', '$11', '1');
-INSERT INTO rides (location, destination, date, time, price, driver_id)
-            VALUES ('Salt Lake City', 'Rexburg', '03/17/2020', '11:30', '$11', '1');
+            VALUES ('Rexburg', 'Salt Lake City', '03/15/2020', '05:00', '12', '1', '2');
 INSERT INTO rides (location, destination, date, time, price, driver_id, rider_id)
-            VALUES ('Boise', 'Rexburg', '02/21/2020', '9:30', '$8', '3', '3');
+            VALUES ('Rexburg', 'Logan', '02/29/2020', '12:00', '9', '2', '3');
+INSERT INTO rides (location, destination, date, time, price, driver_id, rider_id)
+            VALUES ('Rexburg', 'Provo', '02/21/2020', '11:30', '11', '1', '3');
+INSERT INTO rides (location, destination, date, time, price, driver_id, rider_id)
+            VALUES ('Salt Lake City', 'Rexburg', '03/17/2020', '11:30', '11', '1', '2');
+INSERT INTO rides (location, destination, date, time, price, driver_id, rider_id)
+            VALUES ('Boise', 'Rexburg', '02/21/2020', '9:30', '8', '3', '3');
 
 SELECT * FROM drivers;
 SELECT * FROM riders;

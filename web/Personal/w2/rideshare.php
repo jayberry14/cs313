@@ -40,7 +40,15 @@
     
     <div class="container-fluid bg-1" style="height:35vw">
     <form action="" method="post">
-        Where from...?<input type="text" id="location" placeholder="Provo" name="location">
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" name="location" id="location">Where from...?
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li>Rexburg</li>
+                <li>Provo</li>
+                <li>Salt Lake City</li>
+            </ul>
+        </div>
         <br>
         Going to..?<input type="text" id="destination" placeholder="Rexburg" name="destination">
         <br>
