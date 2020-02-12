@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='directory.css'>
     <!-- <script src='directory.js'></script> -->
     <script>
@@ -40,7 +41,7 @@
     
     <div class="container-fluid bg-1" style="height:35vw">
         <form action="" method="post">
-            <!-- <div class="dropdown">
+            <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" name="location" id="location">Where from...?
                 <span class="caret"></span></button>
                 <ul class="dropdown-menu">
@@ -48,7 +49,7 @@
                     <li><a href="#">Provo</a></li>
                     <li><a href="#">Salt Lake City</a></li>
                 </ul>
-            </div> -->
+            </div>
             Where from..?<input type="text" id="location" placeholder="Provo" name="location">
             Going to..?<input type="text" id="destination" placeholder="Rexburg" name="destination">
             What time to depart..?<input type="text" id="time" placeholder="18:30" name="time">
