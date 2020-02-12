@@ -53,7 +53,7 @@
             Going to..?<input type="text" id="destination" placeholder="Rexburg" name="destination">
             What time to depart..?<input type="text" id="time" placeholder="18:30" name="time">
             What day to depart..?<input type="text" id="date" placeholder="02/20/2020" name="date">
-            How much to pay..?<input type="text" id="price" placeholder="$10" name="price">
+            How much to pay..?<input type="text" id="price" placeholder="10" name="price">
             <input type="submit" id="submit" name="submit">
             <?php
                 if(isset($_POST["submit"])){
