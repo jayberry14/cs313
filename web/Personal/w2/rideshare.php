@@ -29,6 +29,7 @@
     
     <div class="container-fluid bg-1" style="height:35vw">
         <a href="drivers.php"><img src="../../Files/red-car.png" alt="I'm a driver!" class="img-thumbnail img-1 text-center"></a>
+        <br>
         <a href="riders.php"><img src="../../Files/thumb.png" alt="I need a ride!" class="img-thumbnail img-1 text-center"></a>
     </div>
 </body>
