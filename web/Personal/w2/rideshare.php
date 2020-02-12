@@ -44,9 +44,9 @@
             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" name="location" id="location">Where from...?
             <span class="caret"></span></button>
             <ul class="dropdown-menu">
-                <li>Rexburg</li>
-                <li>Provo</li>
-                <li>Salt Lake City</li>
+                <li><a href="Rexburg">Rexburg</li>
+                <li><a href="Provo">Provo</a></li>
+                <li><a href="Salt Lake City">Salt Lake City</a></li>
             </ul>
         </div>
         <br>
