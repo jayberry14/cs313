@@ -1,5 +1,5 @@
 <?php
-	require("dbConnect.php");
+	require("./dbConnect.php");
     $db = get_db();
 ?>
 
@@ -14,14 +14,16 @@
 </head>
 <body>
     <form action="" method="post">
-        Book: <input type="text" name="scripture"><br>
+        Book: <input type="text" name="book"><br>
         Chapter: <input type="text" name="chapter"><br>
         Verse: <input type="text" name="verse"><br>
         Content: <textarea name="content" rows="5" cols="20"></textarea><br>
 
         <?php 
+            echo "Before SQL prepare!<br>";
             $statement = $db->prepare("SELECT * FROM topics");
             $statement->execute();
+            echo "after execute()<br>";
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             {
                 $id   = $row['id'];
