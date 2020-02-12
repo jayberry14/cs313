@@ -5,6 +5,7 @@
 ?>
 
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,8 +15,8 @@
     <link rel="stylesheet" href="">
 </head>
 <body>
-    <form action="" method="post">
-        Book: <input type="text" name="scripture">
+    <form action="insertScripture.php" method="post">
+        Book: <input type="text" name="book">
         Chapter: <input type="text" name="chapter">
         Verse: <input type="text" name="verse">
         Content: <textarea name="content" rows="5" cols="20"></textarea>
