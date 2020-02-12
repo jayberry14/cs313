@@ -1,14 +1,3 @@
-<?php
-    session_start();
-    require "dbConnect.php";
-    $db = get_db();
-
-    $_SESSION["location"];
-    $_SESSION["destination"];
-    $_SESSION["date"];
-    $_SESSION["time"];
-    $_SESSION["price"];
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,67 +28,8 @@
     </header>
     
     <div class="container-fluid bg-1" style="height:35vw">
-    <form action="" method="post">
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" name="location" id="location">Where from...?
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a href="#">Rexburg</li>
-                <li><a href="#">Provo</a></li>
-                <li><a href="#">Salt Lake City</a></li>
-            </ul>
-        </div>
-        <br>
-        Going to..?<input type="text" id="destination" placeholder="Rexburg" name="destination">
-        <br>
-        What time to depart..?<input type="text" id="time" placeholder="18:30" name="time">
-        What day to depart..?<input type="text" id="date" placeholder="02/20/2020" name="date">
-        How much to pay..?<input type="text" id="price" placeholder="$10" name="price">
-        <input type="submit" id="submit" name="submit">
-        <?php
-            if(isset($_POST["submit"])){
-                $_SESSION["location"] = $_POST["location"];
-                $_SESSION["destination"] = $_POST["destination"];
-                $_SESSION["price"] = $_POST["price"];
-                $_SESSION["date"] = $_POST["date"];
-                $_SESSION["time"] = $_POST["time"];
-                $location = $_SESSION["location"];
-                $destination = $_SESSION["destination"];
-                $price = $_SESSION["price"];
-                $date = $_SESSION["date"];
-                $time = $_SESSION["time"];
-
-                $rides = $db->prepare("SELECT location, destination, date, time, price 
-                                       FROM rides 
-                                       WHERE location = '$location' 
-                                        OR destination = '$destination' 
-                                        OR price = '$price'
-                                        OR date = '$date'
-                                        OR time = '$time'");
-                $rides->execute();
-                echo "<table class='table'>";
-                echo "<tr>";
-                    echo "<td>Location</td>";
-                    echo "<td>Destination</td>";
-                    // echo "<td>Seats</td>";
-                    echo "<td>Time</td>";
-                    echo "<td>Date</td>";
-                    echo "<td>Price</td>";
-                echo "</tr>";
-                while ($row = $rides->fetch(PDO::FETCH_ASSOC))
-                {
-                    echo "<tr>";
-                        echo "<td>" . $row["location"] . "</td>";
-                        echo "<td>" . $row["destination"] . "</td>";
-                        echo "<td>" . $row["time"] . "</td>";
-                        echo "<td>" . $row["date"] . "</td>";
-                        echo "<td>" . $row["price"] . "</td>";
-                    echo "</tr>";
-                }
-                echo "</table>";
-            }     
-        ?>
-    </form>
+        <img src="../../Files/red-car.png" alt="I'm a driver!" class="img-thumbnail img-1 text-center">
+        <img src="../../Files/thumb.png" alt="I need a ride!" class="img-thumbnail img-1 text-center">
     </div>
 </body>
 <footer class="container-fluid bg-3">
