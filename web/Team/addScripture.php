@@ -22,9 +22,9 @@
         <?php 
             echo "Before SQL prepare!<br>";
             $statement = $db->prepare('SELECT * FROM topics');
-            var_dump($statement);
             echo "In the middle!<br>";
             $statement->execute();
+            var_dump($statement);
             echo "after execute()<br>";
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             {
