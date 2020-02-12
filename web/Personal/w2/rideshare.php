@@ -45,22 +45,24 @@
         Going to..?<input type="text" id="destination" placeholder="Rexburg" name="destination">
         <br>
         When to depart..?<input>
-        How much to pay..?<input>
+        How much to pay..?<input type="text" id="price" placeholder="$10" name="price">
         <input type="submit" id="submit" name="submit">
         <?php
             if(isset($_POST["submit"])){
                 $_SESSION["location"] = $_POST["location"];
                 $_SESSION["destination"] = $_POST["destination"];
+                $_SESSION["price"] = $_POST["price"];
                 // $_SESSION["date"] = $_POST["date"];
                 // $_SESSION["time"] = $_POST["time"];
                 $location = $_SESSION["location"];
                 $destination = $_SESSION["destination"];
+                $price = $_SESSION["price"];
                 // $date = $_SESSION["date"];
                 // $time = $_SESSION["time"];
 
                 $rides = $db->prepare("SELECT location, destination, date, time, price 
                                        FROM rides 
-                                       WHERE location = '$location' AND destination = '$destination'");
+                                       WHERE location = '$location' AND destination = '$destination' AND price = '$price'");
                 $rides->execute();
                 echo "<table class='table'>";
                 echo "<tr>";
