@@ -50,9 +50,7 @@
                 </ul>
             </div> -->
             Where from..?<input type="text" id="location" placeholder="Provo" name="location">
-            <br>
             Going to..?<input type="text" id="destination" placeholder="Rexburg" name="destination">
-            <br>
             What time to depart..?<input type="text" id="time" placeholder="18:30" name="time">
             What day to depart..?<input type="text" id="date" placeholder="02/20/2020" name="date">
             How much to pay..?<input type="text" id="price" placeholder="$10" name="price">
