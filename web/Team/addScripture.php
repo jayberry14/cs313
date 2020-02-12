@@ -1,10 +1,9 @@
 <?php
-	require("dbConnect.php");
+	require("../../dbConnect.php");
     $db = get_db();
 ?>
 
 <!DOCTYPE html>
-<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,8 +13,8 @@
     <link rel="stylesheet" href="">
 </head>
 <body>
-    <form action="insertScripture.php" method="post">
-        Book: <input type="text" name="book"><br>
+    <form action="" method="post">
+        Book: <input type="text" name="scripture"><br>
         Chapter: <input type="text" name="chapter"><br>
         Verse: <input type="text" name="verse"><br>
         Content: <textarea name="content" rows="5" cols="20"></textarea><br>
