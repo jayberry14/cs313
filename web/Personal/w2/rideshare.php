@@ -53,17 +53,21 @@
                 $_SESSION["location"] = $_POST["location"];
                 $_SESSION["destination"] = $_POST["destination"];
                 $_SESSION["price"] = $_POST["price"];
-                // $_SESSION["date"] = $_POST["date"];
-                // $_SESSION["time"] = $_POST["time"];
+                $_SESSION["date"] = $_POST["date"];
+                $_SESSION["time"] = $_POST["time"];
                 $location = $_SESSION["location"];
                 $destination = $_SESSION["destination"];
                 $price = $_SESSION["price"];
-                // $date = $_SESSION["date"];
-                // $time = $_SESSION["time"];
+                $date = $_SESSION["date"];
+                $time = $_SESSION["time"];
 
                 $rides = $db->prepare("SELECT location, destination, date, time, price 
                                        FROM rides 
-                                       WHERE location = '$location' AND destination = '$destination' AND price = '$price'");
+                                       WHERE location = '$location' 
+                                        AND destination = '$destination' 
+                                        AND price = '$price'
+                                        AND date = '$date'
+                                        AND time = '$time'");
                 $rides->execute();
                 echo "<table class='table'>";
                 echo "<tr>";
@@ -81,6 +85,7 @@
                         echo "<td>" . $row["destination"] . "</td>";
                         echo "<td>" . $row["time"] . "</td>";
                         echo "<td>" . $row["date"] . "</td>";
+                        echo "<td>" . $row["price"] . "</td>";
                     echo "</tr>";
                 }
                 echo "</table>";
