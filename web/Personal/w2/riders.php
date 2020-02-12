@@ -40,7 +40,7 @@
     
     <div class="container-fluid bg-1" style="height:35vw">
         <form action="" method="post">
-            <div class="dropdown">
+            <!-- <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" name="location" id="location">Where from...?
                 <span class="caret"></span></button>
                 <ul class="dropdown-menu">
@@ -48,7 +48,8 @@
                     <li><a href="#">Provo</a></li>
                     <li><a href="#">Salt Lake City</a></li>
                 </ul>
-            </div>
+            </div> -->
+            Where from..?<input type="text" id="location" placeholder="Provo" name="location">
             <br>
             Going to..?<input type="text" id="destination" placeholder="Rexburg" name="destination">
             <br>
