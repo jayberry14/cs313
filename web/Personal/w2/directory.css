@@ -74,6 +74,11 @@ footer {
     float: left;
 }
 
+.img-4 {
+    max-width: 100%;
+    float: right;
+}
+
 .divHover {
     visibility: visible;
     color: black;
