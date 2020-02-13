@@ -42,7 +42,7 @@
         </div>
     </header>
     
-    <div class="container-fluid bg-1" style="height:35vw">
+    <div class="container-fluid bg-1" style="height:45vw">
         <form action="" method="post">
             <div class="form-group">
                 <label for="location">Where from...?</label>
