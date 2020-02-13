@@ -92,19 +92,20 @@
                         echo "<td>Price</td>";
                     echo "</tr>";
                     while ($row = $rides->fetch(PDO::FETCH_ASSOC))
-                    {
-                        echo "<tr>";
-                            // echo "<td><input type='checkbox' id=\"$row[\"id\"]\" name=\"$row[\"id\"]\" value=\"$row[\"id\"]>";
+                    { ?>
+                        <tr>
+                            <td><input type="checkbox" id= <?php echo $row["id"] ?> name= <?php echo $row["id"] ?> value= <?php echo $row["id"] ?>>
+                            <?php
                             echo "<td>" . $row["location"] . "</td>";
                             echo "<td>" . $row["destination"] . "</td>";
                             echo "<td>" . $row["time"] . "</td>";
                             echo "<td>" . $row["date"] . "</td>";
                             echo "<td>" . $row["price"] . "</td>";
-                        echo "</tr>";
-                    }
-                    echo "</table>";
-                }     
-            ?>
+                            ?>
+                        </tr>
+                    <?php } ?>
+                </table>
+            <?php } ?>
         </form>
     </div>
 </body>
