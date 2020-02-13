@@ -4,11 +4,13 @@ DROP TABLE drivers;
 
 
 CREATE TABLE riders
-( id       SERIAL      NOT NULL PRIMARY KEY
-, name     VARCHAR(80) NOT NULL
-, password VARCHAR(80) NOT NULL
-, email    VARCHAR(80) NOT NULL
-, phone    INT         NOT NULL
+( id        SERIAL       NOT NULL PRIMARY KEY
+, fname     VARCHAR(80)  NOT NULL
+, lname     VARCHAR(80)  NOT NULL
+, username  VARCHAR(80)  NOT NULL
+, password  VARCHAR(80)  NOT NULL
+, email     VARCHAR(80)  NOT NULL
+, phone     INT          
 );
 
 CREATE TABLE drivers

@@ -92,11 +92,11 @@
                     $rides = $db->prepare("SELECT location, destination, date, time, price 
                                         FROM rides 
                                         WHERE rider_id IS NULL AND
-                                            (location = '$location' 
-                                            OR destination = '$destination' 
-                                            OR price = '$price'
-                                            OR date = '$date'
-                                            OR time = '$time')");
+                                        (location = '$location' 
+                                        OR destination = '$destination' 
+                                        OR price = '$price'
+                                        OR date = '$date'
+                                        OR time = '$time')");
                     $rides->execute();
                     echo "<table class='table'>";
                     echo "<tr>";
