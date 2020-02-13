@@ -26,7 +26,6 @@
             <h1>Ride Share</h1>
         </div>
     </header>
-    
     <div class="container-fluid bg-1" style="height:50vw">
         <h2>Rider Login</h2>
         <form action="rides.php" style="max-width:50%">
