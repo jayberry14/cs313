@@ -44,22 +44,31 @@
     
     <div class="container-fluid bg-1" style="height:35vw">
         <form action="" method="post">
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" name="location" id="location">Where from...?
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Rexburg</li>
-                    <li><a href="#">Provo</a></li>
-                    <li><a href="#">Salt Lake City</a></li>
-                </ul>
+            <div class="form-group">
+                <label for="location">Where from...?</label>
+                <input type="text" class="form-control" name="location" placeholder="Provo" id="location">
             </div>
-                Where from..?<input type="text" id="location" placeholder="Provo" name="location">
-                Going to..?<input type="text" id="destination" placeholder="Rexburg" name="destination">
-                What time to depart..?<input type="text" id="time" placeholder="18:30" name="time">
-                What day to depart..?<input type="text" id="date" placeholder="02/20/2020" name="date">
-                How much to pay..?<input type="text" id="price" placeholder="10" name="price">
+            <div class="form-group">
+                <label for="destination">Going to...?</label>
+                <input type="text" class="form-control" name="destination" placeholder="Rexburg" id="destination">
+            </div>
+            <div class="form-group">
+                <label for="time">What time to depart...?</label>
+                <input type="text" class="form-control" name="time" placeholder="18:30" id="time">
+            </div>
+            <div class="form-group">
+                <label for="date">What day to depart...?</label>
+                <input type="text" class="form-control" name="date" placeholder="02/20/2020" id="date">
+            </div>
+            <div class="form-group">
+                <label for="price">How much to pay...?</label>
+                <input type="text" class="form-control" name="price" placeholder="10" id="price">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
             <br>
-            <input type="submit" id="submit" name="Search">
+            <button type="submit" class="btn btn-default" id="submit">Search</button>
             <?php
                 if(isset($_POST["submit"])){
                     $_SESSION["id"]          = $_POST["id"];

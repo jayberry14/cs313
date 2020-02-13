@@ -80,4 +80,4 @@ SELECT * FROM rides;
 
 SELECT location, destination, date, time, price 
 FROM rides 
-WHERE rider_id IS NULL;
+WHERE rider_id IS NULL AND (location = 'something' OR destination <> 'Rexburg' OR date = '' OR time = '' OR price = NULL);
