@@ -3,6 +3,7 @@
     require "dbConnect.php";
     $db = get_db();
 
+    $_SESSION["id"];
     $_SESSION["location"];
     $_SESSION["destination"];
     $_SESSION["date"];
@@ -59,11 +60,13 @@
             <input type="submit" id="submit" name="submit">
             <?php
                 if(isset($_POST["submit"])){
+                    $_SESSION["id"] = $_POST["id"];
                     $_SESSION["location"] = $_POST["location"];
                     $_SESSION["destination"] = $_POST["destination"];
                     $_SESSION["price"] = $_POST["price"];
                     $_SESSION["date"] = $_POST["date"];
                     $_SESSION["time"] = $_POST["time"];
+                    $id = $_SESSION["id"];
                     $location = $_SESSION["location"];
                     $destination = $_SESSION["destination"];
                     $price = $_SESSION["price"];
@@ -80,6 +83,7 @@
                     $rides->execute();
                     echo "<table class='table'>";
                     echo "<tr>";
+                        echo "<td>Select</td>";
                         echo "<td>Location</td>";
                         echo "<td>Destination</td>";
                         // echo "<td>Seats</td>";
@@ -90,6 +94,7 @@
                     while ($row = $rides->fetch(PDO::FETCH_ASSOC))
                     {
                         echo "<tr>";
+                            echo "<td><input type="checkbox" id="$row["id"]" name="$row["id"]" value="$row["id"]">"
                             echo "<td>" . $row["location"] . "</td>";
                             echo "<td>" . $row["destination"] . "</td>";
                             echo "<td>" . $row["time"] . "</td>";
