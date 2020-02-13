@@ -9,6 +9,8 @@
     $_SESSION["date"];
     $_SESSION["time"];
     $_SESSION["price"];
+    $_SESSION["driver_id"];
+    $_SESSION["rider_id"];
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,7 +26,6 @@
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='directory.css'>
-    <!-- <script src='directory.js'></script> -->
     <script>
 			// prevents refresh from submitting form and clears out unneeded variables
             // Thank you Brother Birch for this section of JS!
@@ -60,39 +61,43 @@
             <input type="submit" id="submit" name="submit">
             <?php
                 if(isset($_POST["submit"])){
-                    $_SESSION["id"] = $_POST["id"];
-                    $_SESSION["location"] = $_POST["location"];
+                    $_SESSION["id"]          = $_POST["id"];
+                    $_SESSION["location"]    = $_POST["location"];
                     $_SESSION["destination"] = $_POST["destination"];
-                    $_SESSION["price"] = $_POST["price"];
-                    $_SESSION["date"] = $_POST["date"];
-                    $_SESSION["time"] = $_POST["time"];
-                    $id = $_SESSION["id"];
-                    $location = $_SESSION["location"];
+                    $_SESSION["price"]       = $_POST["price"];
+                    $_SESSION["date"]        = $_POST["date"];
+                    $_SESSION["time"]        = $_POST["time"];
+                    $_SESSION["driver_id"]   = $_POST["driver_id"];
+                    $_SESSION["rider_id"]    = $_POST["rider_id"];
+                    
+                    $id          = $_SESSION["id"];
+                    $location    = $_SESSION["location"];
                     $destination = $_SESSION["destination"];
-                    $price = $_SESSION["price"];
-                    $date = $_SESSION["date"];
-                    $time = $_SESSION["time"];
+                    $price       = $_SESSION["price"];
+                    $date        = $_SESSION["date"];
+                    $time        = $_SESSION["time"];
+                    $driver_id   = $_SESSION["driver_id"];
+                    $rider_id    = $_SESSION["rider_id"];
 
                     $rides = $db->prepare("SELECT location, destination, date, time, price 
                                         FROM rides 
-                                        WHERE location = '$location' 
+                                        WHERE rider_id IS NULL AND
+                                            (location = '$location' 
                                             OR destination = '$destination' 
                                             OR price = '$price'
                                             OR date = '$date'
-                                            OR time = '$time'");
+                                            OR time = '$time')");
                     $rides->execute();
                     echo "<table class='table'>";
                     echo "<tr>";
                         echo "<td>Select</td>";
                         echo "<td>Location</td>";
                         echo "<td>Destination</td>";
-                        // echo "<td>Seats</td>";
                         echo "<td>Time</td>";
                         echo "<td>Date</td>";
                         echo "<td>Price</td>";
                     echo "</tr>";
-                    while ($row = $rides->fetch(PDO::FETCH_ASSOC))
-                    { ?>
+                    while ($row = $rides->fetch(PDO::FETCH_ASSOC)) { ?>
                         <tr>
                             <td><input type="checkbox" id= <?php echo $row["id"] ?> name= <?php echo $row["id"] ?> value= <?php echo $row["id"] ?>>
                             <?php
