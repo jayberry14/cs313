@@ -94,7 +94,7 @@
                     while ($row = $rides->fetch(PDO::FETCH_ASSOC))
                     {
                         echo "<tr>";
-                            echo "<td><input type='checkbox' id=\"$row[\"id\"]\" name=\"$row[\"id\"]\" value=\"$row[\"id\"]>";
+                            // echo "<td><input type='checkbox' id=\"$row[\"id\"]\" name=\"$row[\"id\"]\" value=\"$row[\"id\"]>";
                             echo "<td>" . $row["location"] . "</td>";
                             echo "<td>" . $row["destination"] . "</td>";
                             echo "<td>" . $row["time"] . "</td>";
