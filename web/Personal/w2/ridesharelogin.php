@@ -26,12 +26,12 @@
             <h1>Ride Share</h1>
         </div>
     </header>
-    <div class="container-fluid bg-1" style="height:50vw">
+    <div class="container-fluid" style="height:50vw">
         <h2>Rider Login</h2>
         <form action="rides.php" style="max-width:50%">
             <div class="form-group">
-                <label for="username">Email:</label>
-                <input type="password" class="form-control" id="username" placeholder="Enter username" name="username">
+                <label for="username">Username:</label>
+                <input type="username" class="form-control" id="username" placeholder="Enter username" name="username">
             </div>
             <div class="form-group">
                 <label for="pwd">Password:</label>
