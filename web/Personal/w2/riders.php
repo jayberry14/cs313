@@ -42,15 +42,25 @@
         </div>
     </header>
     
-    <div class="container-fluid bg-1" style="height:45vw">
+    <div class="container-fluid" style="height:45vw">
         <form action="" method="post">
             <div class="form-group">
-                <label for="location">Where from...?</label>
-                <input type="text" class="form-control" name="location" placeholder="Provo" id="location">
+                <label for="location">Where from..?</label>
+                <select class="form-control" id="location">
+                    <option>Rexburg</option>
+                    <option>Provo</option>
+                    <option>Salt Lake City</option>
+                    <option>Boise</option>
+                </select>
             </div>
             <div class="form-group">
-                <label for="destination">Going to...?</label>
-                <input type="text" class="form-control" name="destination" placeholder="Rexburg" id="destination">
+                <label for="destination">Going to..?</label>
+                <select class="form-control" id="destination">
+                    <option>Rexburg</option>
+                    <option>Provo</option>
+                    <option>Salt Lake City</option>
+                    <option>Logan</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="time">What time to depart...?</label>
