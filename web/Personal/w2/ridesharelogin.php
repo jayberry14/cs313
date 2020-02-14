@@ -28,7 +28,7 @@
     </header>
     <div class="container-fluid" style="height:50vw">
         <h2>Rider Login</h2>
-        <form action="rides.php" style="max-width:50%">
+        <form action="rides.php" style="max-width:40%">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="username" class="form-control" id="username" placeholder="Enter username" name="username">
@@ -42,8 +42,9 @@
             </div>
             <button type="submit" class="btn btn-default">Login</button>
         </form>
+
         <h2>Create an Account</h2>
-        <form action="" style="max-width:50%">
+        <form action="" style="max-width:40%">
             <div class="form-group">
                 <label for="fname">First Name:</label>
                 <input type="fname" class="form-control" id="fname" placeholder="First name" name="fname">
