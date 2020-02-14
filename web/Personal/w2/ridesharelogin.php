@@ -26,7 +26,7 @@
             <h1>Ride Share</h1>
         </div>
     </header>
-    <div class="container-fluid" style="height:50vw">
+    <div class="container-fluid squish-center" style="height:50vw">
         <div class="left">
             <h2>Rider Login</h2>
             <form action="rides.php" style="max-width:100%">
@@ -61,7 +61,7 @@
                     <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
                 </div>
                 <div class="form-group">
-                    <label for="phone">Email:</label>
+                    <label for="phone">Phone:</label>
                     <input type="phone" class="form-control" id="phone" placeholder="Enter phone number" name="phone">
                 </div>
                 <div class="form-group">
