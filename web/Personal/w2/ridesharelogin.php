@@ -27,53 +27,57 @@
         </div>
     </header>
     <div class="container-fluid" style="height:50vw">
-        <h2>Rider Login</h2>
-        <form action="rides.php" style="max-width:40%">
-            <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="username" class="form-control" id="username" placeholder="Enter username" name="username">
-            </div>
-            <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" name="remember"> Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-default">Login</button>
-        </form>
-
-        <h2>Create an Account</h2>
-        <form action="" style="max-width:40%">
-            <div class="form-group">
-                <label for="fname">First Name:</label>
-                <input type="fname" class="form-control" id="fname" placeholder="First name" name="fname">
-            </div>
-            <div class="form-group">
-                <label for="lname">Last Name:</label>
-                <input type="lname" class="form-control" id="lname" placeholder="Last name" name="lname">
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-            </div>
-            <div class="form-group">
-                <label for="phone">Email:</label>
-                <input type="phone" class="form-control" id="phone" placeholder="Enter phone number" name="phone">
-            </div>
-            <div class="form-group">
-                <label for="username">User Name:</label>
-                <input type="username" class="form-control" id="username" placeholder="Enter username" name="username">
-            </div>
-            <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-            </div>
-            <div class="checkbox">
-                <label><input type="checkbox" name="remember"> Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-default">Create!</button>
-        </form>
+        <div class="left">
+            <h2>Rider Login</h2>
+            <form action="rides.php" style="max-width:40%">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="username" class="form-control" id="username" placeholder="Enter username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="remember"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Login</button>
+            </form>
+        </div>
+        
+        <div class="right">
+            <h2>Create an Account</h2>
+            <form action="" style="max-width:40%">
+                <div class="form-group">
+                    <label for="fname">First Name:</label>
+                    <input type="fname" class="form-control" id="fname" placeholder="First name" name="fname">
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name:</label>
+                    <input type="lname" class="form-control" id="lname" placeholder="Last name" name="lname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Email:</label>
+                    <input type="phone" class="form-control" id="phone" placeholder="Enter phone number" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="username">User Name:</label>
+                    <input type="username" class="form-control" id="username" placeholder="Enter username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="remember"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default">Create!</button>
+            </form>
+        </div>
     </div>
 </body>
 <footer class="container-fluid bg-3">
