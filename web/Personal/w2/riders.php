@@ -78,9 +78,6 @@
                 <label for="price">How much to pay...?</label>
                 <input type="text" class="form-control" name="price" placeholder="10" id="price">
             </div>
-            <div class="checkbox">
-                <label><input type="checkbox"> Remember me</label>
-            </div>
             <br>
             <button type="submit" class="btn btn-default" id="submit">Search</button>
             <?php
