@@ -4,13 +4,14 @@ DROP TABLE drivers;
 
 
 CREATE TABLE riders
-( id        SERIAL       NOT NULL PRIMARY KEY
-, fname     VARCHAR(80)  NOT NULL
-, lname     VARCHAR(80)  NOT NULL
-, username  VARCHAR(80)  NOT NULL
-, password  VARCHAR(80)  NOT NULL
-, email     VARCHAR(80)  NOT NULL
-, phone     INT          
+( id            SERIAL       NOT NULL PRIMARY KEY
+, authenticate  INT          NOT NULL
+, fname         VARCHAR(80)  NOT NULL
+, lname         VARCHAR(80)  NOT NULL
+, username      VARCHAR(80)  NOT NULL
+, password      VARCHAR(80)  NOT NULL
+, email         VARCHAR(80)  NOT NULL
+, phone         INT          
 );
 
 CREATE TABLE drivers
@@ -39,9 +40,12 @@ INSERT INTO drivers (name, email, phone) VALUES ('John'  , 'johnsemail@google.co
 INSERT INTO drivers (name, email, phone) VALUES ('Anna'  , 'annasemail@google.com' , '2084963333');
 INSERT INTO drivers (name, email, phone) VALUES ('Bruce' , 'brucesemail@google.com', '2084964444');
 
-INSERT INTO riders (fname, lname, password, email, phone) VALUES ('Caden', 'Montgomery', 'jrkls09fd', 'cadensemail@google.com', '2084965990');
-INSERT INTO riders (fname, lname, password, email, phone) VALUES ('Frank', 'Harris', 'W0aHe#4$o', 'franksemail@google.com', '2084963764');
-INSERT INTO riders (fname, lname, password, email, phone) VALUES ('Jenny', 'Matrix', 'tr7&fffks', 'jennysemail@google.com', '2084960003');
+INSERT INTO riders (authenticate, fname, lname, username, password, email, phone) 
+            VALUES ('1', 'Caden', 'Montgomery', 'montyc', 'jrkls09fd', 'cadensemail@google.com', '2084965990');
+INSERT INTO riders (authenticate, fname, lname, username, password, email, phone) 
+            VALUES ('1', 'Frank', 'Harris', 'harrisf', 'W0aHe#4$o', 'franksemail@google.com', '2084963764');
+INSERT INTO riders (authenticate, fname, lname, username, password, email, phone) 
+            VALUES ('1', 'Jenny', 'Matrix', 'matrixj', 'tr7&fffks', 'jennysemail@google.com', '2084960003');
 
 INSERT INTO rides (location, destination, date, time, price, driver_id, rider_id) 
             VALUES ('Provo', 'Rexburg', '02-20-2020', '18:30', '10', '1', '1');

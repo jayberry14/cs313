@@ -42,10 +42,11 @@
             <h1>Ride Share</h1>
         </div>
     </header>
+
     <div class="container-fluid squish-center2" style="height:50vw">
         <div class="left">
             <h2>Rider Login</h2>
-            <form action="rides.php" style="max-width:100%">
+            <form action="rides.php" method="post" style="max-width:100%">
                 <div class="form-group">
                     <label for="username">Username:</label>
                     <input type="username" class="form-control" id="usernameLogin" placeholder="Enter username" name="usernameLogin">
@@ -57,13 +58,27 @@
                 <div class="checkbox">
                     <label><input type="checkbox" name="remember"> Remember me</label>
                 </div>
-                <button type="submit" class="btn btn-default">Login</button>
+                <button type="submit" name="login" id="login" class="btn btn-default">Login</button>
             </form>
         </div>
+        <?php // Login
+            if(isset($_POST["login"])){
+                $_SESSION["username"]  = $_POST["username"];
+                $_SESSION["password"]  = $_POST["password"];
+                
+                $username    = $_SESSION["username"];
+                $password    = $_SESSION["password"];
+
+                $rideInsert = $db->prepare("SELECT authenticate FROM riders
+                                            WHERE username = '$username'
+                                            AND password = '$password'");
+                $rideInsert->execute();
+            }
+        ?>
         
         <div class="right">
             <h2>Create an Account</h2>
-            <form action="" style="max-width:100%">
+            <form action="rides.php" style="max-width:100%">
                 <div class="form-group">
                     <label for="fname">First Name:</label>
                     <input type="fname" class="form-control" id="fname" placeholder="First name" name="fname">
@@ -89,14 +104,13 @@
                     <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
                 </div>
                 <div class="checkbox">
-                    <label><input type="checkbox" name="remember"> Remember me</label>
+                    <label><input type="checkbox" name="remember">Remember me</label>
                 </div>
-                <button type="submit" class="btn btn-default">Create!</button>
+                <button type="submit" id="create" name="create" class="btn btn-default">Create!</button>
             </form>
         </div>
-        <?php
-            if(isset($_POST["submit"])){
-                $_SESSION["id"]        = $_POST["id"];
+        <?php //Create
+            if(isset($_POST["create"])){
                 $_SESSION["fname"]     = $_POST["fname"];
                 $_SESSION["lname"]     = $_POST["lname"];
                 $_SESSION["email"]     = $_POST["email"];
@@ -104,7 +118,6 @@
                 $_SESSION["username"]  = $_POST["username"];
                 $_SESSION["password"]  = $_POST["password"];
                 
-                $id          = $_SESSION["id"];
                 $fname       = $_SESSION["fname"];
                 $lname       = $_SESSION["lname"];
                 $email       = $_SESSION["email"];
@@ -112,8 +125,8 @@
                 $username    = $_SESSION["username"];
                 $password    = $_SESSION["password"];
 
-                $rideInsert = $db->prepare("INSERT INTO riders (fname, lname, password, email, phone)
-                                            VALUES ()");
+                $rideInsert = $db->prepare("INSERT INTO riders (fname, lname, email, phone, username, password)
+                                            VALUES ($fname, $lname, $email, $phone, $username, $password)");
                 $rideInsert->execute();
             }
         ?>
