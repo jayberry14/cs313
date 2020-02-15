@@ -12,7 +12,7 @@
     $email = htmlspecialchars($_POST["email"]);
     $phone = htmlspecialchars($_POST["phone"]);
     $username = htmlspecialchars($_POST["username"]);
-    $password = htmlspecialchars($_POST["password"]);
+    $password = htmlspecialchars($_POST["pwd"]);
 
     try{
     $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password)
