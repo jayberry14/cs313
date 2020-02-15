@@ -69,10 +69,10 @@
                 $username    = $_SESSION["username"];
                 $password    = $_SESSION["password"];
 
-                $rideInsert = $db->prepare("SELECT authenticate FROM riders
+                $login = $db->prepare("SELECT authenticate FROM riders
                                             WHERE username = '$username'
                                             AND password = '$password'");
-                $rideInsert->execute();
+                $login->execute();
             }
         ?>
         
@@ -126,7 +126,7 @@
                 $password    = $_SESSION["password"];
 
                 $rideInsert = $db->prepare("INSERT INTO riders (fname, lname, email, phone, username, password)
-                                            VALUES ($fname, $lname, $email, $phone, $username, $password)");
+                                            VALUES ('$fname', '$lname', '$email', '$phone', '$username', '$password')");
                 $rideInsert->execute();
             }
         ?>
