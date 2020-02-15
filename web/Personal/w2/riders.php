@@ -43,12 +43,12 @@
     </script>
 </head>
 <body>
-    <header>
-        <div class="container-fluid bg-3">
-            <img src="https://web.byui.edu/mybyui/img/header/byui_logo.png" class="img-3" width="82" height="82" alt="BYU-IDAHO in white letters on black background" />
-            <h1>Ride Share</h1>
-        </div>
-    </header>
+<header>
+    <div class="container-fluid bg-3">
+        <img src="https://web.byui.edu/mybyui/img/header/byui_logo.png" class="img-3" width="82" height="82" alt="BYU-IDAHO in white letters on black background" />
+        <h1>Ride Share</h1>
+    </div>
+</header>
     
     <div class="container-fluid" style="height:45vw">
         <form action="" method="post">
@@ -83,62 +83,11 @@
                 <input type="text" class="form-control" name="price" placeholder="10" id="price">
             </div>
             <br>
-            <button type="submit" class="btn btn-default" id="submit">Search</button>
-            <?php
-                if(isset($_POST["submit"])){
-                    $_SESSION["id"]          = $_POST["id"];
-                    $_SESSION["location"]    = $_POST["location"];
-                    $_SESSION["destination"] = $_POST["destination"];
-                    $_SESSION["price"]       = $_POST["price"];
-                    $_SESSION["date"]        = $_POST["date"];
-                    $_SESSION["time"]        = $_POST["time"];
-                    $_SESSION["driver_id"]   = $_POST["driver_id"];
-                    $_SESSION["rider_id"]    = $_POST["rider_id"];
-                    
-                    $id          = $_SESSION["id"];
-                    $location    = $_SESSION["location"];
-                    $destination = $_SESSION["destination"];
-                    $price       = $_SESSION["price"];
-                    $date        = $_SESSION["date"];
-                    $time        = $_SESSION["time"];
-                    $driver_id   = $_SESSION["driver_id"];
-                    $rider_id    = $_SESSION["rider_id"];
-
-                    $rides = $db->prepare("SELECT location, destination, date, time, price 
-                                        FROM rides 
-                                        WHERE rider_id IS NULL AND
-                                        (location = '$location' 
-                                        OR destination = '$destination' 
-                                        OR price = '$price'
-                                        OR date = '$date'
-                                        OR time = '$time')");
-                    $rides->execute();
-                    echo "<table class='table'>";
-                    echo "<tr>";
-                        echo "<td>Select</td>";
-                        echo "<td>Location</td>";
-                        echo "<td>Destination</td>";
-                        echo "<td>Time</td>";
-                        echo "<td>Date</td>";
-                        echo "<td>Price</td>";
-                    echo "</tr>";
-                    while ($row = $rides->fetch(PDO::FETCH_ASSOC)) { ?>
-                        <tr>
-                            <td><input type="checkbox" id= <?php echo $row["id"] ?> name= <?php echo $row["id"] ?> value= <?php echo $row["id"] ?>>
-                            <?php
-                            echo "<td>" . $row["location"] . "</td>";
-                            echo "<td>" . $row["destination"] . "</td>";
-                            echo "<td>" . $row["time"] . "</td>";
-                            echo "<td>" . $row["date"] . "</td>";
-                            echo "<td>" . $row["price"] . "</td>";
-                            ?>
-                        </tr>
-                    <?php } ?>
-                </table>
-            <?php } ?>
+            <button type="submit" class="btn btn-default" id="search" name="search">Search</button>
         </form>
     </div>
 </body>
+
 <footer class="container-fluid bg-3">
     <h4>Copyright ©2019 Brigham Young University - Idaho</h4>
 </footer>
