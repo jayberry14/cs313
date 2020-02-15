@@ -5,7 +5,7 @@ DROP TABLE drivers;
 
 CREATE TABLE riders
 ( id            SERIAL       NOT NULL PRIMARY KEY
-, authenticate  INT          NOT NULL
+, authenticate  BOOLEAN      NOT NULL
 , fname         VARCHAR(80)  NOT NULL
 , lname         VARCHAR(80)  NOT NULL
 , username      VARCHAR(80)  NOT NULL

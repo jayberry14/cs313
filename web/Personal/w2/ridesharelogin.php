@@ -125,8 +125,14 @@
                 $username    = $_SESSION["username"];
                 $password    = $_SESSION["password"];
 
-                $rideInsert = $db->prepare("INSERT INTO riders (fname, lname, email, phone, username, password)
-                                            VALUES ('$fname', '$lname', '$email', '$phone', '$username', '$password')");
+                $rideInsert = $db->prepare("INSERT INTO riders (authenticate, fname, lname, email, phone, username, password)
+                                            VALUES ('1', ':fname', ':lname', ':email', ':phone', ':username', ':password')");
+                $db->bindValue(':fname', $fname);
+                $db->bindValue(':lname', $lname);
+                $db->bindValue(':email', $email);
+                $db->bindValue(':phone', $phone);
+                $db->bindValue(':username', $username);
+                $db->bindValue(':password', $password);
                 $rideInsert->execute();
             }
         ?>
