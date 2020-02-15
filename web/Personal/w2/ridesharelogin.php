@@ -46,7 +46,7 @@
     <div class="container-fluid squish-center2" style="height:50vw">
         <div class="left">
             <h2>Rider Login</h2>
-            <form action="rides.php" method="post" style="max-width:100%">
+            <form action="riders.php" method="post" style="max-width:100%">
                 <div class="form-group">
                     <label for="username">Username:</label>
                     <input type="username" class="form-control" id="usernameLogin" placeholder="Enter username" name="usernameLogin">
@@ -78,7 +78,7 @@
         
         <div class="right">
             <h2>Create an Account</h2>
-            <form action="rides.php" style="max-width:100%">
+            <form action="riders.php" style="max-width:100%">
                 <div class="form-group">
                     <label for="fname">First Name:</label>
                     <input type="fname" class="form-control" id="fname" placeholder="First name" name="fname">
