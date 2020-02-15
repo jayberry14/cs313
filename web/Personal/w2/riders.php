@@ -1,10 +1,14 @@
 <?php
     session_start();
+    if ($_SESSION["loggedIn"] != true && $_SESSION["auth"] != 1) {
+        header("Location: ridesharelogin.php");
+    }
+
     try {
         require "dbConnect.php";
         $db = get_db();
     } catch (Exception $e) {
-        exit;
+        die();
     }
 
     $_SESSION["id"];

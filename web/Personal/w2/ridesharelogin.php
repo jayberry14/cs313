@@ -6,14 +6,7 @@
     } catch (Exception $e) {
         exit;
     }
-
-    $_SESSION["id"];
-    $_SESSION["fname"];
-    $_SESSION["lname"];
-    $_SESSION["email"];
-    $_SESSION["phone"];
-    $_SESSION["username"];
-    $_SESSION["password"];
+    
 ?>
 <!DOCTYPE html>
 <html>
@@ -63,16 +56,26 @@
         </div>
         <?php // Login
             if(isset($_POST["login"])){
-                $_SESSION["username"]  = $_POST["username"];
-                $_SESSION["password"]  = $_POST["password"];
-                
-                $username    = $_SESSION["username"];
-                $password    = $_SESSION["password"];
+                $username = htmlspecialchars($_POST["username"]);
+                $password = htmlspecialchars($_POST["password"]);
 
-                $login = $db->prepare("SELECT authenticate FROM riders
-                                            WHERE username = '$username'
-                                            AND password = '$password'");
+                $login = $db->prepare('SELECT authenticate FROM riders
+                                            WHERE username = :username
+                                            AND password = :password');
+                $login->bindValue(':username', $username, PDO::PARAM_STR);
+                $login->bindValue(':password', $password, PDO::PARAM_STR);
                 $login->execute();
+                
+                while ($row = $login->fetch(PDO::FETCH_ASSOC)) {
+                    $auth = $row["authenticate"]; 
+                }
+
+                if ($auth = 1)
+                {
+                    $_SESSION["loggedIn"] = true;
+                    $_SESSION["auth"] = $auth;
+                    $_SESSION["username"] = $username;
+                }
             }
         ?>
         
@@ -111,29 +114,32 @@
         </div>
         <?php //Create
             if(isset($_POST["create"])){
-                $_SESSION["fname"]     = htmlspecialchars($_POST["fname"]);
-                $_SESSION["lname"]     = htmlspecialchars($_POST["lname"]);
-                $_SESSION["email"]     = htmlspecialchars($_POST["email"]);
-                $_SESSION["phone"]     = htmlspecialchars($_POST["phone"]);
-                $_SESSION["username"]  = htmlspecialchars($_POST["username"]);
-                $_SESSION["password"]  = htmlspecialchars($_POST["password"]);
-                
-                $fname       = $_SESSION["fname"];
-                $lname       = $_SESSION["lname"];
-                $email       = $_SESSION["email"];
-                $phone       = $_SESSION["phone"];
-                $username    = $_SESSION["username"];
-                $password    = $_SESSION["password"];
+                $fname = htmlspecialchars($_POST["fname"]);
+                $lname = htmlspecialchars($_POST["lname"]);
+                $email = htmlspecialchars($_POST["email"]);
+                $phone = htmlspecialchars($_POST["phone"]);
+                $username = htmlspecialchars($_POST["username"]);
+                $password = htmlspecialchars($_POST["password"]);
 
-                $rideInsert = $db->prepare("INSERT INTO riders (authenticate, fname, lname, email, phone, username, password)
-                                            VALUES ('true', ':fname', ':lname', ':email', ':phone', ':username', ':password')");
-                $rideInsert->bindValue(':fname', $fname);
-                $rideInsert->bindValue(':lname', $lname);
-                $rideInsert->bindValue(':email', $email);
-                $rideInsert->bindValue(':phone', $phone);
-                $rideInsert->bindValue(':username', $username);
-                $rideInsert->bindValue(':password', $password);
+                try{
+                $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password)
+                                            VALUES (1, :fname, :lname, :email, :phone, :username, :password)');
+                
+                $rideInsert->bindValue(':fname', $fname, PDO::PARAM_STR);
+                $rideInsert->bindValue(':lname', $lname, PDO::PARAM_STR);
+                $rideInsert->bindValue(':email', $email, PDO::PARAM_STR);
+                $rideInsert->bindValue(':phone', $phone, PDO::PARAM_STR);
+                $rideInsert->bindValue(':username', $username, PDO::PARAM_STR);
+                $rideInsert->bindValue(':password', $password, PDO::PARAM_STR);
                 $rideInsert->execute();
+                $_SESSION["username"] = $username;
+                $_SESSION["auth"] = true;
+
+                } catch (Exception $e) {
+                    echo "Error: $e";
+                    echo "Account creation failed!";
+                    die();
+                }
             }
         ?>
     </div>
