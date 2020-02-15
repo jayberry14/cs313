@@ -41,11 +41,11 @@ INSERT INTO drivers (name, email, phone) VALUES ('Anna'  , 'annasemail@google.co
 INSERT INTO drivers (name, email, phone) VALUES ('Bruce' , 'brucesemail@google.com', '2084964444');
 
 INSERT INTO riders (authenticate, fname, lname, username, password, email, phone) 
-            VALUES ('1', 'Caden', 'Montgomery', 'montyc', 'jrkls09fd', 'cadensemail@google.com', '2084965990');
+            VALUES ('true', 'Caden', 'Montgomery', 'montyc', 'jrkls09fd', 'cadensemail@google.com', '2084965990');
 INSERT INTO riders (authenticate, fname, lname, username, password, email, phone) 
-            VALUES ('1', 'Frank', 'Harris', 'harrisf', 'W0aHe#4$o', 'franksemail@google.com', '2084963764');
+            VALUES ('true', 'Frank', 'Harris', 'harrisf', 'W0aHe#4$o', 'franksemail@google.com', '2084963764');
 INSERT INTO riders (authenticate, fname, lname, username, password, email, phone) 
-            VALUES ('1', 'Jenny', 'Matrix', 'matrixj', 'tr7&fffks', 'jennysemail@google.com', '2084960003');
+            VALUES ('true', 'Jenny', 'Matrix', 'matrixj', 'tr7&fffks', 'jennysemail@google.com', '2084960003');
 
 INSERT INTO rides (location, destination, date, time, price, driver_id, rider_id) 
             VALUES ('Provo', 'Rexburg', '02-20-2020', '18:30', '10', '1', '1');

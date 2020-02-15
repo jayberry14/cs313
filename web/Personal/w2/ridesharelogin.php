@@ -111,12 +111,12 @@
         </div>
         <?php //Create
             if(isset($_POST["create"])){
-                $_SESSION["fname"]     = $_POST["fname"];
-                $_SESSION["lname"]     = $_POST["lname"];
-                $_SESSION["email"]     = $_POST["email"];
-                $_SESSION["phone"]     = $_POST["phone"];
-                $_SESSION["username"]  = $_POST["username"];
-                $_SESSION["password"]  = $_POST["password"];
+                $_SESSION["fname"]     = htmlspecialchars($_POST["fname"]);
+                $_SESSION["lname"]     = htmlspecialchars($_POST["lname"]);
+                $_SESSION["email"]     = htmlspecialchars($_POST["email"]);
+                $_SESSION["phone"]     = htmlspecialchars($_POST["phone"]);
+                $_SESSION["username"]  = htmlspecialchars($_POST["username"]);
+                $_SESSION["password"]  = htmlspecialchars($_POST["password"]);
                 
                 $fname       = $_SESSION["fname"];
                 $lname       = $_SESSION["lname"];
@@ -126,13 +126,13 @@
                 $password    = $_SESSION["password"];
 
                 $rideInsert = $db->prepare("INSERT INTO riders (authenticate, fname, lname, email, phone, username, password)
-                                            VALUES ('1', ':fname', ':lname', ':email', ':phone', ':username', ':password')");
-                $db->bindValue(':fname', $fname);
-                $db->bindValue(':lname', $lname);
-                $db->bindValue(':email', $email);
-                $db->bindValue(':phone', $phone);
-                $db->bindValue(':username', $username);
-                $db->bindValue(':password', $password);
+                                            VALUES ('true', ':fname', ':lname', ':email', ':phone', ':username', ':password')");
+                $rideInsert->bindValue(':fname', $fname);
+                $rideInsert->bindValue(':lname', $lname);
+                $rideInsert->bindValue(':email', $email);
+                $rideInsert->bindValue(':phone', $phone);
+                $rideInsert->bindValue(':username', $username);
+                $rideInsert->bindValue(':password', $password);
                 $rideInsert->execute();
             }
         ?>
