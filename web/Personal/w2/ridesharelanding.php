@@ -39,7 +39,7 @@
     <div class="container-fluid squish-center2" style="height:50vw">
         <div class="left">
             <h2>Rider Login</h2>
-            <form action="ridersharelogin.php" method="post" style="max-width:100%">
+            <form action="ridesharelogin.php" method="post" style="max-width:100%">
                 <div class="form-group">
                     <label for="username">Username:</label>
                     <input type="username" class="form-control" id="usernameLogin" placeholder="Enter username" name="usernameLogin">
