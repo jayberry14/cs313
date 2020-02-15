@@ -51,7 +51,7 @@
 </header>
     
     <div class="container-fluid" style="height:45vw">
-        <form action="" method="post">
+        <form action="ridesdisplay.php" method="post">
             <div class="form-group">
                 <label for="location">Where from..?</label>
                 <select class="form-control" id="location">
