@@ -48,11 +48,11 @@
             <form action="rides.php" style="max-width:100%">
                 <div class="form-group">
                     <label for="username">Username:</label>
-                    <input type="username" class="form-control" id="username" placeholder="Enter username" name="username">
+                    <input type="username" class="form-control" id="usernameLogin" placeholder="Enter username" name="usernameLogin">
                 </div>
                 <div class="form-group">
                     <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                    <input type="password" class="form-control" id="pwdLogin" placeholder="Enter password" name="pwdLogin">
                 </div>
                 <div class="checkbox">
                     <label><input type="checkbox" name="remember"> Remember me</label>
