@@ -62,4 +62,5 @@
     }
 }
 
+header("Location: riders.php");
 ?>
