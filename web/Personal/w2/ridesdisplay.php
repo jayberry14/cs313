@@ -40,7 +40,7 @@
             echo "<td>Date</td>";
             echo "<td>Price</td>";
         echo "</tr>";
-        
+
         while ($row = $rides->fetch(PDO::FETCH_ASSOC)) { ?>
             <tr>
                 <td><input type="checkbox" id= <?php echo $row["id"] ?> name= <?php echo $row["id"] ?> value= <?php echo $row["id"] ?>>
@@ -57,7 +57,9 @@
     
 <?php } catch (Exception $e) {
     echo "Error: $e";
-    echo "Account creation failed!";
+    echo "Search query failed";
     die();
     }
-} ?>
+}
+
+?>
