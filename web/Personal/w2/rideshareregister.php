@@ -21,7 +21,7 @@
     $rideInsert->bindValue(':fname', $fname, PDO::PARAM_STR);
     $rideInsert->bindValue(':lname', $lname, PDO::PARAM_STR);
     $rideInsert->bindValue(':email', $email, PDO::PARAM_STR);
-    $rideInsert->bindValue(':phone', $phone, PDO::PARAM_INT);
+    $rideInsert->bindValue(':phone', $phone, PDO::PARAM_STR);
     $rideInsert->bindValue(':username', $username, PDO::PARAM_STR);
     $rideInsert->bindValue(':password', $password, PDO::PARAM_STR);
     $rideInsert->execute();

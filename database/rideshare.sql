@@ -11,7 +11,7 @@ CREATE TABLE riders
 , username      VARCHAR(80)  NOT NULL
 , password      VARCHAR(80)  NOT NULL
 , email         VARCHAR(80)  NOT NULL
-, phone         INT          
+, phone         VARCHAR(80)          
 );
 
 CREATE TABLE drivers
@@ -86,4 +86,4 @@ SELECT * FROM rides;
 
 SELECT location, destination, date, time, price 
 FROM rides 
-WHERE rider_id IS NULL AND (location = 'something' OR destination <> 'Rexburg' OR date = '' OR time = '' OR price = NULL);
+WHERE (location = 'something' OR destination <> 'Rexburg' OR date = '' OR time = '' OR price = NULL) AND rider_id IS NULL;
