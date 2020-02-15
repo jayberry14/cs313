@@ -1,16 +1,32 @@
+<?php
+    session_start();
+    try {
+        require "dbConnect.php";
+        $db = get_db();
+    } catch (Exception $e) {
+        exit;
+    }
+
+    $_SESSION["id"];
+    $_SESSION["fname"];
+    $_SESSION["lname"];
+    $_SESSION["email"];
+    $_SESSION["phone"];
+    $_SESSION["username"];
+    $_SESSION["password"];
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>BYU-I Ride Board</title>
+    <title>Login Required</title>
     <link rel="icon" type="image/ico" href="https://web.byui.edu/mybyui/img/header/byui_logo.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='directory.css'>
-    <!-- <script src='directory.js'></script> -->
     <script>
 			// prevents refresh from submitting form and clears out unneeded variables
             // Thank you Brother Birch for this section of JS!
@@ -26,7 +42,7 @@
             <h1>Ride Share</h1>
         </div>
     </header>
-    <div class="container-fluid squish-center" style="height:50vw">
+    <div class="container-fluid squish-center2" style="height:50vw">
         <div class="left">
             <h2>Rider Login</h2>
             <form action="rides.php" style="max-width:100%">
@@ -78,6 +94,29 @@
                 <button type="submit" class="btn btn-default">Create!</button>
             </form>
         </div>
+        <?php
+            if(isset($_POST["submit"])){
+                $_SESSION["id"]        = $_POST["id"];
+                $_SESSION["fname"]     = $_POST["fname"];
+                $_SESSION["lname"]     = $_POST["lname"];
+                $_SESSION["email"]     = $_POST["email"];
+                $_SESSION["phone"]     = $_POST["phone"];
+                $_SESSION["username"]  = $_POST["username"];
+                $_SESSION["password"]  = $_POST["password"];
+                
+                $id          = $_SESSION["id"];
+                $fname       = $_SESSION["fname"];
+                $lname       = $_SESSION["lname"];
+                $email       = $_SESSION["email"];
+                $phone       = $_SESSION["phone"];
+                $username    = $_SESSION["username"];
+                $password    = $_SESSION["password"];
+
+                $rideInsert = $db->prepare("INSERT INTO riders (fname, lname, password, email, phone)
+                                            VALUES ()");
+                $rideInsert->execute();
+            }
+        ?>
     </div>
 </body>
 <footer class="container-fluid bg-3">

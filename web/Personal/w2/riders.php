@@ -1,7 +1,11 @@
 <?php
     session_start();
-    require "dbConnect.php";
-    $db = get_db();
+    try {
+        require "dbConnect.php";
+        $db = get_db();
+    } catch (Exception $e) {
+        exit;
+    }
 
     $_SESSION["id"];
     $_SESSION["location"];
