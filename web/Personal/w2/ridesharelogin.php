@@ -81,7 +81,7 @@
         
         <div class="right">
             <h2>Create an Account</h2>
-            <form action="rideshareregister.php" style="max-width:100%">
+            <form action="rideshareregister.php" method="post" style="max-width:100%">
                 <div class="form-group">
                     <label for="fname">First Name:</label>
                     <input type="fname" class="form-control" id="fname" placeholder="First name" name="fname">
