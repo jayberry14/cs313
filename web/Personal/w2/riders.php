@@ -1,7 +1,7 @@
 <?php
     session_start();
     if ($_SESSION["loggedIn"] != true && $_SESSION["auth"] != 1) {
-        header("Location: ridesharelogin.php");
+        header("Location: ridesharelanding.php");
     }
 
     try {
