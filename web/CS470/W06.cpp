@@ -155,6 +155,59 @@ string weakCommentMitigation(string username, string password)
 	return qGenerator(username, password);
 }
 
+/**************************************
+ * Weak Mitigation Display
+ * ***********************************/
+void weakMitigationDisplay() 
+{
+  string username[] = {"robby2b", "josh_m", "jasonj", "ri0m' --"}; // usernames to test weak mitigation
+  string password[] = {"nada' OR 'x' = 'x", "mayberryj' UNION SELECT authenticate FROM users", "jenkinsj'; DROP TABLE users", "2we_love4_stuff"}; // passwords to test weak mitigation
+  string attackType[] = {"Tautology Attack", "Union Query Attack", "Additional Statement Attack", "Comment Attack"};
+    cout << "**************************************************************" << endl;
+  cout << "Weak Tautology Mitigation Example: " << endl;
+  for (int i = 0; i < 4; i++) //tautology
+  {
+    cout << endl << attackType[i] << endl;
+    cout << "Insert username: " << username[i] << endl;
+    cout << "Insert Password: " << password[i] << endl;
+    string query = weakTautologyMitigation(username[i], password[i]);
+    cout << "Query generated: " << query << endl << endl;
+  }
+  
+  cout << "**************************************************************" << endl;
+  cout << "Weak Union Mitigation Example: " << endl;
+  for (int i = 0; i < 4; i++) //union attack
+  {
+    cout << endl << attackType[i] << endl;
+    cout << "Insert username: " << username[i] << endl;
+    cout << "Insert Password: " << password[i] << endl;
+    string query = weakUnionMitigation(username[i], password[i]);
+    cout << "Query generated: " << query << endl << endl;
+  }
+  
+  cout << "**************************************************************" << endl;
+  cout << "Weak Additional Mitigation Example: " << endl;
+  for (int i = 0; i < 4; i++) //additional
+  {
+    cout << endl << attackType[i] << endl;
+    cout << "Insert username: " << username[i] << endl;
+    cout << "Insert Password: " << password[i] << endl;
+    string query = weakAdditionalMitigation(username[i], password[i]);
+    cout << "Query generated: " << query << endl << endl;
+  }
+  
+  cout << "**************************************************************" << endl;
+  cout << "Weak Comment Mitigation Example: " << endl;
+  for (int i = 0; i < 4; i++) //comment
+  {
+    cout << endl << attackType[i] << endl;
+    cout << "Insert username: " << username[i] << endl;
+    cout << "Insert Password: " << password[i] << endl;
+    string query = weakCommentMitigation(username[i], password[i]);
+    cout << "Query generated: " << query << endl << endl;
+  }
+}
+
 /***************************
 * Test Cases for valid input
 ****************************/
@@ -239,59 +292,6 @@ void commentAttack()
     cout << "Insert username: "  << attack        << endl;
     cout << "Insert password: "  << password      << endl;
     cout << "Query generated: "  << loggedIn      << endl << endl;
-}
-
-/**************************************
- * Weak Mitigation Display
- * ***********************************/
-void weakMitigationDisplay() 
-{
-  string username[] = {"robby2b", "josh_m", "jasonj", "ri0m' --"}; // usernames to test weak mitigation
-  string password[] = {"nada' OR 'x' = 'x", "mayberryj' UNION SELECT authenticate FROM users", "jenkinsj'; DROP TABLE users", "2we_love4_stuff"}; // passwords to test weak mitigation
-  string attackType[] = {"Tautology Attack", "Union Query Attack", "Additional Statement Attack", "Comment Attack"};
-    cout << "**************************************************************" << endl;
-  cout << "Weak Tautology Mitigation Example: " << endl;
-  for (int i = 0; i < 4; i++) //tautology
-  {
-    cout << endl << attackType[i] << endl;
-    cout << "Insert username: " << username[i] << endl;
-    cout << "Insert Password: " << password[i] << endl;
-    string query = weakTautologyMitigation(username[i], password[i]);
-    cout << "Query generated: " << query << endl << endl;
-  }
-  
-  cout << "**************************************************************" << endl;
-  cout << "Weak Union Mitigation Example: " << endl;
-  for (int i = 0; i < 4; i++) //union attack
-  {
-    cout << endl << attackType[i] << endl;
-    cout << "Insert username: " << username[i] << endl;
-    cout << "Insert Password: " << password[i] << endl;
-    string query = weakUnionMitigation(username[i], password[i]);
-    cout << "Query generated: " << query << endl << endl;
-  }
-  
-  cout << "**************************************************************" << endl;
-  cout << "Weak Additional Mitigation Example: " << endl;
-  for (int i = 0; i < 4; i++) //additional
-  {
-    cout << endl << attackType[i] << endl;
-    cout << "Insert username: " << username[i] << endl;
-    cout << "Insert Password: " << password[i] << endl;
-    string query = weakAdditionalMitigation(username[i], password[i]);
-    cout << "Query generated: " << query << endl << endl;
-  }
-  
-  cout << "**************************************************************" << endl;
-  cout << "Weak Comment Mitigation Example: " << endl;
-  for (int i = 0; i < 4; i++) //comment
-  {
-    cout << endl << attackType[i] << endl;
-    cout << "Insert username: " << username[i] << endl;
-    cout << "Insert Password: " << password[i] << endl;
-    string query = weakCommentMitigation(username[i], password[i]);
-    cout << "Query generated: " << query << endl << endl;
-  }
 }
 
 /**************************************************

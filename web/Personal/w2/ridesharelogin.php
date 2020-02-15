@@ -132,8 +132,10 @@
                 $rideInsert->bindValue(':username', $username, PDO::PARAM_STR);
                 $rideInsert->bindValue(':password', $password, PDO::PARAM_STR);
                 $rideInsert->execute();
+
+                $_SESSION["loggedIn"] = true;
+                $_SESSION["auth"] = $auth;
                 $_SESSION["username"] = $username;
-                $_SESSION["auth"] = true;
 
                 } catch (Exception $e) {
                     echo "Error: $e";
