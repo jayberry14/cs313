@@ -16,7 +16,7 @@
 
     try{
     $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password)
-                                VALUES ('true', :fname, :lname, :email, :phone, :username, :password)');
+                                VALUES ('1', :fname, :lname, :email, :phone, :username, :password)');
     
     $rideInsert->bindValue(':fname', $fname, PDO::PARAM_STR);
     $rideInsert->bindValue(':lname', $lname, PDO::PARAM_STR);
