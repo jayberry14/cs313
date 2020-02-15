@@ -64,8 +64,8 @@
             <div class="form-group">
                 <label for="destination">Going to..?</label>
                 <select class="form-control" id="destination">
-                    <option>Rexburg</option>
                     <option>Provo</option>
+                    <option>Rexburg</option>
                     <option>Salt Lake City</option>
                     <option>Logan</option>
                 </select>
