@@ -36,7 +36,7 @@
         </div>
     </header>
 
-    <div class="container-fluid row" style="height:50vw">
+    <div class="container-fluid row squish-center" style="height:50vw">
         <div class="col">
             <h2>Rider Login</h2>
             <form action="ridesharelogin.php" method="post" style="max-width:100%">
