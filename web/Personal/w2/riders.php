@@ -50,90 +50,84 @@
     </div>
 </header>
     <div class="container-fluid row" style="height:45vw">
-        <div class="row">
-            <form action="" method="post">
-                <div class="form-group col-lg-6">
-                    <label for="location">Where from..?</label>
-                    <select class="form-control" id="location" name="location">
-                        <option value="Rexburg">Rexburg</option>
-                        <option value="Provo">Provo</option>
-                        <option value="Salt Lake City">Salt Lake City</option>
-                        <option value="Boise">Boise</option>
-                    </select>
-                </div>
-                <div class="form-group col-lg-6">
-                    <label for="destination">Going to..?</label>
-                    <select class="form-control" id="destination" name="destination">
-                        <option value="Provo">Provo</option>
-                        <option value="Rexburg">Rexburg</option>
-                        <option value="Salt Lake City">Salt Lake City</option>
-                        <option value="Logan">Logan</option>
-                    </select>
-                </div>
-                <div class="form-group col-lg-4">
-                    <label for="time">What time to depart...?</label>
-                    <input type="text" class="form-control" name="time" placeholder="18:30" id="time">
-                </div>
-                <div class="form-group col-lg-4">
-                    <label for="date">What day to depart...?</label>
-                    <input type="text" class="form-control" name="date" placeholder="02/20/2020" id="date">
-                </div>
-                <div class="form-group col-lg-4">
-                    <label for="price">How much to pay...?</label>
-                    <input type="text" class="form-control" name="price" placeholder="10" id="price">
-                </div>
-                <br>
-                <button type="submit" class="btn btn-default squish-center" id="search" name="search">Submit Search</button>
-            </form>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <?php
-                if(isset($_POST["search"])) {
-                    $location = htmlspecialchars($_POST["location"]);
-                    $destination = htmlspecialchars($_POST["destination"]);
-                    $price = htmlspecialchars($_POST["price"]);
-                    $date = htmlspecialchars($_POST["date"]);
-                    $time = htmlspecialchars($_POST["time"]);
-
-                    try{
-                    $rides = $db->prepare('SELECT location, destination, date, time, price 
-                                        FROM rides 
-                                        WHERE rider_id IS NULL');
-                    $rides->execute();
-
-                    echo "<table class='table'>";
-                    echo "<tr>";
-                        echo "<td>Select</td>";
-                        echo "<td>Location</td>";
-                        echo "<td>Destination</td>";
-                        echo "<td>Time</td>";
-                        echo "<td>Date</td>";
-                        echo "<td>Price</td>";
-                    echo "</tr>";
-
-                    while ($row = $rides->fetch(PDO::FETCH_ASSOC)) { ?>
-                        <tr>
-                            <td><input type="checkbox" id= <?php echo $row["id"] ?> name= <?php echo $row["id"] ?> value= <?php echo $row["id"] ?>>
-                            <?php
-                            echo "<td>" . $row["location"] . "</td>";
-                            echo "<td>" . $row["destination"] . "</td>";
-                            echo "<td>" . $row["time"] . "</td>";
-                            echo "<td>" . $row["date"] . "</td>";
-                            echo "<td>" . $row["price"] . "</td>";
-                            ?>
-                        </tr>
-                    <?php } ?>
-                    </table>
-                    <?php } catch (Exception $e) {
-                        echo "Error: $e";
-                        echo "Search query failed";
-                        die();
-                    }
-                } 
-                ?>
+        <form action="" method="post">
+            <div class="form-group col-lg-6">
+                <label for="location">Where from..?</label>
+                <select class="form-control" id="location" name="location">
+                    <option value="Rexburg">Rexburg</option>
+                    <option value="Provo">Provo</option>
+                    <option value="Salt Lake City">Salt Lake City</option>
+                    <option value="Boise">Boise</option>
+                </select>
             </div>
-        </div>
+            <div class="form-group col-lg-6">
+                <label for="destination">Going to..?</label>
+                <select class="form-control" id="destination" name="destination">
+                    <option value="Provo">Provo</option>
+                    <option value="Rexburg">Rexburg</option>
+                    <option value="Salt Lake City">Salt Lake City</option>
+                    <option value="Logan">Logan</option>
+                </select>
+            </div>
+            <div class="form-group col-lg-4">
+                <label for="time">What time to depart...?</label>
+                <input type="text" class="form-control" name="time" placeholder="18:30" id="time">
+            </div>
+            <div class="form-group col-lg-4">
+                <label for="date">What day to depart...?</label>
+                <input type="text" class="form-control" name="date" placeholder="02/20/2020" id="date">
+            </div>
+            <div class="form-group col-lg-4">
+                <label for="price">How much to pay...?</label>
+                <input type="text" class="form-control" name="price" placeholder="10" id="price">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-default squish-center" id="search" name="search">Submit Search</button>
+        </form>
+        <?php
+        if(isset($_POST["search"])) {
+            $location = htmlspecialchars($_POST["location"]);
+            $destination = htmlspecialchars($_POST["destination"]);
+            $price = htmlspecialchars($_POST["price"]);
+            $date = htmlspecialchars($_POST["date"]);
+            $time = htmlspecialchars($_POST["time"]);
+
+            try{
+            $rides = $db->prepare('SELECT location, destination, date, time, price 
+                                FROM rides 
+                                WHERE rider_id IS NULL');
+            $rides->execute();
+
+            echo "<table class='table'>";
+            echo "<tr>";
+                echo "<td>Select</td>";
+                echo "<td>Location</td>";
+                echo "<td>Destination</td>";
+                echo "<td>Time</td>";
+                echo "<td>Date</td>";
+                echo "<td>Price</td>";
+            echo "</tr>";
+
+            while ($row = $rides->fetch(PDO::FETCH_ASSOC)) { ?>
+                <tr>
+                    <td><input type="checkbox" id= <?php echo $row["id"] ?> name= <?php echo $row["id"] ?> value= <?php echo $row["id"] ?>>
+                    <?php
+                    echo "<td>" . $row["location"] . "</td>";
+                    echo "<td>" . $row["destination"] . "</td>";
+                    echo "<td>" . $row["time"] . "</td>";
+                    echo "<td>" . $row["date"] . "</td>";
+                    echo "<td>" . $row["price"] . "</td>";
+                    ?>
+                </tr>
+            <?php } ?>
+            </table>
+            <?php } catch (Exception $e) {
+                echo "Error: $e";
+                echo "Search query failed";
+                die();
+            }
+        } 
+        ?>
     </div>
 </body>
 
