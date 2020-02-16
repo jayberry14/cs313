@@ -50,14 +50,6 @@
     </div>
 </header>
 <?php
-    session_start();
-    try {
-        require "dbConnect.php";
-        $db = get_db();
-    } catch (Exception $e) {
-        exit;
-    }
-    
     if(isset($_POST["search"])) {
         $location = htmlspecialchars($_POST["location"]);
         $destination = htmlspecialchars($_POST["destination"]);
