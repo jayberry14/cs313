@@ -51,8 +51,9 @@
 </header>
     
     <div class="container-fluid" style="height:45vw">
+    <div class="row">
         <form action="ridesdisplay.php" method="post">
-            <div class="form-group">
+            <div class="form-group col-lg-6">
                 <label for="location">Where from..?</label>
                 <select class="form-control" id="location" name="location">
                     <option value="Rexburg">Rexburg</option>
@@ -61,7 +62,7 @@
                     <option value="Boise">Boise</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group col-lg-6">
                 <label for="destination">Going to..?</label>
                 <select class="form-control" id="destination" name="destination">
                     <option value="Provo">Provo</option>
@@ -70,21 +71,22 @@
                     <option value="Logan">Logan</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group col-lg-4">
                 <label for="time">What time to depart...?</label>
                 <input type="text" class="form-control" name="time" placeholder="18:30" id="time">
             </div>
-            <div class="form-group">
+            <div class="form-group col-lg-4">
                 <label for="date">What day to depart...?</label>
                 <input type="text" class="form-control" name="date" placeholder="02/20/2020" id="date">
             </div>
-            <div class="form-group">
+            <div class="form-group col-lg-4">
                 <label for="price">How much to pay...?</label>
                 <input type="text" class="form-control" name="price" placeholder="10" id="price">
             </div>
             <br>
             <button type="submit" class="btn btn-default" id="search" name="search">Search</button>
         </form>
+    </div>
     </div>
 </body>
 
