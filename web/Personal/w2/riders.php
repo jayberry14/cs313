@@ -84,7 +84,7 @@
                 <input type="text" class="form-control" name="price" placeholder="10" id="price">
             </div>
             <br>
-            <button type="submit" class="btn btn-default" id="search" name="search">Search</button>
+            <button type="submit" class="btn btn-default squish-center" id="search" name="search">Search</button>
         </form>
     </div>
     </div>
