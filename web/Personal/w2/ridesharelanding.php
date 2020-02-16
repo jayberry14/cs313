@@ -37,7 +37,7 @@
     </header>
 
     <div class="container-fluid row squish-center" style="height:50vw">
-        <div class="col">
+        <div class="col-lg-6">
             <h2>Rider Login</h2>
             <form action="ridesharelogin.php" method="post" style="max-width:100%">
                 <div class="form-group">
@@ -55,7 +55,7 @@
             </form>
         </div>
         
-        <div class="col">
+        <div class="col-lg-6">
             <h2>Create an Account</h2>
             <form action="rideshareregister.php" method="post" style="max-width:100%">
                 <div class="form-group">
