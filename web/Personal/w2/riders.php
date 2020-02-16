@@ -96,12 +96,12 @@
             try{
             $rides = $db->prepare('SELECT location, destination, date, time, price 
                                 FROM rides 
-                                WHERE rider_id IS NULL
-                                ,     location = :location
-                                ,     destination = : destination
-                                ,     date = :date
-                                ,     time = :time
-                                ,     price = :price');
+                                WHERE rider_id IS NULL');
+                                // ,     location = :location
+                                // ,     destination = : destination
+                                // ,     date = :date
+                                // ,     time = :time
+                                // ,     price = :price
             $rides->bindValue(':location', $location, PDO::PARAM_STR);
             $rides->bindValue(':destination', $destination, PDO::PARAM_STR);
             $rides->bindValue(':date', $date, PDO::PARAM_STR);
