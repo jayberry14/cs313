@@ -88,7 +88,6 @@
         if(isset($_POST["search"])) {
             $location = htmlspecialchars($_POST["location"]);
             $destination = htmlspecialchars($_POST["destination"]);
-            var_dump($destination);
             $price = htmlspecialchars($_POST["price"]);
             $date = htmlspecialchars($_POST["date"]);
             $time = htmlspecialchars($_POST["time"]);
@@ -97,11 +96,11 @@
             $rides = $db->prepare('SELECT location, destination, date, time, price 
                                 FROM rides 
                                 WHERE rider_id IS NULL
-                                OR     location = :location
-                                OR     destination = : destination
-                                OR     date = :date
-                                OR     time = :time
-                                OR     price = :price');
+                                ,     location = :location
+                                ,     destination = : destination
+                                ,     date = :date
+                                ,     time = :time
+                                ,     price = :price');
             $rides->bindValue(':location', $location, PDO::PARAM_STR);
             $rides->bindValue(':destination', $destination, PDO::PARAM_STR);
             $rides->bindValue(':date', $date, PDO::PARAM_STR);
