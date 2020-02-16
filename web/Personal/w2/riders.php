@@ -88,6 +88,7 @@
         if(isset($_POST["search"])) {
             $location = htmlspecialchars($_POST["location"]);
             $destination = htmlspecialchars($_POST["destination"]);
+            var_dump($destination);
             $price = htmlspecialchars($_POST["price"]);
             $date = htmlspecialchars($_POST["date"]);
             $time = htmlspecialchars($_POST["time"]);
