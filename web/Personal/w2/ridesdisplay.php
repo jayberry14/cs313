@@ -8,7 +8,6 @@
     }
 
     $location = htmlspecialchars($_POST["location"]);
-    var_dump($location);
     $destination = htmlspecialchars($_POST["destination"]);
     $price = htmlspecialchars($_POST["price"]);
     $date = htmlspecialchars($_POST["date"]);
@@ -54,6 +53,4 @@
     echo "Search query failed";
     die();
     }
-
-// header("Location: riders.php");
 ?>
