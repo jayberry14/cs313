@@ -95,18 +95,28 @@
             try{
             $rides = $db->prepare('SELECT location, destination, date, time, price 
                                 FROM rides 
-                                WHERE rider_id IS NULL');
+                                WHERE rider_id IS NULL
+                                ,     location = :location
+                                ,     destination = : destination
+                                ,     date = :date
+                                ,     time = :time
+                                ,     price = :price');
+            $rides->bindValue(':location', $location, PDO::PARAM_STR);
+            $rides->bindValue(':destination', $destination, PDO::PARAM_STR);
+            $rides->bindValue(':date', $date, PDO::PARAM_STR);
+            $rides->bindValue(':time', $time, PDO::PARAM_STR);
+            $rides->bindValue(':price', $price, PDO::PARAM_INT);
             $rides->execute();
 
             echo "<table class='table'>";
-            echo "<tr>";
-                echo "<td>Select</td>";
-                echo "<td>Location</td>";
-                echo "<td>Destination</td>";
-                echo "<td>Time</td>";
-                echo "<td>Date</td>";
-                echo "<td>Price</td>";
-            echo "</tr>";
+                echo "<tr>";
+                    echo "<td>Select</td>";
+                    echo "<td>Location</td>";
+                    echo "<td>Destination</td>";
+                    echo "<td>Time</td>";
+                    echo "<td>Date</td>";
+                    echo "<td>Price</td>";
+                echo "</tr>";
 
             while ($row = $rides->fetch(PDO::FETCH_ASSOC)) { ?>
                 <tr>
