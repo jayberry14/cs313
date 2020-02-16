@@ -88,7 +88,6 @@
         if(isset($_POST["search"])) {
             $location = htmlspecialchars($_POST["location"]);
             $destination = htmlspecialchars($_POST["destination"]);
-            var_dump($destination);
             $price = htmlspecialchars($_POST["price"]);
             $date = htmlspecialchars($_POST["date"]);
             $time = htmlspecialchars($_POST["time"]);
@@ -109,7 +108,7 @@
             // $rides->bindValue(':price', $price, PDO::PARAM_INT);
             $rides->execute();
 
-            echo "<table class='table squish-center'>";
+            echo "<table class='table squish-center2'>";
                 echo "<tr>";
                     echo "<td>Select</td>";
                     echo "<td>Location</td>";
