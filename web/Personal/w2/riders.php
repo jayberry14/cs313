@@ -55,19 +55,19 @@
             <div class="form-group">
                 <label for="location">Where from..?</label>
                 <select class="form-control" id="location">
-                    <option>Rexburg</option>
-                    <option>Provo</option>
-                    <option>Salt Lake City</option>
-                    <option>Boise</option>
+                    <option value="Rexburg">Rexburg</option>
+                    <option value="Provo">Provo</option>
+                    <option value="Salt Lake City">Salt Lake City</option>
+                    <option value="Boise">Boise</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="destination">Going to..?</label>
                 <select class="form-control" id="destination">
-                    <option>Provo</option>
-                    <option>Rexburg</option>
-                    <option>Salt Lake City</option>
-                    <option>Logan</option>
+                    <option value="Provo">Provo</option>
+                    <option value="Rexburg">Rexburg</option>
+                    <option value="Salt Lake City">Salt Lake City</option>
+                    <option value="Logan">Logan</option>
                 </select>
             </div>
             <div class="form-group">
