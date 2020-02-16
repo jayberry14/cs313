@@ -100,7 +100,7 @@
                                 OR     destination = : destination
                                 OR     date = :date
                                 OR     time = :time
-                                OR     price = :price'));
+                                OR     price = :price)');
             $rides->bindValue(':location', $location, PDO::PARAM_STR);
             $rides->bindValue(':destination', $destination, PDO::PARAM_STR);
             $rides->bindValue(':date', $date, PDO::PARAM_STR);
