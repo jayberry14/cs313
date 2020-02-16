@@ -54,7 +54,7 @@
         <form action="ridesdisplay.php" method="post">
             <div class="form-group">
                 <label for="location">Where from..?</label>
-                <select class="form-control" id="location">
+                <select class="form-control" id="location" name="location">
                     <option value="Rexburg">Rexburg</option>
                     <option value="Provo">Provo</option>
                     <option value="Salt Lake City">Salt Lake City</option>
@@ -63,7 +63,7 @@
             </div>
             <div class="form-group">
                 <label for="destination">Going to..?</label>
-                <select class="form-control" id="destination">
+                <select class="form-control" id="destination" name="destination">
                     <option value="Provo">Provo</option>
                     <option value="Rexburg">Rexburg</option>
                     <option value="Salt Lake City">Salt Lake City</option>
