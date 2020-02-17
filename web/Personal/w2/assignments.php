@@ -83,7 +83,7 @@
  */
 $timeTarget = 0.05; // 50 milliseconds 
 
-$cost = 10;
+$cost = 11;
 do {
     $cost++;
     $start = microtime(true);
