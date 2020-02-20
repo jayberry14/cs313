@@ -38,7 +38,7 @@
     
     catch (Exception $e) {
         echo "Error: $e";
-        echo "Account creation failed!";
+        echo "Login failed!";
         die();
     }
 
