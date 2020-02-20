@@ -28,6 +28,8 @@
 
         if ($authenticate == true) {
             header("Location: ta07success.php");
+        } else {
+            header("Location: ta07welcome.php");
         }
         
     } catch (Exception $e) {
