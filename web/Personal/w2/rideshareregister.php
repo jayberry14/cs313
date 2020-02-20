@@ -20,12 +20,13 @@
         $usernameCheck = $db->prepare('SELECT username FROM rider WHERE username = :username');
         while ($row = $usernameCheck->fetch(PDO::FETCH_ASSOC)) {    // Cycle through all the different usernames in my table
             ?><h4>TEST 2</h4><?php
-            if ($username = $row["username"]) {                     // If any of them match the user's input
+            if ($username == $row["username"]) {                     // If any of them match the user's input
+                ?><h4>TEST 3</h4><?php
                 $uName = $username;                                 // Set that input to a temp variable
             }
         }
 
-        if ($uName = $username) {                                   // If that temp variable has been set then don't let the user pick that username
+        if ($uName == $username) {                                   // If that temp variable has been set then don't let the user pick that username
             echo "ERROR: Username already taken. Please select another.";
         } else {
             $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password_hash)

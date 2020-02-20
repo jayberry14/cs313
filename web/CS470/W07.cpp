@@ -9,6 +9,7 @@
  *********************************************/
 #include <iostream>
 #include <iomanip>
+#include <cassert>
 using namespace std;
 
 void one(long number);
@@ -64,6 +65,23 @@ string displayCharArray(const char * p)
    return output;
 }
 
+/************************************************
+ * REPLACE ALL CHARACTERS
+ * Converts all given characters to their specified
+ * new character
+ ***********************************************/
+size_t strReplaceAll(char *s, int oldc, int newc) {
+   size_t count = 0; 
+   for(*s ;*s != '\0'; s++)
+   { 
+      if(*s == oldc)
+      { 
+         *s = newc; 
+         count++;
+      }
+   }
+   return count; 
+}
 /**********************************************
  * ONE : The next item on the call stack
  **********************************************/
@@ -101,26 +119,44 @@ void two(long number)              // 345678
         << "-------------------+"
         << "-------------------+"
         << "-----------------+\n";
-   for (long i = 24; i >= -4; i--)
+   for (long i = 30; i >= -4; i--) // loops through index
    {
-      ////////////////////////////////////////////////
-      // Insert code here to display the callstack
-      
-      //
-      ////////////////////////////////////////////////
+      cout << '[' << setw(2) << dec << i << ']'
+           << setw(15) << &bow + i
+           << setw(20) << hex << *(&bow + i)
+           << setw(20) << dec << *(&bow + i)
+           << setw(18) << displayCharArray((char *)(&bow+i))
+           << endl;
    }
 
-   ////////////////////////////////////////////////
    // Insert code here to change the variables in main()
-                                                                                
-   // change text in main() to "*main**"
-
-   // change number in main() to 654321
 
    // change pointerFunction in main() to point to pass
+   long *p;
+   for (p = (long*)&p; *p !=(long)fail; p++)
+   {
+      ;
+   }
+   assert(*p == (long)fail);
+   (*p) = (long)pass;
+   assert(*p == (long)pass);
 
-   // change message in main() to point to passMessage
+   //change message in main() to point to passMessage
+   --p;
+   assert(*p == (long)failMessage);
+   *p = (long)passMessage;
+   assert(*p == (long)passMessage);
 
-   //
-   ////////////////////////////////////////////////
+   // change text in main() to "*main**"
+   --p;
+   assert(*p == 11868464746679594);
+   strReplaceAll((char *)p, 'M', 'm');
+   strReplaceAll((char *)p, 'A', 'a');
+   strReplaceAll((char *)p, 'I', 'i');
+   strReplaceAll((char *)p, 'N', 'n');
+
+   // change number in main() to 654321
+   p += 3;
+   assert(*p == 123456);
+   *p = 654321;
 }
