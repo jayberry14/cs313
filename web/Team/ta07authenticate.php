@@ -14,7 +14,7 @@
     // $pass_ver = password_verify($password, $pass_hash);
 
     try {
-        $statement = $db->prepare('SELECT id FROM w07users WHERE username = :username, pass_hash = :pass_hash');
+        $statement = $db->prepare('SELECT id FROM w07users WHERE username = :username AND pass_hash = :pass_hash');
         $statement->bindValue(':username', $username);
         $statement->bindValue(':pass_hash', $pass_hash);
         $statement->execute();
