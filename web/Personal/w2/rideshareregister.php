@@ -43,6 +43,7 @@
             $_SESSION["loggedIn"] = true;
             $_SESSION["auth"] = 1;
             $_SESSION["username"] = $username;
+            header("Location: riders.php");
         }
     } catch (Exception $e) {
         echo "Error: $e";
@@ -50,5 +51,4 @@
         die();
     }
 
-    // header("Location: riders.php");
 ?>
