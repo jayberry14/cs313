@@ -17,7 +17,7 @@
     $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
     try {
-        $usernameCheck = $db->prepare('SELECT username FROM rider WHERE username = :username')
+        $usernameCheck = $db->prepare('SELECT username FROM rider WHERE username = :username');
         $login->bindValue(':username', $username, PDO::PARAM_STR);
 
         if ($usernameCheck = $username) {
