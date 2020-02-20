@@ -22,6 +22,7 @@
         while ($row = $usernameCheck->fetch(PDO::FETCH_ASSOC)) {    // Cycle through all the different usernames in my table
             if ($row["username"] = ':username') {                   // If any of them match the user's input
                 $uName = $username;                                 // Set that input to a temp variable
+                echo "Error: Username taken already. Select a different one."
             }
         }
 
@@ -35,7 +36,6 @@
             $rideInsert->bindValue(':lname', $lname, PDO::PARAM_STR);
             $rideInsert->bindValue(':email', $email, PDO::PARAM_STR);
             $rideInsert->bindValue(':phone', $phone, PDO::PARAM_STR);
-            $rideInsert->bindValue(':username', $username, PDO::PARAM_STR);
             $rideInsert->bindValue(':pass_hash', $pass_hash, PDO::PARAM_STR);
             $rideInsert->execute();
             
