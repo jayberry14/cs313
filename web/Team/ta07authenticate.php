@@ -22,14 +22,14 @@
 
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
             var_dump($row["pass_hash"]);
-            if (password_verify($password, $row["pass_hash"]) {
+            if (password_verify($password, $row["pass_hash"])) {
                 $authenticate = true;
             }
             // $pass_ver = password_verify($password, $pass_hash);
         }
         var_dump($authenticate);
         if ($authenticate == true) {
-            //header("Location: ta07success.php");
+            header("Location: ta07success.php");
         } else {
             //header("Location: ta07welcome.php");
         }
