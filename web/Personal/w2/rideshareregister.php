@@ -24,8 +24,6 @@
                 $uName = $username;                                 // Set that input to a temp variable
             }
         }
-        $usernameCheck->bindValue(':username', $username, PDO::PARAM_STR);
-
 
         if ($uName = $username) {                                   // If that temp variable has been set then don't let the user pick that username
             echo "ERROR: Username already taken. Please select another.";
@@ -37,6 +35,7 @@
             $rideInsert->bindValue(':lname', $lname, PDO::PARAM_STR);
             $rideInsert->bindValue(':email', $email, PDO::PARAM_STR);
             $rideInsert->bindValue(':phone', $phone, PDO::PARAM_STR);
+            $rideInsert->bindValue(':username', $username, PDO::PARAM_STR);
             $rideInsert->bindValue(':pass_hash', $pass_hash, PDO::PARAM_STR);
             $rideInsert->execute();
 
