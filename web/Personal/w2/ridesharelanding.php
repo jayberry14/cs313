@@ -95,7 +95,7 @@
         </div>
     </div>
 </body>
-<footer class="container-fluid bg-3">
+<footer class="container-fluid bg-3 navbar-fixed-bottom">
     <h4>Copyright ©2019 Brigham Young University - Idaho</h4>
 </footer>
 </html>

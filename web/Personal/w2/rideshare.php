@@ -33,7 +33,7 @@
         <a href="ridesharelanding.php"><img src="../../Files/thumb.png" alt="I need a ride!" class="img-thumbnail img-4"></a>
     </div>
 </body>
-<footer class="container-fluid bg-3">
+<footer class="container-fluid bg-3 navbar-fixed-bottom">
     <h4>Copyright ©2019 Brigham Young University - Idaho</h4>
 </footer>
 </html>
