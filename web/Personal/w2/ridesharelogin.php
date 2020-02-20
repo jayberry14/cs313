@@ -19,9 +19,9 @@
     try {
         $login = $db->prepare('SELECT authenticate FROM riders
                                     WHERE username = :username
-                                    AND password = :password');
+                                    AND password_hash = :pass_hash');
         $login->bindValue(':username', $username, PDO::PARAM_STR);
-        $login->bindValue(':password', $password, PDO::PARAM_STR);
+        $login->bindValue(':pass_hash', $pass_hash, PDO::PARAM_STR);
         $login->execute();
         
         while ($row = $login->fetch(PDO::FETCH_ASSOC)) {

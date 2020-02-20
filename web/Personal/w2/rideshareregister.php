@@ -17,7 +17,10 @@
     $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
     try {
-        if ($_SESSION["username"] = $username) {
+        $usernameCheck = $db->prepare('SELECT username FROM rider WHERE username = :username')
+        $login->bindValue(':username', $username, PDO::PARAM_STR);
+
+        if ($usernameCheck = $username) {
             echo "ERROR: Username already taken, please try another";
         } else {
             $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password_hash)
