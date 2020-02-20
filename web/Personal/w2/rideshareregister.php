@@ -50,5 +50,4 @@
         echo "Account creation failed!";
         die();
     }
-
 ?>
