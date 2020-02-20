@@ -13,6 +13,7 @@
     $password = htmlspecialchars($_POST["password"]);
     $pass_hash = password_hash($password, PASSWORD_DEFAULT);
     // $pass_ver = password_verify($password, $pass_hash);
+    var_dump($pass_hash);
 
     try {
         $statement = $db->prepare('SELECT id FROM w07users WHERE username = :username AND pass_hash = :pass_hash');
@@ -21,16 +22,17 @@
         $statement->execute();
 
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            var_dump($row["id"]);
             if ($row["id"] != null) {
                 $authenticate = true;
             }
             // $pass_ver = password_verify($password, $pass_hash);
         }
-
+        var_dump($authenticate);
         if ($authenticate == true) {
-            header("Location: ta07success.php");
+            //header("Location: ta07success.php");
         } else {
-            header("Location: ta07welcome.php");
+            //header("Location: ta07welcome.php");
         }
         
     } catch (Exception $e) {
