@@ -44,7 +44,7 @@
                         <input class="form-control" type="password" name="password" id="password" required>
                         <?php
                             if (isset($_GET["alphaNumError"])) { ?>
-                                <p style="color: red"><?="Password must match!"?></p>
+                                <p style="color: red"><?php echo "Password must match!"?></p>
                            <?php } ?>
                     </div>
                     <div class="form-row">
@@ -52,7 +52,7 @@
                         <input class="form-control" type="password" name="confirmPassword" id="password" required>
                         <?php
                             if (isset($_GET["confirmError"])) { ?>
-                                <p style="color: red"><?="Password must match!"?></p>
+                                <p style="color: red"><?php echo "Password must match!"?></p>
                            <?php } ?>
                     </div>
                     <br>
