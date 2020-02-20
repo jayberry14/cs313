@@ -46,6 +46,10 @@
                             if (isset($_GET["alphaNumError"])) { ?>
                                 <p style="color: red"><?php echo "Password must contain at least 1 number!"?></p>
                            <?php } ?>
+                           <?php
+                            if (isset($_GET["lengthError"])) { ?>
+                                <p style="color: red"><?php echo "Password must be at least 7 characters!"?></p>
+                           <?php } ?>
                     </div>
                     <div class="form-row">
                         <label for="confirmPassword">Confirm Password:</label>

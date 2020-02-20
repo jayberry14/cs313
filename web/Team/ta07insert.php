@@ -11,7 +11,10 @@
     $password = htmlspecialchars($_POST["password"]);
     $confirmPassword = htmlspecialchars($_POST["confirmPassword"]);
 
-    if ($password != $confirmPassword && (strlen($password) < 7)) {
+    if (strlen($password) < 7) {
+        header("Location: ta07welcome.php?lengthError=1");
+    }
+    else if ($password != $confirmPassword && (strlen($password) < 7)) {
         header("Location: ta07welcome.php?confirmError=1");
         die();
     } 
