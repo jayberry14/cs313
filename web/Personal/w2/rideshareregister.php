@@ -39,7 +39,7 @@
             $rideInsert->bindValue(':pass_hash', $pass_hash, PDO::PARAM_STR);
             $rideInsert->execute();
 
-            while ($row = $login->fetch(PDO::FETCH_ASSOC)) {
+            while ($row = $rideInsert->fetch(PDO::FETCH_ASSOC)) {
                 $auth = $row["authenticate"]; 
             }
             
