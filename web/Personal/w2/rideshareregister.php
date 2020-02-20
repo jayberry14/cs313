@@ -17,12 +17,11 @@
     $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
     try {
+        // Only insert if the username isn't taken
         $usernameCheck = $db->prepare('SELECT username FROM rider WHERE username = :username');
-        $login->bindValue(':username', $username, PDO::PARAM_STR);
+        $usernameCheck->bindValue(':username', $username, PDO::PARAM_STR);
 
-        if ($usernameCheck = $username) {
-            echo "ERROR: Username already taken, please try another";
-        } else {
+        if ($usernameCheck != $username) {
             $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password_hash)
                                     VALUES (true, :fname, :lname, :email, :phone, :username, :password_hash)');
         
