@@ -89,8 +89,8 @@
                 </div>
                 <div class="checkbox">
                     <label><input type="checkbox" name="remember">Remember me</label>
+                    <button type="submit" id="create" name="create" class="btn btn-default">Create!</button>
                 </div>
-                <button type="submit" id="create" name="create" class="btn btn-default">Create!</button>
             </form>
         </div>
     </div>
