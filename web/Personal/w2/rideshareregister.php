@@ -55,5 +55,5 @@
         die();
     }
 
-    header("Location: riders.php");
+    //header("Location: riders.php");
 ?>
