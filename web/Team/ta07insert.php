@@ -18,6 +18,7 @@
         $statement->bindValue(':username', $username);
         $statement->bindValue(':pass_hash', $pass_hash);
         $statement->execute();
+        header("Location: ta07welcome.php");
     } catch (\Throwable $e) {
         echo "Error: $e";
     }
