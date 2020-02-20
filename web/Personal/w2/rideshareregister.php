@@ -38,6 +38,10 @@
             $rideInsert->bindValue(':phone', $phone, PDO::PARAM_STR);
             $rideInsert->bindValue(':pass_hash', $pass_hash, PDO::PARAM_STR);
             $rideInsert->execute();
+
+            while ($row = $login->fetch(PDO::FETCH_ASSOC)) {
+                $auth = $row["authenticate"]; 
+            }
             
             $_SESSION["loggedIn"] = true;
             $_SESSION["auth"] = $auth;
