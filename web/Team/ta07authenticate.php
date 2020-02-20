@@ -11,19 +11,18 @@
     $authenticate = false;
     $username = htmlspecialchars($_POST["username"]);    
     $password = htmlspecialchars($_POST["password"]);
-    $pass_hash = password_hash($password, PASSWORD_DEFAULT);
-    // $pass_ver = password_verify($password, $pass_hash);
+    //$pass_hash = password_hash($password, PASSWORD_DEFAULT);
+    //$pass_ver = password_verify($password, $pass_hash);
     var_dump($pass_hash);
 
     try {
-        $statement = $db->prepare('SELECT id FROM w07users WHERE username = :username AND pass_hash = :pass_hash');
+        $statement = $db->prepare('SELECT pass_hash FROM w07users WHERE username = :username');
         $statement->bindValue(':username', $username);
-        $statement->bindValue(':pass_hash', $pass_hash);
         $statement->execute();
 
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-            var_dump($row["id"]);
-            if ($row["id"] != null) {
+            var_dump($row["pass_hash"]);
+            if (password_verify($password, $row["pass_hash"]) {
                 $authenticate = true;
             }
             // $pass_ver = password_verify($password, $pass_hash);
