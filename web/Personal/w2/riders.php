@@ -80,7 +80,6 @@
                 <label for="price">How much to pay...?</label>
                 <input type="text" class="form-control" name="price" placeholder="10" id="price">
             </div>
-            <br>
             <button type="submit" class="btn btn-default squish-center" id="search" name="search">Submit Search</button>
         </form>
         <?php
