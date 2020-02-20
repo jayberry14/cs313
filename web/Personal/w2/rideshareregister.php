@@ -27,7 +27,7 @@
         }
 
         if ($uName == $username) {                                   // If that temp variable has been set then don't let the user pick that username
-            header("Location: ridesharelanding.php?error=1");
+            header("Location: ridesharelanding.php?usernameError=1");
         } else {
             $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password_hash)
                                         VALUES (true, :fname, :lname, :email, :phone, :username, :pass_hash)');

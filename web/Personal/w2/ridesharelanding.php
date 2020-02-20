@@ -58,7 +58,7 @@
         <div class="col-lg-6">
             <h2>Create an Account</h2>
             <?php
-                if(isset($_GET["error"])) { ?>
+                if(isset($_GET["usernameError"])) { ?>
                     <h4 style="color:red"><?php echo "Username already taken, please choose another" ?></h4>
             <?php }
             ?>
