@@ -57,6 +57,11 @@
         
         <div class="col-lg-6">
             <h2>Create an Account</h2>
+            <?php
+                    if(isset($_GET["error"])) { ?>
+                        <p style="color:red"><?php echo "Username already taken!" ?></p>
+                <?php }
+            ?>
             <form action="rideshareregister.php" method="post" style="max-width:100%">
                 <div class="form-group">
                     <label for="fname">First Name:</label>
@@ -85,11 +90,6 @@
                 <div class="checkbox">
                     <label><input type="checkbox" name="remember">Remember me</label>
                 </div>
-                <?php
-                    if(isset($_GET["error"])) { ?>
-                        <p style="color:red"><?php echo "Username already taken!" ?></p>
-                <?php }
-                ?>
                 <button type="submit" id="create" name="create" class="btn btn-default">Create!</button>
             </form>
         </div>
