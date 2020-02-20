@@ -13,9 +13,11 @@
 
     if ($password != $confirmPassword) {
         header("Location: ta07welcome.php?confirmError=1");
+        die();
     } 
     else if(ctype_alnum($password)) {
         header("Location: ta07welcome.php?alphaNumError=1");
+        die();
     }
     $pass_hash = password_hash($password, PASSWORD_DEFAULT);
 
@@ -26,6 +28,7 @@
         $statement->bindValue(':pass_hash', $pass_hash);
         $statement->execute();
         header("Location: ta07welcome.php");
+        die();
     } catch (\Throwable $e) {
         echo "Error: $e";
     }
