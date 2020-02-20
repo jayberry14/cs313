@@ -43,6 +43,15 @@
                         <label for="password">Password:</label>
                         <input class="form-control" type="password" name="password" id="password" required>
                     </div>
+                    <div class="form-row">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input class="form-control" type="password" name="confirmPassword" id="password" required>
+                        <?php
+                            if (isset($_GET["error"])) { ?>
+                                <p style="color: red"><?="Password must match!"?></p>
+                           <?php }
+                        ?>
+                    </div>
                     <br>
                     <div class="text-center">
                         <input type="submit" value="Register" class="btn btn-primary" name="registerButton">
