@@ -18,10 +18,11 @@
     try {
         // Only insert if the username isn't taken
         $usernameCheck = $db->prepare('SELECT username FROM rider WHERE username = :username');
+        echo "Echo TEST";
         $usernameCheck->bindValue(':username', $username, PDO::PARAM_STR);
+        ?><h4>TEST 1</h4><?php
         while ($row = $usernameCheck->fetch(PDO::FETCH_ASSOC)) {    // Cycle through all the different usernames in my table
-            ?><h4>TEST</h4><?php
-            echo "Echo TEST";
+            ?><h4>TEST 2</h4><?php
             if ($username = $row["username"]) {                     // If any of them match the user's input
                 $uName = $username;                                 // Set that input to a temp variable
             }
