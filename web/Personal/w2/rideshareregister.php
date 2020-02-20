@@ -20,7 +20,7 @@
         $usernameCheck = $db->prepare('SELECT username FROM rider WHERE username = :username');
         $usernameCheck->bindValue(':username', $username, PDO::PARAM_STR);
         while ($row = $usernameCheck->fetch(PDO::FETCH_ASSOC)) {    // Cycle through all the different usernames in my table
-            if ($row["username"] = $username) {                   // If any of them match the user's input
+            if ($row["username"] = $username) {                     // If any of them match the user's input
                 $uName = $username;                                 // Set that input to a temp variable
                 echo "Error: Username taken already. Select a different one.";
             }
