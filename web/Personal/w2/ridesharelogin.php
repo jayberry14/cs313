@@ -13,6 +13,8 @@
 
     $username = htmlspecialchars($_POST["usernameLogin"]);
     $password = htmlspecialchars($_POST["pwdLogin"]);
+    $pass_hash = password_hash($password, PASSWORD_DEFAULT);
+    $pass_ver = password_verify($password, $pass_hash);
 
     try {
         $login = $db->prepare('SELECT authenticate FROM riders
@@ -26,13 +28,12 @@
             $auth = $row["authenticate"]; 
         }
 
-        if ($auth = 1 && password_verify($password, password_hash($password, PASSWORD_DEFAULT)))
+        if ($auth = 1 && $pass_ver = true)
         {
             $_SESSION["loggedIn"] = true;
             $_SESSION["auth"] = $auth;
             $_SESSION["username"] = $username;
         }
-
     } 
     
     catch (Exception $e) {
