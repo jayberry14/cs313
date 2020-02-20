@@ -4,14 +4,14 @@ DROP TABLE drivers;
 
 
 CREATE TABLE riders
-( id            SERIAL       NOT NULL PRIMARY KEY
-, authenticate  BOOLEAN      NOT NULL
-, fname         VARCHAR(80)  NOT NULL
-, lname         VARCHAR(80)  NOT NULL
-, username      VARCHAR(80)  NOT NULL
-, password      VARCHAR(80)  NOT NULL
-, email         VARCHAR(80)  NOT NULL
-, phone         VARCHAR(80)          
+( id                 SERIAL       NOT NULL PRIMARY KEY
+, authenticate       BOOLEAN      NOT NULL
+, fname              VARCHAR(80)  NOT NULL
+, lname              VARCHAR(80)  NOT NULL
+, username           VARCHAR(80)  NOT NULL
+, password_hash      VARCHAR(80)  NOT NULL
+, email              VARCHAR(80)  NOT NULL
+, phone              VARCHAR(80)          
 );
 
 CREATE TABLE drivers
@@ -40,11 +40,11 @@ INSERT INTO drivers (name, email, phone) VALUES ('John'  , 'johnsemail@google.co
 INSERT INTO drivers (name, email, phone) VALUES ('Anna'  , 'annasemail@google.com' , '2084963333');
 INSERT INTO drivers (name, email, phone) VALUES ('Bruce' , 'brucesemail@google.com', '2084964444');
 
-INSERT INTO riders (authenticate, fname, lname, username, password, email, phone) 
+INSERT INTO riders (authenticate, fname, lname, username, password_hash, email, phone) 
             VALUES ('true', 'Caden', 'Montgomery', 'montyc', 'jrkls09fd', 'cadensemail@google.com', '2084965990');
-INSERT INTO riders (authenticate, fname, lname, username, password, email, phone) 
+INSERT INTO riders (authenticate, fname, lname, username, password_hash, email, phone) 
             VALUES ('true', 'Frank', 'Harris', 'harrisf', 'W0aHe#4$o', 'franksemail@google.com', '2084963764');
-INSERT INTO riders (authenticate, fname, lname, username, password, email, phone) 
+INSERT INTO riders (authenticate, fname, lname, username, password_hash, email, phone) 
             VALUES ('true', 'Jenny', 'Matrix', 'matrixj', 'tr7&fffks', 'jennysemail@google.com', '2084960003');
 
 INSERT INTO rides (location, destination, date, time, price, driver_id, rider_id) 

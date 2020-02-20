@@ -14,9 +14,11 @@
     $username = htmlspecialchars($_POST["usernameCreate"]);
     $password = htmlspecialchars($_POST["pwdCreate"]);
 
+    $password_hash = password_hash($password, PASSWORD_DEFAULT);
+
     try {
-        $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password)
-                                    VALUES (true, :fname, :lname, :email, :phone, :username, :password)');
+        $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password_hash)
+                                    VALUES (true, :fname, :lname, :email, :phone, :username, :password_hash)');
         
         $rideInsert->bindValue(':fname', $fname, PDO::PARAM_STR);
         $rideInsert->bindValue(':lname', $lname, PDO::PARAM_STR);

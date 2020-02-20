@@ -14,10 +14,6 @@
     $username = htmlspecialchars($_POST["usernameLogin"]);
     $password = htmlspecialchars($_POST["pwdLogin"]);
 
-    if (password_verify($password, password_hash($password))) {
-        
-    }
-
     try {
         $login = $db->prepare('SELECT authenticate FROM riders
                                     WHERE username = :username
@@ -30,7 +26,7 @@
             $auth = $row["authenticate"]; 
         }
 
-        if ($auth = 1)
+        if ($auth = 1 && password_verify($password, password_hash($password, PASSWORD_DEFAULT)))
         {
             $_SESSION["loggedIn"] = true;
             $_SESSION["auth"] = $auth;

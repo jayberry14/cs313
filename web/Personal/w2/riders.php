@@ -95,7 +95,7 @@
             try{
             $rides = $db->prepare('SELECT location, destination, date, time, price 
                                 FROM rides 
-                                WHERE rider_id IS NULL');
+                                WHERE rider_id IS NULL');            // TODO: Make this to only query the fields that the user has searched for 
                                 // ,     location = :location
                                 // ,     destination = : destination
                                 // ,     date = :date
