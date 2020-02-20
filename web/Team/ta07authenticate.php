@@ -8,6 +8,7 @@
         exit;
     }
 
+    $authenticate = false;
     $username = htmlspecialchars($_POST["username"]);    
     $password = htmlspecialchars($_POST["password"]);
     $pass_hash = password_hash($password, PASSWORD_DEFAULT);
