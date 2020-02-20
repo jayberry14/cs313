@@ -20,11 +20,8 @@
         $usernameCheck = $db->prepare('SELECT username FROM riders WHERE username = :username');
         $usernameCheck->bindValue(':username', $username, PDO::PARAM_STR);
         $usernameCheck->execute();
-        ?><h4>TEST 1</h4><?php
         while ($row = $usernameCheck->fetch(PDO::FETCH_ASSOC)) {    // Cycle through all the different usernames in my table
-            ?><h4>TEST 2</h4><?php
             if ($username == $row["username"]) {                    // If any of them match the user's input
-                ?><h4>TEST 3</h4><?php
                 $uName = $username;                                 // Set that input to a temp variable
             }
         }
@@ -53,5 +50,5 @@
         die();
     }
 
-    //header("Location: riders.php");
+    header("Location: riders.php");
 ?>
