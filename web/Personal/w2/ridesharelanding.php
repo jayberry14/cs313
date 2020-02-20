@@ -85,6 +85,11 @@
                 <div class="checkbox">
                     <label><input type="checkbox" name="remember">Remember me</label>
                 </div>
+                <?php
+                    if(isset($_GET["error"])) {
+                        echo "<p>Username already taken!</p>";
+                    }
+                ?>
                 <button type="submit" id="create" name="create" class="btn btn-default">Create!</button>
             </form>
         </div>
