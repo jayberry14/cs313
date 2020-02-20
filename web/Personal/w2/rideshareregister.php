@@ -19,11 +19,13 @@
         // Only insert if the username isn't taken
         $usernameCheck = $db->prepare('SELECT username FROM rider WHERE username = :username');
         $usernameCheck->bindValue(':username', $username, PDO::PARAM_STR);
-        while ($row = $usernameCheck->fetch(PDO::FETCH_ASSOC)) {
-            $uName = $row["username"];
+        while ($row = $usernameCheck->fetch(PDO::FETCH_ASSOC)) {    // Cycle through all the different usernames in my table
+            if ($row["username"] = ':username') {                   // If any of them match the user's input
+                $uName = $username;                                 // Set that input to a temp variable
+            }
         }
 
-        if ($uName = $username) {
+        if ($uName = $username) {                                   // If that temp variable has been set then don't let the user pick that username
             echo "ERROR: Username already taken. Please select another.";
         } else {
             $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password_hash)
