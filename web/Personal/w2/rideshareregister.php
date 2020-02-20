@@ -19,11 +19,16 @@
         // Only insert if the username isn't taken
         $usernameCheck = $db->prepare('SELECT username FROM rider WHERE username = :username');
         $usernameCheck->bindValue(':username', $username, PDO::PARAM_STR);
+        while ($row = $usernameCheck->fetch(PDO::FETCH_ASSOC)) {
+            $uName = $row["username"];
+        }
 
-        if ($usernameCheck != $username) {
+        if ($uName = $username) {
+            echo "ERROR: Username already taken. Please select another.";
+        } else {
             $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password_hash)
-                                    VALUES (true, :fname, :lname, :email, :phone, :username, :pass_hash)');
-        
+                                        VALUES (true, :fname, :lname, :email, :phone, :username, :pass_hash)');
+            
             $rideInsert->bindValue(':fname', $fname, PDO::PARAM_STR);
             $rideInsert->bindValue(':lname', $lname, PDO::PARAM_STR);
             $rideInsert->bindValue(':email', $email, PDO::PARAM_STR);

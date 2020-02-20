@@ -122,11 +122,11 @@
                 <tr>
                     <td><input type="checkbox" id= <?php echo $row["id"] ?> name= <?php echo $row["id"] ?> value= <?php echo $row["id"] ?>>
                     <?php
-                    echo "<td>" . $row["location"] . "</td>";
-                    echo "<td>" . $row["destination"] . "</td>";
-                    echo "<td>" . $row["time"] . "</td>";
-                    echo "<td>" . $row["date"] . "</td>";
-                    echo "<td>" . $row["price"] . "</td>";
+                        echo "<td>" . $row["location"] . "</td>";
+                        echo "<td>" . $row["destination"] . "</td>";
+                        echo "<td>" . $row["time"] . "</td>";
+                        echo "<td>" . $row["date"] . "</td>";
+                        echo "<td>" . $row["price"] . "</td>";
                     ?>
                 </tr>
             <?php } ?>
