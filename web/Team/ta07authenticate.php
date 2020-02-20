@@ -15,8 +15,8 @@
 
     try {
         $statement = $db->prepare('SELECT id FROM w07users WHERE username = :username, pass_hash = :pass_hash');
-        $statement->bind(':username', $username);
-        $statement->bind(':pass_hash', $pass_hash);
+        $statement->bindValue(':username', $username);
+        $statement->bindValue(':pass_hash', $pass_hash);
         $statement->execute();
 
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {

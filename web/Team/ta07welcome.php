@@ -43,6 +43,7 @@
                         <label for="password">Password:</label>
                         <input class="form-control" type="password" name="password" id="password" required>
                     </div>
+                    <br>
                     <div class="text-center">
                         <input type="submit" value="Register" class="btn btn-primary" name="registerButton">
                     </div>

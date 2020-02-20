@@ -15,8 +15,8 @@
     try {
         $statement = $db->prepare('INSERT INTO w07users (username, pass_hash) 
                                     VALUES (:username, :pass_hash)');
-        $statement->bind(':username', $username);
-        $statement->bind(':pass_hash', $pass_hash);
+        $statement->bindValue(':username', $username);
+        $statement->bindValue(':pass_hash', $pass_hash);
         $statement->execute();
     } catch (\Throwable $e) {
         echo "Error: $e";
