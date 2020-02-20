@@ -13,8 +13,7 @@
     $phone = htmlspecialchars($_POST["phone"]);
     $username = htmlspecialchars($_POST["usernameCreate"]);
     $password = htmlspecialchars($_POST["pwdCreate"]);
-
-    $password_hash = password_hash($password, PASSWORD_DEFAULT);
+    $pass_hash = password_hash($password, PASSWORD_DEFAULT);
 
     try {
         // Only insert if the username isn't taken
@@ -23,14 +22,14 @@
 
         if ($usernameCheck != $username) {
             $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password_hash)
-                                    VALUES (true, :fname, :lname, :email, :phone, :username, :password_hash)');
+                                    VALUES (true, :fname, :lname, :email, :phone, :username, :pass_hash)');
         
             $rideInsert->bindValue(':fname', $fname, PDO::PARAM_STR);
             $rideInsert->bindValue(':lname', $lname, PDO::PARAM_STR);
             $rideInsert->bindValue(':email', $email, PDO::PARAM_STR);
             $rideInsert->bindValue(':phone', $phone, PDO::PARAM_STR);
             $rideInsert->bindValue(':username', $username, PDO::PARAM_STR);
-            $rideInsert->bindValue(':password', $password, PDO::PARAM_STR);
+            $rideInsert->bindValue(':pass_hash', $pass_hash, PDO::PARAM_STR);
             $rideInsert->execute();
             
             $_SESSION["loggedIn"] = true;
