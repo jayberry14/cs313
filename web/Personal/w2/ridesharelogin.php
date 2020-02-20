@@ -11,10 +11,14 @@
         exit;
     }
 
-    $username = htmlspecialchars($_POST["username"]);
-    $password = htmlspecialchars($_POST["password"]);
+    $username = htmlspecialchars($_POST["usernameLogin"]);
+    $password = htmlspecialchars($_POST["pwdLogin"]);
 
-    try{
+    if (password_verify($password, password_hash($password))) {
+        
+    }
+
+    try {
         $login = $db->prepare('SELECT authenticate FROM riders
                                     WHERE username = :username
                                     AND password = :password');
@@ -33,7 +37,9 @@
             $_SESSION["username"] = $username;
         }
 
-    } catch (Exception $e) {
+    } 
+    
+    catch (Exception $e) {
         echo "Error: $e";
         echo "Account creation failed!";
         die();

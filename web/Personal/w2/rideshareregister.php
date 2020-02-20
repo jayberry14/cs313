@@ -11,26 +11,27 @@
     $lname = htmlspecialchars($_POST["lname"]);
     $email = htmlspecialchars($_POST["email"]);
     $phone = htmlspecialchars($_POST["phone"]);
-    $username = htmlspecialchars($_POST["username"]);
-    $password = htmlspecialchars($_POST["pwd"]);
+    $username = htmlspecialchars($_POST["usernameCreate"]);
+    $password = htmlspecialchars($_POST["pwdCreate"]);
 
-    try{
-    $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password)
-                                VALUES (true, :fname, :lname, :email, :phone, :username, :password)');
+    try {
+        $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password)
+                                    VALUES (true, :fname, :lname, :email, :phone, :username, :password)');
+        
+        $rideInsert->bindValue(':fname', $fname, PDO::PARAM_STR);
+        $rideInsert->bindValue(':lname', $lname, PDO::PARAM_STR);
+        $rideInsert->bindValue(':email', $email, PDO::PARAM_STR);
+        $rideInsert->bindValue(':phone', $phone, PDO::PARAM_STR);
+        $rideInsert->bindValue(':username', $username, PDO::PARAM_STR);
+        $rideInsert->bindValue(':password', $password, PDO::PARAM_STR);
+        $rideInsert->execute();
+
+        $_SESSION["loggedIn"] = true;
+        $_SESSION["auth"] = $auth;
+        $_SESSION["username"] = $username;
+    } 
     
-    $rideInsert->bindValue(':fname', $fname, PDO::PARAM_STR);
-    $rideInsert->bindValue(':lname', $lname, PDO::PARAM_STR);
-    $rideInsert->bindValue(':email', $email, PDO::PARAM_STR);
-    $rideInsert->bindValue(':phone', $phone, PDO::PARAM_STR);
-    $rideInsert->bindValue(':username', $username, PDO::PARAM_STR);
-    $rideInsert->bindValue(':password', $password, PDO::PARAM_STR);
-    $rideInsert->execute();
-
-    $_SESSION["loggedIn"] = true;
-    $_SESSION["auth"] = $auth;
-    $_SESSION["username"] = $username;
-
-    } catch (Exception $e) {
+    catch (Exception $e) {
         echo "Error: $e";
         echo "Account creation failed!";
         die();

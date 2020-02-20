@@ -31,7 +31,7 @@
 <body>
     <header>
         <div class="container-fluid bg-3">
-            <img src="https://web.byui.edu/mybyui/img/header/byui_logo.png" class="img-3" width="82" height="82" alt="BYU-IDAHO in white letters on black background" />
+            <img src="https://web.byui.edu/mybyui/img/header/byui_logo.png" class="img-3" width="82" height="82" alt="BYU-IDAHO logo" />
             <h1>Ride Share</h1>
         </div>
     </header>
@@ -45,7 +45,7 @@
                     <input type="username" class="form-control" id="usernameLogin" placeholder="Enter username" name="usernameLogin">
                 </div>
                 <div class="form-group">
-                    <label for="pwd">Password:</label>
+                    <label for="pwdLogin">Password:</label>
                     <input type="password" class="form-control" id="pwdLogin" placeholder="Enter password" name="pwdLogin">
                 </div>
                 <div class="checkbox">
@@ -75,12 +75,12 @@
                     <input type="phone" class="form-control" id="phone" placeholder="Enter phone number" name="phone">
                 </div>
                 <div class="form-group">
-                    <label for="username">User Name:</label>
-                    <input type="username" class="form-control" id="username" placeholder="Enter username" name="username">
+                    <label for="usernameCreate">User Name:</label>
+                    <input type="username" class="form-control" id="usernameCreate" placeholder="Enter username" name="usernameCreate">
                 </div>
                 <div class="form-group">
-                    <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                    <label for="pwdCreate">Password:</label>
+                    <input type="password" class="form-control" id="pwdCreate" placeholder="Enter password" name="pwdCreate">
                 </div>
                 <div class="checkbox">
                     <label><input type="checkbox" name="remember">Remember me</label>
