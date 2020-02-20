@@ -107,7 +107,7 @@
                 // $rides->bindValue(':price', $price, PDO::PARAM_INT);
                 $rides->execute();
 
-                echo "<table class='table squish-center3'>";
+                echo "<table class='table' style='box-sizing:border-box'>";
                     echo "<tr>";
                         echo "<td>Select</td>";
                         echo "<td>Location</td>";
