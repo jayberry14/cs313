@@ -17,12 +17,13 @@
 
     try {
         // Only insert if the username isn't taken
-        $usernameCheck = $db->prepare('SELECT username FROM rider WHERE username = :username');
+        $usernameCheck = $db->prepare('SELECT username FROM riders WHERE username = :username');
         $usernameCheck->bindValue(':username', $username, PDO::PARAM_STR);
+        $usernameCheck->execute();
         ?><h4>TEST 1</h4><?php
         while ($row = $usernameCheck->fetch(PDO::FETCH_ASSOC)) {    // Cycle through all the different usernames in my table
             ?><h4>TEST 2</h4><?php
-            if ($username == $row["username"]) {                     // If any of them match the user's input
+            if ($username == $row["username"]) {                    // If any of them match the user's input
                 ?><h4>TEST 3</h4><?php
                 $uName = $username;                                 // Set that input to a temp variable
             }
@@ -41,13 +42,9 @@
             $rideInsert->bindValue(':username', $username, PDO::PARAM_STR);
             $rideInsert->bindValue(':pass_hash', $pass_hash, PDO::PARAM_STR);
             $rideInsert->execute();
-
-            while ($row = $rideInsert->fetch(PDO::FETCH_ASSOC)) {
-                $auth = $row["authenticate"]; 
-            }
             
             $_SESSION["loggedIn"] = true;
-            $_SESSION["auth"] = $auth;
+            $_SESSION["auth"] = 1;
             $_SESSION["username"] = $username;
         }
     } catch (Exception $e) {
