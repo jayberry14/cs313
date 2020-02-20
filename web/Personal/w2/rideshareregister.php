@@ -17,7 +17,7 @@
     $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
     try {
-        if (($db->prepare('SELECT username FROM riders')) = $username) {
+        if ($_SESSION["username"] = $username) {
             echo "ERROR: Username already taken, please try another";
         } else {
             $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password_hash)
