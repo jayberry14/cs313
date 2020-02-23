@@ -13,6 +13,21 @@
     $phone = htmlspecialchars($_POST["phone"]);
     $username = htmlspecialchars($_POST["usernameCreate"]);
     $password = htmlspecialchars($_POST["pwdCreate"]);
+    $confirmPassword = htmlspecialchars($_POST["pwdConfirm"]);
+
+    if (strlen($password) < 7) {
+        header("Location: ridesharelanding.php?lengthError=1");
+        die();
+    }
+    if ($password != $confirmPassword) {
+        header("Location: ridesharelanding.php?confirmError=1");
+        die();
+    } 
+    if(ctype_alnum($password) {
+        header("Location: ridesharelanding.php?alphaNumError=1");
+        die();
+    }
+
     $pass_hash = password_hash($password, PASSWORD_DEFAULT);
 
     try {
@@ -28,6 +43,7 @@
 
         if ($uName == $username) {                                   // If that temp variable has been set then don't let the user pick that username
             header("Location: ridesharelanding.php?usernameError=1");
+            die();
         } else {
             $rideInsert = $db->prepare('INSERT INTO riders (authenticate, fname, lname, email, phone, username, password_hash)
                                         VALUES (true, :fname, :lname, :email, :phone, :username, :pass_hash)');
@@ -44,6 +60,7 @@
             $_SESSION["auth"] = 1;
             $_SESSION["username"] = $username;
             header("Location: riders.php");
+            die();
         }
     } catch (Exception $e) {
         echo "Error: $e";

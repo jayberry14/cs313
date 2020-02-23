@@ -23,8 +23,10 @@
         }
         if ($authenticate == true) {
             header("Location: ta07success.php");
+            die();
         } else {
             header("Location: ta07welcome.php");
+            die();
         }
         
     } catch (Exception $e) {

@@ -86,6 +86,22 @@
                 <div class="form-group">
                     <label for="pwdCreate">Password:</label>
                     <input type="password" class="form-control" id="pwdCreate" placeholder="Enter password" name="pwdCreate">
+                    <?php
+                        if (isset($_GET["alphaNumError"])) { ?>
+                            <p style="color: red"><?php echo "Password must contain at least 1 number!"?></p>
+                        <?php } ?>
+                        <?php
+                        if (isset($_GET["lengthError"])) { ?>
+                            <p style="color: red"><?php echo "Password must be at least 7 characters!"?></p>
+                        <?php } ?>
+                </div>
+                <div class="form-group">
+                    <label for="pwdConfirm">Confirm Password:</label>
+                    <input type="password" class="form-control" id="pwdConfirm" placeholder="Enter password" name="pwdConfirm">
+                    <?php
+                        if (isset($_GET["confirmError"])) { ?>
+                            <p style="color: red"><?php echo "Password must match!"?></p>
+                        <?php } ?>
                 </div>
                 <div class="checkbox">
                     <label><input type="checkbox" name="remember">Remember me</label>

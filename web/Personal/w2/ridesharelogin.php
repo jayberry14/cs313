@@ -34,6 +34,7 @@
             $_SESSION["auth"] = $auth;
             $_SESSION["username"] = $username;
             header("Location: riders.php");
+            die();
         }
     } 
     
