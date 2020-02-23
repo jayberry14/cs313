@@ -148,6 +148,10 @@
                         try {
                             $rideSelect = $db->prepare('INSERT INTO rides (rider_id) VALUES (9999)');
                             $rideSelect->execute();
+                        } catch (Exception $e) {
+                            echo "Error: $e";
+                            echo "Ride Selection Failed!";
+                            die();
                         }
                     }
                 } 
