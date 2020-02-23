@@ -84,8 +84,8 @@
         </form>
         <?php
         if(isset($_POST["search"])) {
-            $location = htmlspecialchars($_POST["location"]);
-            $destination = htmlspecialchars($_POST["destination"]);
+            $location = $_POST["location"];
+            $destination = $_POST["destination"];
             $price = htmlspecialchars($_POST["price"]);
             $date = htmlspecialchars($_POST["date"]);
             $time = htmlspecialchars($_POST["time"]);
