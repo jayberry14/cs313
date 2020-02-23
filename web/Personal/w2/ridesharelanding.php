@@ -36,7 +36,7 @@
         </div>
     </header>
 
-    <div class="container-fluid row" style="height:50vw">
+    <div class="container-fluid row" style="height:70vw">
         <div class="col-lg-6">
             <h2>Rider Login</h2>
             <form action="ridesharelogin.php" method="post" style="max-width:100%">
