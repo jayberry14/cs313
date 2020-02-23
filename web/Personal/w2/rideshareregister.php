@@ -15,18 +15,18 @@
     $password = htmlspecialchars($_POST["pwdCreate"]);
     $confirmPassword = htmlspecialchars($_POST["pwdConfirm"]);
 
-    // if (strlen($password) < 7) {
-    //     header("Location: ridesharelanding.php?lengthError=1");
-    //     die();
-    // }
-    // if ($password != $confirmPassword) {
-    //     header("Location: ridesharelanding.php?confirmError=1");
-    //     die();
-    // } 
-    // if(ctype_alnum($password) {
-    //     header("Location: ridesharelanding.php?alphaNumError=1");
-    //     die();
-    // }
+    if (strlen($password) < 7) {
+        header("Location: ridesharelanding.php?lengthError=1");
+        die();
+    }
+    if ($password != $confirmPassword) {
+        header("Location: ridesharelanding.php?confirmError=1");
+        die();
+    } 
+    if(ctype_alnum($password)) {
+        header("Location: ridesharelanding.php?alphaNumError=1");
+        die();
+    }
 
     $pass_hash = password_hash($password, PASSWORD_DEFAULT);
 
