@@ -1,6 +1,6 @@
 <?php // Login
     session_start();
-    if ($_SESSION["loggedIn"] != true && $_SESSION["auth"] != 1) {
+    if ($_SESSION["loggedIn"] == false) {
         header("Location: ridesharelanding.php");
     }
 
@@ -28,10 +28,9 @@
             }
         }
 
-        if ($authenticate == 1 && $pass_ver == true)
+        if ($authenticate == true)
         {
             $_SESSION["loggedIn"] = true;
-            $_SESSION["auth"] = $auth;
             $_SESSION["username"] = $username;
             header("Location: riders.php");
             die();
