@@ -58,10 +58,9 @@
         <div class="col-lg-6">
             <h2>Create an Account</h2>
             <?php
-                if(isset($_GET["usernameError"])) { ?>
-                    <h4 style="color:red"><?php echo "Username already taken, please choose another"; ?></h4>
-            <?php }
-            ?>
+                if (isset($_GET["usernameError"])) { ?>
+                    <p style="color: red"><?php echo "Password must contain at least 1 number!"; ?></p>
+            <?php } ?>
             <form action="rideshareregister.php" method="post" style="max-width:100%">
                 <div class="form-group">
                     <label for="fname">First Name:</label>

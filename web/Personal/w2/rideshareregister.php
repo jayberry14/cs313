@@ -23,7 +23,7 @@
         header("Location: ridesharelanding.php?confirmError=1");
         die();
     } 
-    if(ctype_alnum($password)) {
+    if (ctype_alnum($password)) {
         header("Location: ridesharelanding.php?alphaNumError=1");
         die();
     }
