@@ -146,10 +146,11 @@
                 }
                 ?>
                 </table>
-                <?php if(isset($_POST["selectRide")) {
-                    $rideSelect = $db->prepare('INSERT INTO rides (rider_id) VALUES (9999)');
-                    $rideSelect->execute();
-                }
+                <?php 
+                    if(isset($_POST["selectRide")) {
+                        // $rideSelect = $db->prepare('INSERT INTO rides (rider_id) VALUES (9999)');
+                        // $rideSelect->execute();
+                    }
             } catch (Exception $e) {
                 echo "Error: $e";
                 echo "Search query failed";
