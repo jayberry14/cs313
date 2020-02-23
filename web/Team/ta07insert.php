@@ -19,7 +19,7 @@
         header("Location: ta07welcome.php?confirmError=1");
         die();
     } 
-    if(ctype_alnum($password) {
+    if(ctype_alnum($password)) {
         header("Location: ta07welcome.php?alphaNumError=1");
         die();
     }
