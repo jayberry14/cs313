@@ -147,9 +147,10 @@
                 ?>
                 </table>
                 <?php 
-                    if(isset($_POST["selectRide")) {
+                    if($_POST["selectRide" != NULL) {
                         // $rideSelect = $db->prepare('INSERT INTO rides (rider_id) VALUES (9999)');
                         // $rideSelect->execute();
+                        header("Location: rideshare.php");
                     }
             } catch (Exception $e) {
                 echo "Error: $e";
