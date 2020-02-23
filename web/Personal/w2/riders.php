@@ -133,7 +133,7 @@
 
                 while ($row = $rides->fetch(PDO::FETCH_ASSOC)) { ?>
                     <tr>
-                        <td><input type="radio" id="<?php echo $row["id"] ?>" name="select" value="<?php echo $row["id"] ?>">
+                        <td><input type="radio" id="<?php echo $row["id"] ?>" name="selectRide" value="<?php echo $row["id"] ?>">
                         <?php
                             echo "<td>" . $row["location"] . "</td>";
                             echo "<td>" . $row["destination"] . "</td>";
@@ -143,19 +143,18 @@
                         ?>
                     </tr>
                     <?php 
-                    if(isset($_POST["select")) {
-                        $selected = $_POST["select"];
-                        try {
-                            $rideSelect = $db->prepare('INSERT INTO rides (rider_id) VALUES (9999)');
-                            $rideSelect->execute();
-                        } catch (Exception $e) {
-                            echo "Error: $e";
-                            echo "Ride Selection Failed!";
-                            die();
-                        }
-                    }
-                } 
-                ?>
+                }
+                // if(isset($_POST["selectRide")) {
+                //     try {
+                //         $rideSelect = $db->prepare('INSERT INTO rides (rider_id) VALUES (9999)');
+                //         $rideSelect->execute();
+                //     } catch (Exception $e) {
+                //         echo "Error: $e";
+                //         echo "Ride Selection Failed!";
+                //         die();
+                //     }
+                // }
+                // ?>
                 </table>
             <?php } catch (Exception $e) {
                 echo "Error: $e";
