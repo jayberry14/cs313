@@ -87,3 +87,13 @@ SELECT * FROM rides;
 SELECT location, destination, date, time, price 
 FROM rides 
 WHERE (location = 'something' OR destination <> 'Rexburg' OR date = '' OR time = '' OR price = NULL) AND rider_id IS NULL;
+
+
+SELECT location, destination, date, time, price 
+FROM rides 
+WHERE (rider_id IS NULL
+AND     location = :location
+AND     destination = : destination
+AND     date = :date
+AND     time = :time
+AND     price = :price);

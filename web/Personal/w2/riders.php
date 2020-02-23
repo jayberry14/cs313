@@ -92,13 +92,13 @@
 
             try{
                 $rides = $db->prepare('SELECT location, destination, date, time, price 
-                                    FROM rides 
-                                    WHERE rider_id IS NULL            // TODO: Make this to only query the fields that the user has searched for 
-                                    ,     location = :location
-                                    ,     destination = : destination
-                                    ,     date = :date
-                                    ,     time = :time
-                                    ,     price = :price');
+                                       FROM rides 
+                                       WHERE (rider_id IS NULL
+                                       AND     location = :location
+                                       AND     destination = : destination
+                                       AND     date = :date
+                                       AND     time = :time
+                                       AND     price = :price)');
                 $rides->bindValue(':location', $location, PDO::PARAM_STR);
                 $rides->bindValue(':destination', $destination, PDO::PARAM_STR);
                 $rides->bindValue(':date', $date, PDO::PARAM_STR);
