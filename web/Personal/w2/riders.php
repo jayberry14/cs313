@@ -89,9 +89,14 @@
                 </select>
             </div>
             <div class="form-group col-lg-4">
-                <label for="price">How much to pay...?</label>
-                $<input type="text" class="form-control" name="price" placeholder="10" id="price">
-            </div>
+                <label for="price">Max to pay...?</label>
+                <select class="form-control" id="price" name="price">
+                    <option value="8">$8</option>
+                    <option value="9">$9</option>
+                    <option value="10">$10</option>
+                    <option value="11">$11</option>
+                    <option value="12">$12</option>
+                </select>            </div>
             <button type="submit" class="btn btn-default squish-center" id="search" name="search">Submit Search</button>
         </form>
         <?php
