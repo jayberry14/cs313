@@ -82,15 +82,15 @@
                 <label for="date">What day to depart...?</label>
                 <select class="form-control" id="date" name="date">
                     <option value="02/20/2020">02/20/2020</option>
-                    <option value="09:30">09:30</option>
-                    <option value="11:30">11:30</option>
-                    <option value="12:00">12:00</option>
-                    <option value="18:30">18:30</option>
+                    <option value="02/21/2020">02/21/2020</option>
+                    <option value="02/29/2020">02/29/2020</option>
+                    <option value="03/15/2020">03/15/2020</option>
+                    <option value="03/17/2020">03/17/2020</option>
                 </select>
             </div>
             <div class="form-group col-lg-4">
                 <label for="price">How much to pay...?</label>
-                <input type="text" class="form-control" name="price" placeholder="10" id="price">
+                $<input type="text" class="form-control" name="price" placeholder="10" id="price">
             </div>
             <button type="submit" class="btn btn-default squish-center" id="search" name="search">Submit Search</button>
         </form>
