@@ -15,11 +15,8 @@
     $password = htmlspecialchars($_POST["pwdLogin"]);
 
     try {
-        $login = $db->prepare('SELECT authenticate FROM riders
-                                    WHERE username = :username
-                                    AND password_hash = :pass_hash');
+        $login = $db->prepare('SELECT password_hash FROM riders WHERE username = :username');
         $login->bindValue(':username', $username, PDO::PARAM_STR);
-        $login->bindValue(':pass_hash', $pass_hash, PDO::PARAM_STR);
         $login->execute();
         
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
