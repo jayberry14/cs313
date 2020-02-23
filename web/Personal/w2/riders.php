@@ -48,7 +48,7 @@
         <h1>Ride Share</h1>
     </div>
 </header>
-    <div class="container-fluid row" style="height:45vw">
+    <div class="container-fluid row" style="height:60vw">
         <form action="" method="post">
             <div class="form-group col-lg-6">
                 <label for="location">Where from..?</label>
