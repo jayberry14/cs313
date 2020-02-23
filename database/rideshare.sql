@@ -48,7 +48,7 @@ INSERT INTO riders (authenticate, fname, lname, username, password_hash, email, 
             VALUES ('true', 'Jenny', 'Matrix', 'matrixj', 'tr7&fffks', 'jennysemail@google.com', '2084960003');
 
 INSERT INTO rides (location, destination, date, time, price, driver_id, rider_id) 
-            VALUES ('Provo', 'Rexburg', '02-20-2020', '18:30', '10', '1', '1');
+            VALUES ('Provo', 'Rexburg', '02/20/2020', '18:30', '10', '1', '1');
 INSERT INTO rides (location, destination, date, time, price, driver_id)
             VALUES ('Rexburg', 'Salt Lake City', '03/15/2020', '05:00', '12', '1');
 INSERT INTO rides (location, destination, date, time, price, driver_id)

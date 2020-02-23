@@ -70,11 +70,23 @@
             </div>
             <div class="form-group col-lg-4">
                 <label for="time">What time to depart...?</label>
-                <input type="text" class="form-control" name="time" placeholder="18:30" id="time">
+                <select class="form-control" id="time" name="time">
+                    <option value="05:00">05:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="18:30">18:30</option>
+                </select>
             </div>
             <div class="form-group col-lg-4">
                 <label for="date">What day to depart...?</label>
-                <input type="text" class="form-control" name="date" placeholder="02/20/2020" id="date">
+                <select class="form-control" id="date" name="date">
+                    <option value="02/20/2020">02/20/2020</option>
+                    <option value="09:30">09:30</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="18:30">18:30</option>
+                </select>
             </div>
             <div class="form-group col-lg-4">
                 <label for="price">How much to pay...?</label>
@@ -99,8 +111,6 @@
                                        AND     date = :date
                                        AND     time = :time
                                        AND     price <= :price)');
-                // $rides->bindValue(':location', $location, PDO::PARAM_STR);
-                // $rides->bindValue(':destination', $destination, PDO::PARAM_STR);
                 $rides->bindValue(':date', $date, PDO::PARAM_STR);
                 $rides->bindValue(':time', $time, PDO::PARAM_STR);
                 $rides->bindValue(':price', $price, PDO::PARAM_INT);
