@@ -92,8 +92,8 @@ WHERE (location = 'something' OR destination <> 'Rexburg' OR date = '' OR time =
 SELECT location, destination, date, time, price 
 FROM rides 
 WHERE (rider_id IS NULL
-AND     location = :location
-AND     destination = : destination
-AND     date = :date
-AND     time = :time
-AND     price = :price);
+AND     location IS NOT NULL
+AND     destination IS NOT NULL
+AND     date IS NOT NULL
+AND     time IS NOT NULL
+AND     price <= 11);

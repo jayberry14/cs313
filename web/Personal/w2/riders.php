@@ -98,7 +98,7 @@
                                        AND     destination = : destination
                                        AND     date = :date
                                        AND     time = :time
-                                       AND     price = :price)');
+                                       AND     price <= :price)');
                 $rides->bindValue(':location', $location, PDO::PARAM_STR);
                 $rides->bindValue(':destination', $destination, PDO::PARAM_STR);
                 $rides->bindValue(':date', $date, PDO::PARAM_STR);
@@ -118,7 +118,7 @@
 
                 while ($row = $rides->fetch(PDO::FETCH_ASSOC)) { ?>
                     <tr>
-                        <td><input type="checkbox" id= <?php echo $row["id"] ?> name= <?php echo $row["id"] ?> value= <?php echo $row["id"] ?>>
+                        <td><input type="checkbox" id= "<?php echo $row["id"] ?>" name= "<?php echo $row["id"] ?>" value= "<?php echo $row["id"] ?>">
                         <?php
                             echo "<td>" . $row["location"] . "</td>";
                             echo "<td>" . $row["destination"] . "</td>";
