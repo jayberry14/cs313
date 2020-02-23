@@ -93,17 +93,17 @@
             try{
                 $rides = $db->prepare('SELECT location, destination, date, time, price 
                                     FROM rides 
-                                    WHERE rider_id IS NULL');            // TODO: Make this to only query the fields that the user has searched for 
-                                    // ,     location = :location
-                                    // ,     destination = : destination
-                                    // ,     date = :date
-                                    // ,     time = :time
-                                    // ,     price = :price
-                // $rides->bindValue(':location', $location, PDO::PARAM_STR);
-                // $rides->bindValue(':destination', $destination, PDO::PARAM_STR);
-                // $rides->bindValue(':date', $date, PDO::PARAM_STR);
-                // $rides->bindValue(':time', $time, PDO::PARAM_STR);
-                // $rides->bindValue(':price', $price, PDO::PARAM_INT);
+                                    WHERE rider_id IS NULL            // TODO: Make this to only query the fields that the user has searched for 
+                                    ,     location = :location
+                                    ,     destination = : destination
+                                    ,     date = :date
+                                    ,     time = :time
+                                    ,     price = :price');
+                $rides->bindValue(':location', $location, PDO::PARAM_STR);
+                $rides->bindValue(':destination', $destination, PDO::PARAM_STR);
+                $rides->bindValue(':date', $date, PDO::PARAM_STR);
+                $rides->bindValue(':time', $time, PDO::PARAM_STR);
+                $rides->bindValue(':price', $price, PDO::PARAM_INT);
                 $rides->execute();
 
                 echo "<table class='table squish-center3' style='box-sizing:border-box'>";
