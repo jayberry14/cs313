@@ -103,9 +103,9 @@
         if(isset($_POST["search"])) {
             $location = $_POST["location"];
             $destination = $_POST["destination"];
-            $price = htmlspecialchars($_POST["price"]);
-            $date = htmlspecialchars($_POST["date"]);
-            $time = htmlspecialchars($_POST["time"]);
+            $price = $_POST["price"];
+            $date = $_POST["date"];
+            $time = $_POST["time"];
 
             try{
                 $rides = $db->prepare('SELECT location, destination, date, time, price 
@@ -113,8 +113,8 @@
                                        WHERE (rider_id IS NULL
                                        AND     location IS NOT NULL
                                        AND     destination IS NOT NULL
-                                       AND     date = :date
-                                       AND     time = :time
+                                       AND     date = '$_POST["date"]'
+                                       AND     time = '$_POST["time"]'
                                        AND     price <= :price)');
                 $rides->bindValue(':date', $date, PDO::PARAM_STR);
                 $rides->bindValue(':time', $time, PDO::PARAM_STR);
