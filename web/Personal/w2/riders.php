@@ -81,8 +81,8 @@
             <div class="form-group col-lg-4">
                 <label for="date">What day to depart...?</label>
                 <select class="form-control" id="date" name="date">
-                    <option value="03/17/2020">03/17/2020</option>
                     <option value="03/15/2020">03/15/2020</option>
+                    <option value="03/17/2020">03/17/2020</option>
                     <option value="02/29/2020">02/29/2020</option>
                     <option value="02/21/2020">02/21/2020</option>
                     <option value="02/20/2020">02/20/2020</option>
@@ -133,7 +133,7 @@
 
                 while ($row = $rides->fetch(PDO::FETCH_ASSOC)) { ?>
                     <tr>
-                        <td><input type="radio" id="<?php echo $row["id"] ?>" name="selectRide" value="<?php echo $row["id"] ?>">
+                        <td><button type="submit" id="<?php echo $row["id"] ?>" name="selectRide" value="<?php echo $row["id"] ?>">Go!</button>
                         <?php
                             echo "<td>" . $row["location"] . "</td>";
                             echo "<td>" . $row["destination"] . "</td>";
