@@ -28,6 +28,7 @@
         if ($authenticate == true)
         {
             $_SESSION["loggedIn"] = true;
+            $_SESSION["auth"] = 1;
             $_SESSION["username"] = $username;
             header("Location: riders.php");
             die();
