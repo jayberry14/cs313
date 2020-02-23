@@ -94,8 +94,8 @@
                 $rides = $db->prepare('SELECT location, destination, date, time, price 
                                        FROM rides 
                                        WHERE (rider_id IS NULL
-                                       AND     location = :location
-                                       AND     destination = : destination
+                                       AND     location = '$location'
+                                       AND     destination = '$destination'
                                        AND     date = :date
                                        AND     time = :time
                                        AND     price <= :price)');
