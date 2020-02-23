@@ -19,7 +19,7 @@
         $login->bindValue(':username', $username, PDO::PARAM_STR);
         $login->execute();
         
-        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        while ($row = $login->fetch(PDO::FETCH_ASSOC)) {
             if (password_verify($password, $row["password_hash"])) {
                 $authenticate = true;
             }
