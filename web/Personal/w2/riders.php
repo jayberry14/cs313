@@ -133,7 +133,7 @@
 
                 while ($row = $rides->fetch(PDO::FETCH_ASSOC)) { ?>
                     <tr>
-                        <td><button type="submit" id="<?php echo $row["id"] ?>" name="selectRide" value="<?php echo $row["id"] ?>">Go!</button>
+                        <td><button type="submit" formmethod="post" id="<?php echo $row["id"] ?>" name="selectRide" value="<?php echo $row["id"] ?>">Go!</button>
                         <?php
                             echo "<td>" . $row["location"] . "</td>";
                             echo "<td>" . $row["destination"] . "</td>";
