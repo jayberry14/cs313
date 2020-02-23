@@ -28,6 +28,12 @@ int main()
    long number = 123456;
    void (*pointerFunction)() = fail;
    const char * message = failMessage;
+   int * intP = new int;
+   	
+
+   cout << "Code: "  << &passMessage << endl;
+   cout << "Stack: " << &number      << endl;
+   cout << "Heap: "  << intP        << endl;
 
    // display the initial values of the local variables
    cout << "main() : " << (void *)main << endl;
@@ -70,17 +76,15 @@ string displayCharArray(const char * p)
  * Converts all given characters to their specified
  * new character
  ***********************************************/
-size_t strReplaceAll(char *s, int oldc, int newc) {
-   size_t count = 0; 
-   for(*s ;*s != '\0'; s++)
+void strReplaceAll(char *p, int oldc, int newc)
+{
+   for(*p; *p != '\0'; p++)
    { 
-      if(*s == oldc)
+      if(*p == oldc)
       { 
-         *s = newc; 
-         count++;
+         *p = newc; 
       }
    }
-   return count; 
 }
 /**********************************************
  * ONE : The next item on the call stack
@@ -119,13 +123,13 @@ void two(long number)              // 345678
         << "-------------------+"
         << "-------------------+"
         << "-----------------+\n";
-   for (long i = 30; i >= -4; i--) // loops through index
+   for (long i = 24; i >= -4; i--) // loops through index
    {
       cout << '[' << setw(2) << dec << i << ']'
            << setw(15) << &bow + i
            << setw(20) << hex << *(&bow + i)
            << setw(20) << dec << *(&bow + i)
-           << setw(18) << displayCharArray((char *)(&bow+i))
+           << setw(18) << displayCharArray((char *)(&bow+i)) //TODO
            << endl;
    }
 
@@ -137,26 +141,21 @@ void two(long number)              // 345678
    {
       ;
    }
-   assert(*p == (long)fail);
+
    (*p) = (long)pass;
-   assert(*p == (long)pass);
 
    //change message in main() to point to passMessage
    --p;
-   assert(*p == (long)failMessage);
    *p = (long)passMessage;
-   assert(*p == (long)passMessage);
 
    // change text in main() to "*main**"
-   --p;
-   assert(*p == 11868464746679594);
+   p -= 2;
    strReplaceAll((char *)p, 'M', 'm');
    strReplaceAll((char *)p, 'A', 'a');
    strReplaceAll((char *)p, 'I', 'i');
    strReplaceAll((char *)p, 'N', 'n');
 
    // change number in main() to 654321
-   p += 3;
-   assert(*p == 123456);
+   --p;
    *p = 654321;
 }

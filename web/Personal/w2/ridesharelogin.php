@@ -13,8 +13,6 @@
 
     $username = htmlspecialchars($_POST["usernameLogin"]);
     $password = htmlspecialchars($_POST["pwdLogin"]);
-    $pass_hash = password_hash($password, PASSWORD_DEFAULT);
-    $pass_ver = password_verify($password, $pass_hash);
 
     try {
         $login = $db->prepare('SELECT authenticate FROM riders
@@ -24,15 +22,18 @@
         $login->bindValue(':pass_hash', $pass_hash, PDO::PARAM_STR);
         $login->execute();
         
-        while ($row = $login->fetch(PDO::FETCH_ASSOC)) {
-            $auth = $row["authenticate"]; 
+        while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+            if (password_verify($password, $row["pass_hash"])) {
+                $authenticate = true;
+            }
         }
 
-        if ($auth = 1 && $pass_ver = true)
+        if ($authenticate == 1 && $pass_ver == true)
         {
             $_SESSION["loggedIn"] = true;
             $_SESSION["auth"] = $auth;
             $_SESSION["username"] = $username;
+            header("Location: riders.php");
         }
     } 
     
@@ -42,5 +43,4 @@
         die();
     }
 
-    header("Location: riders.php");
 ?>
