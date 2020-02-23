@@ -113,8 +113,8 @@
                                        WHERE (rider_id IS NULL
                                        AND     location IS NOT NULL
                                        AND     destination IS NOT NULL
-                                       AND     date IS NOT NULL
-                                       AND     time IS NOT NULL
+                                       AND     date = :date
+                                       AND     time = :time
                                        AND     price <= :price)');
                 $rides->bindValue(':date', $date, PDO::PARAM_STR);
                 $rides->bindValue(':time', $time, PDO::PARAM_STR);
