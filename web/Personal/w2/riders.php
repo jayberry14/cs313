@@ -113,8 +113,8 @@
                                        WHERE (rider_id IS NULL
                                        AND     location IS NOT NULL
                                        AND     destination IS NOT NULL
-                                       AND     date = :date
-                                       AND     time = :time
+                                       AND     date IS NOT NULL
+                                       AND     time IS NOT NULL
                                        AND     price <= :price)');
                 $rides->bindValue(':date', $date, PDO::PARAM_STR);
                 $rides->bindValue(':time', $time, PDO::PARAM_STR);
@@ -133,7 +133,7 @@
 
                 while ($row = $rides->fetch(PDO::FETCH_ASSOC)) { ?>
                     <tr>
-                        <td><input type="checkbox" id= "<?php echo $row["id"] ?>" name= "<?php echo $row["id"] ?>" value= "<?php echo $row["id"] ?>">
+                        <td><input type="radio" id="<?php echo $row["id"] ?>" name="select" value="<?php echo $row["id"] ?>">
                         <?php
                             echo "<td>" . $row["location"] . "</td>";
                             echo "<td>" . $row["destination"] . "</td>";
@@ -142,7 +142,16 @@
                             echo "<td>" . $row["price"] . "</td>";
                         ?>
                     </tr>
-                <?php } ?>
+                    <?php 
+                    if(isset($_POST["select")) {
+                        $selected = $_POST["select"];
+                        try {
+                            $rideSelect = $db->prepare('INSERT INTO rides (rider_id) VALUES (9999)');
+                            $rideSelect->execute();
+                        }
+                    }
+                } 
+                ?>
                 </table>
             <?php } catch (Exception $e) {
                 echo "Error: $e";
@@ -150,11 +159,6 @@
                 die();
             }
         } 
-        ?>
-        <?php
-        if(isset($_POST["select"])) {
-
-        }
         ?>
     </div>
 </body>
