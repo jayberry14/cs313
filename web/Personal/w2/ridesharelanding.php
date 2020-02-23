@@ -59,7 +59,7 @@
             <h2>Create an Account</h2>
             <?php
                 if (isset($_GET["usernameError"])) { ?>
-                    <p style="color: red"><?php echo "Password must contain at least 1 number!"; ?></p>
+                    <p style="color: red"><?php echo "Username is already taken!"; ?></p>
             <?php } ?>
             <form action="rideshareregister.php" method="post" style="max-width:100%">
                 <div class="form-group">
