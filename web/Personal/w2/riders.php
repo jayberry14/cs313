@@ -62,9 +62,9 @@
             <div class="form-group col-lg-6">
                 <label for="destination">Going to..?</label>
                 <select class="form-control" id="destination" name="destination">
+                    <option value="Salt Lake City">Salt Lake City</option>
                     <option value="Provo">Provo</option>
                     <option value="Rexburg">Rexburg</option>
-                    <option value="Salt Lake City">Salt Lake City</option>
                     <option value="Logan">Logan</option>
                 </select>
             </div>
@@ -81,21 +81,21 @@
             <div class="form-group col-lg-4">
                 <label for="date">What day to depart...?</label>
                 <select class="form-control" id="date" name="date">
-                    <option value="02/20/2020">02/20/2020</option>
-                    <option value="02/21/2020">02/21/2020</option>
-                    <option value="02/29/2020">02/29/2020</option>
-                    <option value="03/15/2020">03/15/2020</option>
                     <option value="03/17/2020">03/17/2020</option>
+                    <option value="03/15/2020">03/15/2020</option>
+                    <option value="02/29/2020">02/29/2020</option>
+                    <option value="02/21/2020">02/21/2020</option>
+                    <option value="02/20/2020">02/20/2020</option>
                 </select>
             </div>
             <div class="form-group col-lg-4">
                 <label for="price">Max to pay...?</label>
                 <select class="form-control" id="price" name="price">
-                    <option value="8">$8</option>
-                    <option value="9">$9</option>
-                    <option value="10">$10</option>
-                    <option value="11">$11</option>
                     <option value="12">$12</option>
+                    <option value="11">$11</option>
+                    <option value="10">$10</option>
+                    <option value="9">$9</option>
+                    <option value="8">$8</option>
                 </select>            </div>
             <button type="submit" class="btn btn-default squish-center" id="search" name="search">Submit Search</button>
         </form>
@@ -150,6 +150,11 @@
                 die();
             }
         } 
+        ?>
+        <?php
+        if(isset($_POST["select"])) {
+
+        }
         ?>
     </div>
 </body>
