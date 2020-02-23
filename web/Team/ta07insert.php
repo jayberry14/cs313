@@ -23,7 +23,7 @@
         header("Location: ta07welcome.php?alphaNumError=1");
         die();
     }
-    
+
     $pass_hash = password_hash($password, PASSWORD_DEFAULT);
 
     try {
@@ -34,7 +34,7 @@
         $statement->execute();
         header("Location: ta07welcome.php");
         die();
-    } catch (\Throwable $e) {
+    } catch (Throwable $e) {
         echo "Error: $e";
     }
 ?>
