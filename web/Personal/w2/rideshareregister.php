@@ -23,7 +23,7 @@
         header("Location: ridesharelanding.php?confirmError=1");
         die();
     } 
-    if (1 === preg_match('~[0-9]~', $password)) {
+    if (1 != preg_match('~[0-9]~', $password)) {
         header("Location: ridesharelanding.php?alphaNumError=1");
         die();
     }
