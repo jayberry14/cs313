@@ -100,7 +100,7 @@
                                        AND     time = :time
                                        AND     price <= :price)');
                 $rides->bindValue(':location', $location, PDO::PARAM_STR);
-                $rides->bindValue(':destination', $destination, PDO::PARAM_STR);
+                // $rides->bindValue(':destination', $destination, PDO::PARAM_STR);
                 $rides->bindValue(':date', $date, PDO::PARAM_STR);
                 $rides->bindValue(':time', $time, PDO::PARAM_STR);
                 $rides->bindValue(':price', $price, PDO::PARAM_INT);
