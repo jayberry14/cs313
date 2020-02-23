@@ -23,7 +23,7 @@
         $login->execute();
         
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-            if (password_verify($password, $row["pass_hash"])) {
+            if (password_verify($password, $row["password_hash"])) {
                 $authenticate = true;
             }
         }
