@@ -14,27 +14,21 @@ const requestHandler = (req, res) => {
     
     if (url === '/message' && method === 'POST') {
         const body = [];
-        req.on('data', (first) => {
-            console.log(first);
-            body.push(first);
+        req.on('data', (chunk) => {
+            console.log(chunk);
+            body.push(chunk);
             res.write('<html>');
             res.write('<head><title>Message Display</title></head>');
             res.write('<body><div name="first">');
-            res.write(first);
-            res.write('</div><br>')
-        });
-        req.on('data', (second) => {
-            console.log(second);
-            body.push(second);
-            res.write('<div name="second">');
-            res.write(second); 
+            res.write(chunk);
             res.write('</div></body></html>');
         });
         return req.on('end', () => {
             const parseBody = Buffer.concat(body).toString();
             const message = parseBody.split('=')[1];
             fs.writeFile('serverMessage.txt', message, (err) => {  
-                res.writeHead(302, { Location: '/' });
+                res.statusCode = 302;
+                res.setHeader('Location', '/');
                 return res.end();  
             });
         });
