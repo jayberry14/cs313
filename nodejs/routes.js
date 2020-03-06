@@ -21,7 +21,11 @@ const requestHandler = (req, res) => {
             res.write('<head><title>Message Display</title></head>');
             res.write('<body><div name="first">');
             res.write(chunk);
-            res.write('</div></body></html>');
+            res.write('</div>');
+            res.write('<body><div name="second">');
+            res.write(chunk);
+            res.write('</div>');
+            res.write('</body></html>');
         });
         return req.on('end', () => {
             const parseBody = Buffer.concat(body).toString();
