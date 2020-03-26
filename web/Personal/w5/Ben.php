@@ -1,54 +1,44 @@
 <!DOCTYPE html>
-
 <html class="no-js"> 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Super Calculator</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <form action="ta02POST.php" method="post">
+        <form action="BenPost.php" method="POST">
             <div>
-                <label for="name">Name</label>
-                <input name="nameForPHP" type="text" class="form-control" placeholder="Enter name">
-                <label for="email">Email</label>
-                <input name="emailForPHP" type="text" class="form-control" placeholder="Enter email">
+                <label for="pricex">Price of X</label>
+                <input name="pricexForPHP" type="text" class="form-control" placeholder="Enter Price of X">
+                <label for="pricey">Price of Y</label>
+                <input name="priceyForPHP" type="text" class="form-control" placeholder="Enter Price of Y">
+                <!-- <label for="pricex">Price of X</label>
+                <input name="pricexForPHP" type="text" class="form-control" placeholder="Enter Price of X"> -->
             </div>
             <br>
-            <div>
-                
-            <?php 
-            $majors = array("Computer Science", "Web Design and Development", "Computer Information Technology", "Computer Engineering");
-            foreach($majors as $i) {
-                echo "<input type=\"radio\" name=\"majorForPHP\" value=\"$i\">$i<br><br>";
-            }
-            ?>
-                <!-- <input type="radio" name="majorForPHP" value="CS"> Computer Science<br>
-                <input type="radio" name="majorForPHP" value="WDD"> Web Design and Development<br>
-                <input type="radio" name="majorForPHP" value="CIT"> Computer Information Technology<br>
-                <input type="radio" name="majorForPHP" value="CE"> Computer Engineering -->
-          </div>
-            <br>
-            <div>
-                <label for="comments">Comments:</label>
-                <br>
-                <textarea name="comments" rows="4" cols="50" placeholder="Comments Here..."></textarea>
+            <div> 
+                <!-- <?php 
+                // $majors = array("Computer Science", "Web Design and Development", "Computer Information Technology", "Computer Engineering");
+                // foreach($majors as $i) {
+                //     echo "<input type=\"radio\" name=\"majorForPHP\" value=\"$i\">$i<br><br>";
+                // }
+                ?> -->
             </div>
             <div>
             <!-- <?php
                 // $continents = array("NA" => "North America", "SA" => "South America", "EU" => "Europe", "AS" => "Asia", "AU" => "Austrailia", "AF" => "Africa", "AN" => "Antarctica",);
             ?> -->
-                <label for="visited continents"></label><br>
+                <!-- <label for="visited continents"></label><br>
                     <input type="checkbox" name="choices" value=""> <br>
                     <input type="checkbox" name="choices" value=""> <br>
                     <input type="checkbox" name="choices" value=""> <br>
                     <input type="checkbox" name="choices" value=""> <br>  
                     <input type="checkbox" name="choices" value=""> <br>
                     <input type="checkbox" name="choices" value=""> <br>
-                    <input type="checkbox" name="choices" value=""> <br>
+                    <input type="checkbox" name="choices" value=""> <br> -->
 
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
