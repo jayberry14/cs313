@@ -7,12 +7,11 @@
         <h2>Do some derivatives :)</h2>
 
         a<i>x</i><sup>b</sup>
-        <form method="post" action="index.php">
+        <form method="post" action="">
         <input name="inputa" id="inputa" placeholder="Enter a">
         <input name="inputb" id="inputb" placeholder="Enter b">
         <input type="submit" name="submit" id="submit" value="Calculate Derivative">
         <br><br>
-
 
         <?php
 
