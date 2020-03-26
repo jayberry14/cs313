@@ -9,4 +9,5 @@
     echo "Price of X: $priceX <br><br>";
     echo "Price of Y: $priceY <br><br>";
     echo "X + Y =  $sumXY <br>";
+    echo "The Budget Constraint: $budgetCon <br><br>";
 ?>
