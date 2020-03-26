@@ -15,8 +15,8 @@
                 <input name="pricexForPHP" type="text" class="form-control" placeholder="Enter Price of X">
                 <label for="pricey">Price of Y</label>
                 <input name="priceyForPHP" type="text" class="form-control" placeholder="Enter Price of Y">
-                <!-- <label for="pricex">Price of X</label>
-                <input name="pricexForPHP" type="text" class="form-control" placeholder="Enter Price of X"> -->
+                <label for="budgetConstraint">Budget Constraint</label>
+                <input name="budgetConstraint" type="text" class="form-control" placeholder="Enter Budget Constaint">
             </div>
             <br>
             <div> 
