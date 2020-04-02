@@ -104,10 +104,10 @@
 
 
                     $dataPoints1 = array(
-                        array();
+                        array()
                     );
                     $dataPoints2 = array(
-                        array();
+                        array()
                     );
                     
                     for ($i = 0; $i < 100; $i++)
