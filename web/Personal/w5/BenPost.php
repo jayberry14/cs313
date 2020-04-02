@@ -9,10 +9,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel='stylesheet' type='text/css' media='screen' href='directory.css'>
     </head>
     <body>
     <h1>Optimizing Supply</h1>
-        <div class="container-fluid row">
+        <div class="container-fluid row squish-center3">
             <div class="col-lg-6">
                 <?php 
                     $income = htmlspecialchars($_POST["inputIncome"]);
@@ -33,8 +34,8 @@
                     echo "Price of X: $priceX <br>";
                     echo "Price of Y: $priceY <br>";
                     echo "Preference of X goods: $goodsXPreference <br>";
-                    echo "Preference of Y goods: $goodsYPreference <br>";
-                    echo "The total expendature on goods X is: $totalSpendX <br>";
+                    echo "Preference of Y goods: $goodsYPreference <br><br>";
+                    echo "The total expendature on goods X is: $totalSpendX <br><br>";
                     echo "The total expendature on goods Y is: $totalSpendY <br><br>";
                     echo "Quantity of X's goods to be sold is: $x <br><br>";
                     echo "Quantity of Y's goods to be sold is: $y <br><br>";
