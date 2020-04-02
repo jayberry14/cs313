@@ -13,7 +13,7 @@
     </head>
     <body class="bg-7">
     <h1>Optimizing Supply</h1>
-        <div class="container-fluid row squish-center3">
+        <div class="container-fluid squish-center3">
             <div class="col-lg-12">
                 <?php 
                     $income = htmlspecialchars($_POST["inputIncome"]);
