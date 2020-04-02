@@ -35,16 +35,8 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th><?php echo "Income";?></th>
-                            <th><?php echo "Price of X";?></th>
-                            <th><?php echo "Price of Y";?></th>
-                            <th><?php echo "Preference of X goods";?></th>
-                            <th><?php echo "Preference of Y goods";?></th>
-                            <th><?php echo "Total Spent on X goods";?></th>
-                            <th><?php echo "Total Spent on Y goods";?></th>
-                            <th><?php echo "How much X to sell";?></th>
-                            <th><?php echo "How much Y to sell";?></th>
-                            <th><?php echo "Total Expenses Overall";?></th>
+                            <th><?php echo "Title";?></th>
+                            <th><?php echo "Results/Input"?></th>
                         </tr>
                     </thead>
                     <tbody>
