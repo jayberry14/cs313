@@ -14,7 +14,7 @@
     <body class="bg-7">
     <h1>Optimizing Supply</h1>
         <div class="container-fluid row squish-center3">
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <?php 
                     $income = htmlspecialchars($_POST["inputIncome"]);
                     $priceX = htmlspecialchars($_POST["inputPriceX"]);
