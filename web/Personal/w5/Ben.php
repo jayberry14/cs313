@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Super Calculator</title>
+        <title>Optimizing Supply</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -11,8 +11,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
+    <h1>Optimizing Supply</h1>
         <form action="BenPost.php" method="POST">
             <div class="container-fluid row">
+            <h3>Let's calculate a Lagrangian!</h3>
                 <div class="col-lg-6">
                     <label for="inputIncome">Income</label>
                     <input name="inputIncome" type="text" class="form-control" placeholder="Enter the Income"> <!-- I -->
