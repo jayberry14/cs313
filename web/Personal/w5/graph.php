@@ -49,17 +49,16 @@ $dataPoints1 = array(
 	array("x"=> 75,	"y"=> 0.3774),
 	array("x"=> 80,	"y"=> 0.354)
 );
+
+$dataPoints2 = array(
+	array();
+);
+
 for ($i = 0; $i < 100; $i++)
 {
-	$dataPoints2;
+	array_push($dataPoints2, );
 }
 
-$dataPoints3 = array(
-	foreach($dataPoints2 as $i) {
-		array(
-
-		)
-	}
 );
 	
 ?>
