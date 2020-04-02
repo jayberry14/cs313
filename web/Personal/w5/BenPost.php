@@ -11,7 +11,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel='stylesheet' type='text/css' media='screen' href='Ben.css'>
-        <script>
+        <!-- <script>
             window.onload = function () {
             
             var chart = new CanvasJS.Chart("chartContainer", {
@@ -71,7 +71,7 @@
                 chart.render();
             } 
         }
-        </script>
+        </script> -->
     </head>
     <body class="bg-9">
     <h1>Maximizing Utility</h1>
