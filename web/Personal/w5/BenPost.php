@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Optimizing Supply</title>
+        <title>Maximizing Utility</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/ico" href="https://images-na.ssl-images-amazon.com/images/I/41TVVos4V4L._AC_.jpg">
@@ -13,7 +13,7 @@
         <link rel='stylesheet' type='text/css' media='screen' href='Ben.css'>
     </head>
     <body class="bg-9">
-    <h1>Optimizing Supply</h1>
+    <h1>Maximizing Utility</h1>
         <div class="container-fluid squish-center3">
             <div class="col-lg-12">
                 <?php 
@@ -53,31 +53,31 @@
                             <td><?php echo "$$priceY";?></td>
                         </tr>
                         <tr>
-                            <td><?php echo "Preference of X goods";?></td>
+                            <td><?php echo "Preference for X goods";?></td>
                             <td><?php echo "$goodsXPreference";?></td>
                         </tr>
                         <tr>
-                            <td><?php echo "Preference of Y goods";?></td>
+                            <td><?php echo "Preference for Y goods";?></td>
                             <td><?php echo "$goodsYPreference";?></td>
                         </tr>
                         <tr>
-                            <td><?php echo "The total expendature on goods X is";?></td>
+                            <td><?php echo "The total cost of goods X";?></td>
                             <td><?php echo "$$totalSpendX";?></td>
                         </tr>
                         <tr>
-                            <td><?php echo "The total expendature on goods Y is";?></td>
+                            <td><?php echo "The total cost of goods Y";?></td>
                             <td><?php echo "$$totalSpendY";?></td>
                         </tr>
                         <tr>
-                            <td><?php echo "Quantity of X's goods to be sold is";?></td>
+                            <td><?php echo "Quantity of X to purchase";?></td>
                             <td><?php echo "$x";?></td>
                         </tr>
                         <tr>
-                            <td><?php echo "Quantity of Y's goods to be sold is";?></td>
+                            <td><?php echo "Quantity of Y to purchase";?></td>
                             <td><?php echo "$y";?></td>
                         </tr>
                         <tr>
-                            <td><?php echo "The total expendature on goods X and Y comes to";?></td>
+                            <td><?php echo "The total cost overall";?></td>
                             <td><?php echo "$$totalSpend";?></td>
                         </tr>
                     </tbody>
