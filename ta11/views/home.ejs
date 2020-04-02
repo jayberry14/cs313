@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Homepage</title>
+</head>
+<body style="padding: 10px">
+    <h1>Try Sending an email<h1>
+        
+    <form action="/sent" method="POST">
+        <label for="sender">From:</label> <input type="text" name="sender"><br>
+        <label for="recepient">To:</label> <input type="text" name="recipient"><br>
+        <label for="subject">Subject:</label> <input type="text" name="subject"><br>
+        <textarea id="emailText" name="emailText" rows="5" cols="50"></textarea><br><br>
+        <button type="submit">Send SPAM email 👻</button>
+    </form>
+</body>
+</html>
