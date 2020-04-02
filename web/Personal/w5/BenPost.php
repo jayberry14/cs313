@@ -20,7 +20,7 @@
                     $goodsXPreference = htmlspecialchars($_POST["inputGoodX"]);
                     $goodsYPreference = htmlspecialchars($_POST["inputGoodY"]);
                     
-                    $x = $income / ($priceX * (1 + $goodsXPreference / $goodsYPreference));
+                    $x = $income / ($priceX * (1 + $goodsYPreference / $goodsXPreference));
                     $y = ($income * $goodsYPreference) / ($priceY * ($goodsXPreference + $goodsYPreference));
 
                     echo "Income:  $income <br><br>";
