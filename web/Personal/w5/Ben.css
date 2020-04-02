@@ -54,6 +54,11 @@ footer {
     color: #555555;
     text-align: center;
   }
+.bg-7 {
+    background-color: forestgreen;
+    color: whitesmoke;
+    text-align: center;
+}
 
 .img-1 {
     max-width: 100%;
