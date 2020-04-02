@@ -60,11 +60,11 @@ footer {
     text-align: center;
 }
 .bg-8 {
-    background: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpicserio.com%2Fgreen-wallpapers%2F2426262.html&psig=AOvVaw0LI1BNYea6dupmJfEulkI4&ust=1585882446640000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjR5NjeyOgCFQAAAAAdAAAAABAk";
+    background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpicserio.com%2Fgreen-wallpapers%2F2426262.html&psig=AOvVaw0LI1BNYea6dupmJfEulkI4&ust=1585882446640000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjR5NjeyOgCFQAAAAAdAAAAABAk");
     text-align: center;
 }
 .bg-9 {
-    background-image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersafari.com%2Fw%2FuXBh3O&psig=AOvVaw0LI1BNYea6dupmJfEulkI4&ust=1585882446640000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjR5NjeyOgCFQAAAAAdAAAAABAq";
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersafari.com%2Fw%2FuXBh3O&psig=AOvVaw0LI1BNYea6dupmJfEulkI4&ust=1585882446640000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjR5NjeyOgCFQAAAAAdAAAAABAq");
     text-align: center;
 }
 
