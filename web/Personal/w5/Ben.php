@@ -14,7 +14,7 @@
     <body class="bg-7">
     <h1>Optimizing Supply</h1>
         <form action="BenPost.php" method="POST">
-            <div class="container-fluid row squish-center3">
+            <div class="container-fluid squish-center3">
             <h3>Let's calculate a Lagrangian!</h3>
                 <div class="col-lg-12">
                     <label for="inputIncome">Income</label>
