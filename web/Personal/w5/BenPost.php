@@ -34,32 +34,60 @@
                 ?>
                 <table class="table table-striped">
                     <thead>
-                    <tr>
-                        <th><?php echo "Income";?></th>
-                        <th><?php echo "Price of X";?></th>
-                        <th><?php echo "Price of Y";?></th>
-                        <th><?php echo "Preference of X goods";?></th>
-                        <th><?php echo "Preference of Y goods";?></th>
-                        <th><?php echo "The total expendature on goods X is";?></th>
-                        <th><?php echo "The total expendature on goods Y is";?></th>
-                        <th><?php echo "Quantity of X's goods to be sold is";?></th>
-                        <th><?php echo "Quantity of Y's goods to be sold is";?></th>
-                        <th><?php echo "The total expendature on goods X and Y comes to";?></th>
-                    </tr>
+                        <tr>
+                            <th><?php echo "Income";?></th>
+                            <th><?php echo "Price of X";?></th>
+                            <th><?php echo "Price of Y";?></th>
+                            <th><?php echo "Preference of X goods";?></th>
+                            <th><?php echo "Preference of Y goods";?></th>
+                            <th><?php echo "Total Spent on X goods";?></th>
+                            <th><?php echo "Total Spent on Y goods";?></th>
+                            <th><?php echo "How much X to sell";?></th>
+                            <th><?php echo "How much Y to sell";?></th>
+                            <th><?php echo "Total Expenses Overall";?></th>
+                        </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td><?php echo " $$income";?></td>
-                        <td><?php echo " $$priceX";?></td>
-                        <td><?php echo " $$priceY";?></td>
-                        <td><?php echo " $goodsXPreference";?></td>
-                        <td><?php echo " $goodsYPreference";?></td>
-                        <td><?php echo " $$totalSpendX";?></td>
-                        <td><?php echo " $$totalSpendY";?></td>
-                        <td><?php echo " $x";?></td>
-                        <td><?php echo " $y";?></td>
-                        <td><?php echo " $$totalSpend";?></td>
-                    </tr>
+                        <tr>
+                            <td><?php echo "Income";?></td>
+                            <td><?php echo "$$income";?></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo "Price of X";?></td>
+                            <td><?php echo "$$priceX";?></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo "Price of Y";?></td>
+                            <td><?php echo "$$priceY";?></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo "Preference of X goods";?></td>
+                            <td><?php echo "$goodsXPreference";?></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo "Preference of Y goods";?></td>
+                            <td><?php echo "$goodsYPreference";?></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo "The total expendature on goods X is";?></td>
+                            <td><?php echo "$$totalSpendX";?></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo "The total expendature on goods Y is";?></td>
+                            <td><?php echo "$$totalSpendY";?></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo "Quantity of X's goods to be sold is";?></td>
+                            <td><?php echo "$x";?></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo "Quantity of Y's goods to be sold is";?></td>
+                            <td><?php echo "$y";?></td>
+                        </tr>
+                        <tr>
+                            <td><?php echo "The total expendature on goods X and Y comes to";?></td>
+                            <td><?php echo "$$totalSpend";?></td>
+                        </tr>
                     </tbody>
                 </table>
                 <?php
