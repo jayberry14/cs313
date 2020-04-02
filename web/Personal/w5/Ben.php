@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Optimizing Supply</title>
+        <title>Maximizing Utility</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/ico" href="https://images-na.ssl-images-amazon.com/images/I/41TVVos4V4L._AC_.jpg">
@@ -13,7 +13,7 @@
         <link rel='stylesheet' type='text/css' media='screen' href='Ben.css'>
     </head>
     <body class="bg-8">
-    <h1>Optimizing Supply</h1>
+    <h1>Maximizing Utility</h1>
         <form action="BenPost.php" method="POST">
             <div class="container-fluid squish-center3">
             <h3>Let's calculate a Lagrangian!</h3>
