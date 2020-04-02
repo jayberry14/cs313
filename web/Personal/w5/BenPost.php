@@ -22,9 +22,9 @@
                     $priceY = htmlspecialchars($_POST["inputPriceY"]);
                     $goodsXPreference = htmlspecialchars($_POST["inputGoodX"]);
                     $goodsYPreference = htmlspecialchars($_POST["inputGoodY"]);
-                    
-                    $x = $income / ($priceX * (1 + $goodsYPreference / $goodsXPreference));
-                    $y = ($income * $goodsYPreference) / ($priceY * ($goodsXPreference + $goodsYPreference));
+
+                    $x = floor($income / ($priceX * (1 + $goodsYPreference / $goodsXPreference)));
+                    $y = floor(($income * $goodsYPreference) / ($priceY * ($goodsXPreference + $goodsYPreference)));
 
                     $totalSpendX = $priceX * $x;
                     $totalSpendY = $priceY * $y;
