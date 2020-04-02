@@ -30,16 +30,16 @@
 
                     $totalSpend = $totalSpendX + $totalSpendY;
 
-                    echo "Income:  $income <br>";
-                    echo "Price of X: $priceX <br>";
-                    echo "Price of Y: $priceY <br>";
+                    echo "Income: $$income <br>";
+                    echo "Price of X: $$priceX <br>";
+                    echo "Price of Y: $$priceY <br>";
                     echo "Preference of X goods: $goodsXPreference <br>";
                     echo "Preference of Y goods: $goodsYPreference <br><br>";
-                    echo "The total expendature on goods X is: $totalSpendX <br><br>";
-                    echo "The total expendature on goods Y is: $totalSpendY <br><br>";
+                    echo "The total expendature on goods X is: $$totalSpendX <br><br>";
+                    echo "The total expendature on goods Y is: $$totalSpendY <br><br>";
                     echo "Quantity of X's goods to be sold is: $x <br><br>";
                     echo "Quantity of Y's goods to be sold is: $y <br><br>";
-                    echo "The total expendature on goods X and Y comes to: $totalSpend <br>";
+                    echo "The total expendature on goods X and Y comes to: $$totalSpend <br>";
                 ?>
             </div>
         </div>
