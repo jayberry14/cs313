@@ -76,15 +76,15 @@
                         </tr>
                         <tr>
                             <td><?php echo "Quantity of X to purchase";?></td>
-                            <td><?php echo "$x";?></td>
+                            <td><?php echo "$xFloor";?></td>
                         </tr>
                         <tr>
                             <td><?php echo "Quantity of Y to purchase";?></td>
-                            <td><?php echo "$y";?></td>
+                            <td><?php echo "$yFloor";?></td>
                         </tr>
                         <tr>
                             <td><?php echo "The total cost overall";?></td>
-                            <td><?php echo "$$totalSpend/$$totalSpendRounded";?></td>
+                            <td><?php echo "$$totalSpendRounded/$$totalSpend";?></td>
                         </tr>
                     </tbody>
                 </table>
