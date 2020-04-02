@@ -11,7 +11,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel='stylesheet' type='text/css' media='screen' href='Ben.css'>
     </head>
-    <body class="bg-8">
+    <body class="bg-7">
     <h1>Optimizing Supply</h1>
         <form action="BenPost.php" method="POST">
             <div class="container-fluid row squish-center3">
