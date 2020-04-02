@@ -23,13 +23,19 @@
                     $goodsXPreference = htmlspecialchars($_POST["inputGoodX"]);
                     $goodsYPreference = htmlspecialchars($_POST["inputGoodY"]);
 
-                    $x = floor($income / ($priceX * (1 + $goodsYPreference / $goodsXPreference)));
-                    $y = floor(($income * $goodsYPreference) / ($priceY * ($goodsXPreference + $goodsYPreference)));
+                    $x = $income / ($priceX * (1 + $goodsYPreference / $goodsXPreference));
+                    $y = ($income * $goodsYPreference) / ($priceY * ($goodsXPreference + $goodsYPreference));
+
+                    $xFloor = floor($x);
+                    $yFloor = floor($y);
 
                     $totalSpendX = $priceX * $x;
                     $totalSpendY = $priceY * $y;
+                    $totalSpendXRounded = $priceX * $xFloor;
+                    $totalSpendYRounded = $priceY * $yFloor;
 
                     $totalSpend = $totalSpendX + $totalSpendY;
+                    $totalSpendRounded = $totalSpendXRounded + $totalSpendYRounded;
 
                 ?>
                 <table class="table table-striped">
@@ -78,7 +84,7 @@
                         </tr>
                         <tr>
                             <td><?php echo "The total cost overall";?></td>
-                            <td><?php echo "$$totalSpend";?></td>
+                            <td><?php echo "$$totalSpend/$$totalSpendRounded";?></td>
                         </tr>
                     </tbody>
                 </table>
