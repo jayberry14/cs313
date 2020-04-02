@@ -59,6 +59,10 @@ footer {
     color: whitesmoke;
     text-align: center;
 }
+.bg-8 {
+    background-image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpicserio.com%2Fgreen-wallpapers%2F2426262.html&psig=AOvVaw0LI1BNYea6dupmJfEulkI4&ust=1585882446640000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjR5NjeyOgCFQAAAAAdAAAAABAk";
+    text-align: center;
+}
 
 .img-1 {
     max-width: 100%;
