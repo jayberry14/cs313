@@ -88,8 +88,10 @@
                     $y = ($income * $goodsYPreference) / ($priceY * ($goodsXPreference + $goodsYPreference));
                     $z = pow($x, $goodsXPreference) * pow($y, $goodsYPreference);
 
-                    $L = ((pow($z, (1/$goodsYPreference)))/(pow($x, ($goodsXPreference/$goodsYPreference))));
-                    $C = ($income - $priceX * $x) / $priceY;
+                    function L($x, $z, $goodsXPreference, $goodsYPreference) {
+                        return ((pow($z, (1/$goodsYPreference)))/(pow($x, ($goodsXPreference/$goodsYPreference))));
+                    }
+                    // $C = ($income - $priceX * $x) / $priceY;
 
                     $xFloor = floor($x);
                     $yFloor = floor($y);
@@ -106,14 +108,14 @@
                     $dataPoints1 = array(
                         array()
                     );
-                    $dataPoints2 = array(
-                        array()
-                    );
+                    // $dataPoints2 = array(
+                    //     array()
+                    // );
                     
                     for ($i = 0; $i < 100; $i++)
                     {
                         array_push($dataPoints1, $L);
-                        array_push($dataPoints2, $C);
+                        // array_push($dataPoints2, $C);
                     }
 
                 ?>
