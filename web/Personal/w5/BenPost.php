@@ -23,6 +23,11 @@
                     $x = $income / ($priceX * (1 + $goodsYPreference / $goodsXPreference));
                     $y = ($income * $goodsYPreference) / ($priceY * ($goodsXPreference + $goodsYPreference));
 
+                    $totalSpendX = $priceX * $x;
+                    $totalSpendY = $priceY * $y;
+
+                    $totalSpend = $totalSpendX + $totalSpendY;
+
                     echo "Income:  $income <br><br>";
                     echo "Price of X: $priceX <br><br>";
                     echo "Price of Y: $priceY <br><br>";
@@ -30,6 +35,7 @@
                     echo "Preference of Y goods: $goodsYPreference <br><br>";
                     echo "Quantity of X's goods to be sold is: $x <br>";
                     echo "Quantity of Y's goods to be sold is: $y <br>";
+                    echo "The total expendature on goods X and Y comes to: $totalSpend <br>";
                 ?>
             </div>
         </div>
