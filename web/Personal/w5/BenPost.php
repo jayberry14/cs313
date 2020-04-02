@@ -11,23 +11,27 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <?php 
-            $income = htmlspecialchars($_POST["inputIncome"]);
-            $priceX = htmlspecialchars($_POST["inputPriceX"]);
-            $priceY = htmlspecialchars($_POST["inputPriceY"]);
-            $goodsXPreference = htmlspecialchars($_POST["inputGoodX"]);
-            $goodsYPreference = htmlspecialchars($_POST["inputGoodY"]);
-            
-            $x = ($income * $goodsXPreference) / ($goodsYPreference * 2 * $priceX);
-            $y = ($income) / (2 * $priceY);
+        <div class="container-fluid row">
+            <div class="col-lg-6">
+                <?php 
+                    $income = htmlspecialchars($_POST["inputIncome"]);
+                    $priceX = htmlspecialchars($_POST["inputPriceX"]);
+                    $priceY = htmlspecialchars($_POST["inputPriceY"]);
+                    $goodsXPreference = htmlspecialchars($_POST["inputGoodX"]);
+                    $goodsYPreference = htmlspecialchars($_POST["inputGoodY"]);
+                    
+                    $x = $income / ($priceX * (1 + $goodsXPreference / $goodsYPreference));
+                    $y = ($income * $goodsYPreference) / ($priceY * ($goodsXPreference + $goodsYPreference));
 
-            echo "Income:  $income <br><br>";
-            echo "Price of X: $priceX <br><br>";
-            echo "Price of Y: $priceY <br><br>";
-            echo "Preference of X goods: $goodsXPreference <br><br>";
-            echo "Preference of Y goods: $goodsYPreference <br><br>";
-            echo "Quantity of X's goods to be sold is: $x <br>";
-            echo "Quantity of Y's goods to be sold is: $y <br>";
-        ?>
+                    echo "Income:  $income <br><br>";
+                    echo "Price of X: $priceX <br><br>";
+                    echo "Price of Y: $priceY <br><br>";
+                    echo "Preference of X goods: $goodsXPreference <br><br>";
+                    echo "Preference of Y goods: $goodsYPreference <br><br>";
+                    echo "Quantity of X's goods to be sold is: $x <br>";
+                    echo "Quantity of Y's goods to be sold is: $y <br>";
+                ?>
+            </div>
+        </div>
     </body>
 </html>
