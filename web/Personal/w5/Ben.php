@@ -12,7 +12,7 @@
         <form action="BenPost.php" method="POST">
             <div>
                 <label for="inputIncome">Income</label>
-                <input name="inputI" type="text" class="form-control" placeholder="Enter the Income"> <!-- I -->
+                <input name="inputIncome" type="text" class="form-control" placeholder="Enter the Income"> <!-- I -->
                 <label for="inputGoodX">Good X's Preference</label>
                 <input name="inputGoodX" type="text" class="form-control" placeholder="Enter X's Preference"> <!-- Alpha -->
                 <label for="inputGoodY">Good Y's Preference</label>
