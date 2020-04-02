@@ -48,7 +48,7 @@
                     markerSize: 0,
                     toolTipContent: "Temperature: {x} °C <br>{name}: {y} mPa.s",
                     showInLegend: true,
-                    dataPoints: <?php echo json_encode($dataPoints1, JSON_NUMERIC_CHECK); ?>
+                    dataPoints: <?php //echo json_encode($dataPoints1, JSON_NUMERIC_CHECK); ?>
                 },{
                     type: "line",
                     axisYType: "secondary",
@@ -56,7 +56,7 @@
                     markerSize: 0,
                     toolTipContent: "Temperature: {x} °C <br>{name}: {y} g/cm³",
                     showInLegend: true,
-                    dataPoints: <?php echo json_encode($dataPoints2, JSON_NUMERIC_CHECK); ?>
+                    dataPoints: <?php //echo json_encode($dataPoints2, JSON_NUMERIC_CHECK); ?>
                 }]
             });
             chart.render();
