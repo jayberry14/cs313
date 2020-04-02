@@ -7,7 +7,10 @@
     
     $x = ($income * $goodsXPreference) / ($goodsYPreference * 2 * $priceX);
 
+    echo "Income:  $income <br><br>";
     echo "Price of X: $priceX <br><br>";
     echo "Price of Y: $priceY <br><br>";
+    echo "Preference of X goods: $goodsXPreference <br><br>";
+    echo "Preference of Y goods: $goodsYPreference <br><br>";
     echo "Quantity of X's goods to be sold is: $x <br>";
 ?>
