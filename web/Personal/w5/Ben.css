@@ -68,7 +68,10 @@ footer {
     text-align: center;
 }
 .bg-9 {
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersafari.com%2Fw%2FuXBh3O&psig=AOvVaw0LI1BNYea6dupmJfEulkI4&ust=1585882446640000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjR5NjeyOgCFQAAAAAdAAAAABAq");
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190617/ourmid/pngtree-dark-green-material-poster-background-image_128892.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: whitesmoke;
     text-align: center;
 }
