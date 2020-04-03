@@ -1,3 +1,10 @@
+html { 
+    background: url(images/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 body {
     background-color: whitesmoke;
 }
@@ -67,6 +74,13 @@ footer {
     color: whitesmoke;
     text-align: center;
 }
+.bg-8_5 {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQG9AKP_Np_pp5PzYjrq09YGdukOtiB6gKLgBU9pAdYg3S4aF_A&usqp=CAU") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 .bg-9 {
     background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190617/ourmid/pngtree-dark-green-material-poster-background-image_128892.jpg");
     background-repeat: no-repeat;
@@ -74,6 +88,13 @@ footer {
     background-position: center;
     color: black;
     text-align: center;
+}
+.bg-9_5 {
+    background: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190617/ourmid/pngtree-dark-green-material-poster-background-image_128892.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .img-1 {
