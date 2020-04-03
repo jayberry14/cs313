@@ -20,7 +20,7 @@
 	}
 	
 	function C($income, $priceX, $x, $priceY) { 
-		return ($income - $priceX * $x) / $priceY;
+		return (($income - $priceX * $x) / $priceY);
 	}
 
 	$xFloor = floor($x);
