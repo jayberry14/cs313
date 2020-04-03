@@ -36,8 +36,8 @@
 	
 	for ($i = 0; $i < 100; $i++)
 	{
-		$dataPoints1[] = L();
-		$dataPoints2[] = C();
+		$dataPoints1[] = L($i, $z, $goodsXUtility, $goodsYUtility);
+		$dataPoints2[] = C($income, $priceX, $i--, $priceY);
 	}
 
 	echo "Data points 1 is $dataPoints1";
