@@ -18,16 +18,10 @@
         border-radius: 0;
         }
         
-        /* Add a gray background color and some padding to the footer */
-        footer {
-        background-color: #f2f2f2;
-        padding: 2vw;
-        }
-        
     .carousel-inner img {
         width: 100%; /* Set width to 100% */
         margin: auto;
-        min-height:20vw;
+        min-height:10vw;
     }
 
     /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -73,21 +67,27 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="https://scitechdaily.com/images/Gravity-Mysteries-Chalkboard.jpg" alt="Lagrangian">
-            <div class="carousel-caption">
-            <h3>Who Needs Drugs?</h3>
-            <p>...no seriously, we have drugs</p>
-            </div>      
-        </div>
-
-        <div class="item">
-            <img src="https://www.economist.com/sites/default/files/images/print-edition/20180428_FND000_0.jpg" alt="MicroEconomics">
-            <div class="carousel-caption">
-            <h3>Micro Economics is Easy</h3>
-            <p>Bet</p>
-            </div>      
-        </div>
+            <div class="item active">
+                <img src="https://scitechdaily.com/images/Gravity-Mysteries-Chalkboard.jpg" alt="Lagrangian">
+                <div class="carousel-caption">
+                <h3>Who Needs Drugs?</h3>
+                <p>...no seriously, we have drugs</p>
+                </div>      
+            </div>
+            <div class="item">
+                <img src="https://d3n8a8pro7vhmx.cloudfront.net/prosperousamerica/pages/4040/features/original/manufacturing_5.jpg?1512760258" alt="Manufacturing">
+                <div class="carousel-caption">
+                <h3>Manufacturing</h3>
+                <p>Manacuring</p>
+                </div>      
+            </div>
+            <div class="item">
+                <img src="https://ast.porttechnology.org/wp-content/media/20190527053126/container_weighing_header_1280_800_84_s_c1.jpg" alt="Cargo">
+                <div class="carousel-caption">
+                <h3>Cargo Containers in Port</h3>
+                <p>Or was it starboard...?</p>
+                </div>      
+            </div>
         </div>
 
         <!-- Left and right controls -->
@@ -100,32 +100,5 @@
         <span class="sr-only">Next</span>
         </a>
     </div>
-    
-    <div class="container text-center">    
-    <h3>What We Do</h3><br>
-    <div class="row">
-        <div class="col-sm-4">
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        <p>Current Project</p>
-        </div>
-        <div class="col-sm-4"> 
-        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-        <p>Project 2</p>    
-        </div>
-        <div class="col-sm-4">
-        <div class="well">
-        <p>Some text..</p>
-        </div>
-        <div class="well">
-        <p>Some text..</p>
-        </div>
-        </div>
-    </div>
-    </div><br>
-
-<footer class="container-fluid text-center">
-<p>Footer Text</p>
-</footer>
-
 </body>
 </html>
