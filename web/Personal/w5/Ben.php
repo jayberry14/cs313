@@ -14,7 +14,7 @@
     </head>
     <body class="bg-8">
     <h1>Maximizing Utility</h1>
-        <form action="graph.php" method="POST">
+        <form action="BenPost.php" method="POST">
             <div class="container-fluid squish-center3">
             <h3>Let's calculate a Lagrangian!</h3>
                 <div class="col-lg-12">

@@ -25,12 +25,6 @@
 
                     $x = $income / ($priceX * (1 + $goodsYUtility / $goodsXUtility));
                     $y = ($income * $goodsYUtility) / ($priceY * ($goodsXUtility + $goodsYUtility));
-                    $z = pow($x, $goodsXUtility) * pow($y, $goodsYUtility);
-
-                    function L($x, $z, $goodsXUtility, $goodsYUtility) {
-                        return ((pow($z, (1/$goodsYUtility)))/(pow($x, ($goodsXUtility/$goodsYUtility))));
-                    }
-                    // $C = ($income - $priceX * $x) / $priceY;
 
                     $xFloor = floor($x);
                     $yFloor = floor($y);
@@ -42,20 +36,6 @@
 
                     $totalSpend = $totalSpendX + $totalSpendY;
                     $totalSpendRounded = $totalSpendXRounded + $totalSpendYRounded;
-
-
-                    $dataPoints1 = array(
-                        array()
-                    );
-                    // $dataPoints2 = array(
-                    //     array()
-                    // );
-                    
-                    for ($i = 0; $i < 100; $i++)
-                    {
-                        array_push($dataPoints1, $L);
-                        // array_push($dataPoints2, $C);
-                    }
                 ?>
                 <table class="table table-striped">
                     <thead>
