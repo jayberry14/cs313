@@ -39,7 +39,6 @@
     </style>
     </head>
     <body class="bg-8">
-    <h1>Ben's Economic Calculators</h1>
 
     <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -64,7 +63,7 @@
         </div>
     </div>
     </nav>
-
+    <h1>Ben's Economic Calculators</h1>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
