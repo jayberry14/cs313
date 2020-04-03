@@ -14,16 +14,16 @@
     </head>
     <body class="bg-8">
     <h1>Maximizing Utility</h1>
-        <form action="BenPost.php" method="POST">
+        <form action="graph.php" method="POST">
             <div class="container-fluid squish-center3">
             <h3>Let's calculate a Lagrangian!</h3>
                 <div class="col-lg-12">
                     <label for="inputIncome">Income</label>
                     <input name="inputIncome" type="text" class="form-control" placeholder="Enter the Income"> <!-- I -->
-                    <label for="inputGoodX">Good X's Preference</label>
-                    <input name="inputGoodX" type="text" class="form-control" placeholder="Enter X's Preference"> <!-- Alpha -->
-                    <label for="inputGoodY">Good Y's Preference</label>
-                    <input name="inputGoodY" type="text" class="form-control" placeholder="Enter Y's Preference"> <!-- Beta -->
+                    <label for="inputGoodX">Good X's Utility</label>
+                    <input name="inputGoodX" type="text" class="form-control" placeholder="Enter X's Utility"> <!-- Alpha -->
+                    <label for="inputGoodY">Good Y's Utility</label>
+                    <input name="inputGoodY" type="text" class="form-control" placeholder="Enter Y's Utility"> <!-- Beta -->
                     <label for="inputPriceX">Price of X</label>
                     <input name="inputPriceX" type="text" class="form-control" placeholder="Enter Price of X"> <!-- px -->
                     <label for="inputPriceY">Price of Y</label>
