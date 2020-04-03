@@ -21,7 +21,7 @@
     .carousel-inner img {
         width: 100%; /* Set width to 100% */
         margin: auto;
-        min-height:10vw;
+        min-height:2vw;
     }
 
     /* Hide the carousel text when the screen is less than 600 pixels wide */
