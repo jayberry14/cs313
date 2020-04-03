@@ -1,3 +1,11 @@
+<?php
+	$dataPoints1 = array(
+		array()
+	);
+	$dataPoints2 = array(
+		array()
+	);
+?>
 <!DOCTYPE HTML>
 <html>
 <head> 
@@ -31,14 +39,6 @@
 
 		$totalSpend = $totalSpendX + $totalSpendY;
 		$totalSpendRounded = $totalSpendXRounded + $totalSpendYRounded;
-
-
-		$dataPoints1 = array(
-			array()
-		);
-		$dataPoints2 = array(
-		    array()
-		);
 		
 		for ($i = 0; $i < 100; $i++)
 		{
