@@ -11,31 +11,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel='stylesheet' type='text/css' media='screen' href='Ben.css'>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript">
-        google.charts.load('current', {'packages':['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
-
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-            ['Year', 'Sales', 'Expenses'],
-            ['2004',  1000,      400],
-            ['2005',  1170,      460],
-            ['2006',  660,       1120],
-            ['2007',  1030,      540]
-            ]);
-
-            var options = {
-            title: 'Company Performance',
-            curveType: 'function',
-            legend: { position: 'bottom' }
-            };
-
-            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-            chart.draw(data, options);
-        }
-        </script>
     </head>
     <body class="bg-9">
     <h1>Maximizing Utility</h1>
@@ -45,15 +20,15 @@
                     $income = htmlspecialchars($_POST["inputIncome"]);
                     $priceX = htmlspecialchars($_POST["inputPriceX"]);
                     $priceY = htmlspecialchars($_POST["inputPriceY"]);
-                    $goodsXPreference = htmlspecialchars($_POST["inputGoodX"]);
-                    $goodsYPreference = htmlspecialchars($_POST["inputGoodY"]);
+                    $goodsXUtility = htmlspecialchars($_POST["inputGoodX"]);
+                    $goodsYUtility = htmlspecialchars($_POST["inputGoodY"]);
 
-                    $x = $income / ($priceX * (1 + $goodsYPreference / $goodsXPreference));
-                    $y = ($income * $goodsYPreference) / ($priceY * ($goodsXPreference + $goodsYPreference));
-                    $z = pow($x, $goodsXPreference) * pow($y, $goodsYPreference);
+                    $x = $income / ($priceX * (1 + $goodsYUtility / $goodsXUtility));
+                    $y = ($income * $goodsYUtility) / ($priceY * ($goodsXUtility + $goodsYUtility));
+                    $z = pow($x, $goodsXUtility) * pow($y, $goodsYUtility);
 
-                    function L($x, $z, $goodsXPreference, $goodsYPreference) {
-                        return ((pow($z, (1/$goodsYPreference)))/(pow($x, ($goodsXPreference/$goodsYPreference))));
+                    function L($x, $z, $goodsXUtility, $goodsYUtility) {
+                        return ((pow($z, (1/$goodsYUtility)))/(pow($x, ($goodsXUtility/$goodsYUtility))));
                     }
                     // $C = ($income - $priceX * $x) / $priceY;
 
@@ -81,7 +56,6 @@
                         array_push($dataPoints1, $L);
                         // array_push($dataPoints2, $C);
                     }
-
                 ?>
                 <table class="table table-striped">
                     <thead>
@@ -104,12 +78,12 @@
                             <td><?php echo "$$priceY";?></td>
                         </tr>
                         <tr>
-                            <td><?php echo "Preference for X goods";?></td>
-                            <td><?php echo "$goodsXPreference";?></td>
+                            <td><?php echo "Utility for X goods";?></td>
+                            <td><?php echo "$goodsXUtility";?></td>
                         </tr>
                         <tr>
-                            <td><?php echo "Preference for Y goods";?></td>
-                            <td><?php echo "$goodsYPreference";?></td>
+                            <td><?php echo "Utility for Y goods";?></td>
+                            <td><?php echo "$goodsYUtility";?></td>
                         </tr>
                         <tr>
                             <td><?php echo "The total cost of goods X";?></td>
