@@ -13,6 +13,26 @@
         <link rel='stylesheet' type='text/css' media='screen' href='Ben.css'>
     </head>
     <body class="bg-9">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="Ben.php">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="MaxUtil.php">Maximum Utility Calculator</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
     <h1>Maximizing Utility</h1>
         <div class="container-fluid squish-center3">
             <div class="col-lg-12">
@@ -25,12 +45,6 @@
 
                     $x = $income / ($priceX * (1 + $goodsYUtility / $goodsXUtility));
                     $y = ($income * $goodsYUtility) / ($priceY * ($goodsXUtility + $goodsYUtility));
-                    $z = pow($x, $goodsXUtility) * pow($y, $goodsYUtility);
-
-                    function L($x, $z, $goodsXUtility, $goodsYUtility) {
-                        return ((pow($z, (1/$goodsYUtility)))/(pow($x, ($goodsXUtility/$goodsYUtility))));
-                    }
-                    // $C = ($income - $priceX * $x) / $priceY;
 
                     $xFloor = floor($x);
                     $yFloor = floor($y);
