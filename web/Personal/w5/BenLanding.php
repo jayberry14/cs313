@@ -21,13 +21,13 @@
         /* Add a gray background color and some padding to the footer */
         footer {
         background-color: #f2f2f2;
-        padding: 25px;
+        padding: 2vw;
         }
         
     .carousel-inner img {
         width: 100%; /* Set width to 100% */
         margin: auto;
-        min-height:200px;
+        min-height:20vw;
     }
 
     /* Hide the carousel text when the screen is less than 600 pixels wide */
