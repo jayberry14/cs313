@@ -36,8 +36,8 @@
 	
 	for ($i = 0; $i < 100; $i++)
 	{
-		array_push($dataPoints1, $L);
-		array_push($dataPoints2, $C);
+		array_push($dataPoints1, L());
+		array_push($dataPoints2, C());
 	}
 
 	echo "Data points 1 is $dataPoints1";
