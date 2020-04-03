@@ -74,18 +74,18 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
+            <img src="https://scitechdaily.com/images/Gravity-Mysteries-Chalkboard.jpg" alt="Lagrangian">
             <div class="carousel-caption">
-            <h3>Sell $</h3>
-            <p>Money Money.</p>
+            <h3>Who Needs Drugs?</h3>
+            <p>...no seriously, we have drugs</p>
             </div>      
         </div>
 
         <div class="item">
-            <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+            <img src="https://www.economist.com/sites/default/files/images/print-edition/20180428_FND000_0.jpg" alt="MicroEconomics">
             <div class="carousel-caption">
-            <h3>More Sell $</h3>
-            <p>Lorem ipsum...</p>
+            <h3>Micro Economics is Easy</h3>
+            <p>Bet</p>
             </div>      
         </div>
         </div>
