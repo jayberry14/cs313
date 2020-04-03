@@ -19,7 +19,7 @@
 		function L($x, $z, $goodsXUtility, $goodsYUtility) {
 			return ((pow($z, (1/$goodsYUtility)))/(pow($x, ($goodsXUtility/$goodsYUtility))));
 		}
-		// $C = ($income - $priceX * $x) / $priceY;
+		$C = ($income - $priceX * $x) / $priceY;
 
 		$xFloor = floor($x);
 		$yFloor = floor($y);
@@ -36,14 +36,14 @@
 		$dataPoints1 = array(
 			array()
 		);
-		// $dataPoints2 = array(
-		//     array()
-		// );
+		$dataPoints2 = array(
+		    array()
+		);
 		
 		for ($i = 0; $i < 100; $i++)
 		{
 			array_push($dataPoints1, $L);
-			// array_push($dataPoints2, $C);
+			array_push($dataPoints2, $C);
 		}
 	?>
 	<table class="table table-striped">
