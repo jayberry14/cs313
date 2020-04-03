@@ -10,67 +10,30 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
         <link rel='stylesheet' type='text/css' media='screen' href='Ben.css'>
-        <script>
-            window.onload = function () {
-            
-            var chart = new CanvasJS.Chart("chartContainer", {
-                animationEnabled: true,
-                title:{
-                    text: "Dynamic Viscosity Vs Density over Temperature of Water"
-                },
-                axisX:{
-                    title: "Temperature [°C]"
-                },
-                axisY:{
-                    title: "Dynamic Viscosity [mPa.s]",
-                    titleFontColor: "#4F81BC",
-                    lineColor: "#4F81BC",
-                    labelFontColor: "#4F81BC",
-                    tickColor: "#4F81BC"
-                },
-                axisY2:{
-                    title: "Density [g/cm³]",
-                    titleFontColor: "#C0504E",
-                    lineColor: "#C0504E",
-                    labelFontColor: "#C0504E",
-                    tickColor: "#C0504E",
-                    includeZero: false
-                },
-                legend:{
-                    cursor: "pointer",
-                    dockInsidePlotArea: true,
-                    itemclick: toggleDataSeries
-                },
-                data: [{
-                    type: "line",
-                    name: "Dynamic Viscosity",
-                    markerSize: 0,
-                    toolTipContent: "Temperature: {x} °C <br>{name}: {y} mPa.s",
-                    showInLegend: true,
-                    dataPoints: <?php echo json_encode($dataPoints1, JSON_NUMERIC_CHECK); ?>
-                },{
-                    type: "line",
-                    axisYType: "secondary",
-                    name: "Density",
-                    markerSize: 0,
-                    toolTipContent: "Temperature: {x} °C <br>{name}: {y} g/cm³",
-                    showInLegend: true,
-                    dataPoints: <?php echo json_encode($dataPoints2, JSON_NUMERIC_CHECK); ?>
-                }]
-            });
-            chart.render();
-            
-            function toggleDataSeries(e){
-                if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-                    e.dataSeries.visible = false;
-                }
-                else{
-                    e.dataSeries.visible = true;
-                }
-                chart.render();
-            } 
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ['Year', 'Sales', 'Expenses'],
+            ['2004',  1000,      400],
+            ['2005',  1170,      460],
+            ['2006',  660,       1120],
+            ['2007',  1030,      540]
+            ]);
+
+            var options = {
+            title: 'Company Performance',
+            curveType: 'function',
+            legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
         }
         </script>
     </head>
