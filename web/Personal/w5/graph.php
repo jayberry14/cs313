@@ -5,6 +5,43 @@
 	$dataPoints2 = array(
 		array()
 	);
+	$income = htmlspecialchars($_POST["inputIncome"]);
+	$priceX = htmlspecialchars($_POST["inputPriceX"]);
+	$priceY = htmlspecialchars($_POST["inputPriceY"]);
+	$goodsXUtility = htmlspecialchars($_POST["inputGoodX"]);
+	$goodsYUtility = htmlspecialchars($_POST["inputGoodY"]);
+
+	$x = $income / ($priceX * (1 + $goodsYUtility / $goodsXUtility));
+	$y = ($income * $goodsYUtility) / ($priceY * ($goodsXUtility + $goodsYUtility));
+	$z = pow($x, $goodsXUtility) * pow($y, $goodsYUtility);
+
+	function L($x, $z, $goodsXUtility, $goodsYUtility) {
+		return ((pow($z, (1/$goodsYUtility)))/(pow($x, ($goodsXUtility/$goodsYUtility))));
+	}
+	
+	function C($income, $priceX, $x, $priceY) { 
+		return ($income - $priceX * $x) / $priceY;
+	}
+
+	$xFloor = floor($x);
+	$yFloor = floor($y);
+
+	$totalSpendX = $priceX * $x;
+	$totalSpendY = $priceY * $y;
+	$totalSpendXRounded = $priceX * $xFloor;
+	$totalSpendYRounded = $priceY * $yFloor;
+
+	$totalSpend = $totalSpendX + $totalSpendY;
+	$totalSpendRounded = $totalSpendXRounded + $totalSpendYRounded;
+	
+	for ($i = 0; $i < 100; $i++)
+	{
+		array_push($dataPoints1, $L);
+		array_push($dataPoints2, $C);
+	}
+
+	echo "Data points 1 is $dataPoints1";
+	echo "Data points 2 is $dataPoints2";
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -74,39 +111,6 @@
 </head>
 <body>
 <div id="chartContainer" style="height: 370px; width: 100%;">
-	<?php 
-		$income = htmlspecialchars($_POST["inputIncome"]);
-		$priceX = htmlspecialchars($_POST["inputPriceX"]);
-		$priceY = htmlspecialchars($_POST["inputPriceY"]);
-		$goodsXUtility = htmlspecialchars($_POST["inputGoodX"]);
-		$goodsYUtility = htmlspecialchars($_POST["inputGoodY"]);
-
-		$x = $income / ($priceX * (1 + $goodsYUtility / $goodsXUtility));
-		$y = ($income * $goodsYUtility) / ($priceY * ($goodsXUtility + $goodsYUtility));
-		$z = pow($x, $goodsXUtility) * pow($y, $goodsYUtility);
-
-		function L($x, $z, $goodsXUtility, $goodsYUtility) {
-			return ((pow($z, (1/$goodsYUtility)))/(pow($x, ($goodsXUtility/$goodsYUtility))));
-		}
-		$C = ($income - $priceX * $x) / $priceY;
-
-		$xFloor = floor($x);
-		$yFloor = floor($y);
-
-		$totalSpendX = $priceX * $x;
-		$totalSpendY = $priceY * $y;
-		$totalSpendXRounded = $priceX * $xFloor;
-		$totalSpendYRounded = $priceY * $yFloor;
-
-		$totalSpend = $totalSpendX + $totalSpendY;
-		$totalSpendRounded = $totalSpendXRounded + $totalSpendYRounded;
-		
-		for ($i = 0; $i < 100; $i++)
-		{
-			array_push($dataPoints1, $L);
-			array_push($dataPoints2, $C);
-		}
-	?>
 	<table class="table table-striped">
 		<thead>
 			<tr>
