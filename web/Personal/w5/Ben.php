@@ -51,9 +51,6 @@
             <li><a href="MaxUtil.php">Maximum Utility Calculator</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
         </div>
     </div>
     </nav>
@@ -70,22 +67,22 @@
             <div class="item active">
                 <img src="https://scitechdaily.com/images/Gravity-Mysteries-Chalkboard.jpg" alt="Lagrangian">
                 <div class="carousel-caption">
-                <h3>Who Needs Drugs?</h3>
-                <p>...no seriously, we have drugs</p>
+                <h3>Chalkboard</h3>
+                <p>with stuff on it</p>
                 </div>      
             </div>
             <div class="item">
                 <img src="https://d3n8a8pro7vhmx.cloudfront.net/prosperousamerica/pages/4040/features/original/manufacturing_5.jpg?1512760258" alt="Manufacturing">
                 <div class="carousel-caption">
                 <h3>Manufacturing</h3>
-                <p>Manacuring</p>
+                <p>all the things</p>
                 </div>      
             </div>
             <div class="item">
                 <img src="https://ast.porttechnology.org/wp-content/media/20190527053126/container_weighing_header_1280_800_84_s_c1.jpg" alt="Cargo">
                 <div class="carousel-caption">
                 <h3>Cargo Containers in Port</h3>
-                <p>Or was it starboard...?</p>
+                <p>Ain't they purdy?</p>
                 </div>      
             </div>
         </div>
@@ -100,5 +97,6 @@
         <span class="sr-only">Next</span>
         </a>
     </div>
+    <br><br>
 </body>
 </html>
