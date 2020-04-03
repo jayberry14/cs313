@@ -25,6 +25,12 @@
 
                     $x = $income / ($priceX * (1 + $goodsYUtility / $goodsXUtility));
                     $y = ($income * $goodsYUtility) / ($priceY * ($goodsXUtility + $goodsYUtility));
+                    $z = pow($x, $goodsXUtility) * pow($y, $goodsYUtility);
+
+                    function L($x, $z, $goodsXUtility, $goodsYUtility) {
+                        return ((pow($z, (1/$goodsYUtility)))/(pow($x, ($goodsXUtility/$goodsYUtility))));
+                    }
+                    // $C = ($income - $priceX * $x) / $priceY;
 
                     $xFloor = floor($x);
                     $yFloor = floor($y);
