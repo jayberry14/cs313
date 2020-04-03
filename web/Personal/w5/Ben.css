@@ -73,6 +73,8 @@ footer {
     background-position: center;
     color: whitesmoke;
     text-align: center;
+    max-width: 100%;
+    max-height: max-content;
 }
 .bg-8_5 {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQG9AKP_Np_pp5PzYjrq09YGdukOtiB6gKLgBU9pAdYg3S4aF_A&usqp=CAU") no-repeat center center fixed; 
