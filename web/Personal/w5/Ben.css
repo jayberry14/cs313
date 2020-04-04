@@ -73,7 +73,7 @@ footer {
     background-position: center;
     color: whitesmoke;
     text-align: center;
-    min-height: 100%;
+    /* min-height: 75vw; */
 }
 .bg-9 {
     background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190617/ourmid/pngtree-dark-green-material-poster-background-image_128892.jpg");
