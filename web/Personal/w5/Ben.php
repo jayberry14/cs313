@@ -98,6 +98,5 @@
         <span class="sr-only">Next</span>
         </a>
     </div>
-    <br><br>
 </body>
 </html>
