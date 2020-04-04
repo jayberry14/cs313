@@ -25,9 +25,9 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="Ben.php">Home</a></li>
+                <li><a href="Ben.php">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="MaxUtil.php">Maximizing Utility Calculator</a></li>
+                <li class="active"><a href="MaxUtil.php">Maximizing Utility Calculator</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             </div>
