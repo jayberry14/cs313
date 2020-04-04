@@ -42,7 +42,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
             </button>
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="https://images-na.ssl-images-amazon.com/images/I/41TVVos4V4L._AC_.jpg"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -66,21 +66,21 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="https://scitechdaily.com/images/Gravity-Mysteries-Chalkboard.jpg" alt="Lagrangian">
+                <img class="img-1" src="https://scitechdaily.com/images/Gravity-Mysteries-Chalkboard.jpg" alt="Lagrangian">
                 <div class="carousel-caption">
                 <h3>Chalkboard</h3>
                 <p>with stuff on it</p>
                 </div>      
             </div>
             <div class="item">
-                <img src="https://d3n8a8pro7vhmx.cloudfront.net/prosperousamerica/pages/4040/features/original/manufacturing_5.jpg?1512760258" alt="Manufacturing">
+                <img class="img-1" src="https://d3n8a8pro7vhmx.cloudfront.net/prosperousamerica/pages/4040/features/original/manufacturing_5.jpg?1512760258" alt="Manufacturing">
                 <div class="carousel-caption">
                 <h3>Manufacturing</h3>
                 <p>all the things</p>
                 </div>      
             </div>
             <div class="item">
-                <img src="https://ast.porttechnology.org/wp-content/media/20190527053126/container_weighing_header_1280_800_84_s_c1.jpg" alt="Cargo">
+                <img class="img-1" src="https://ast.porttechnology.org/wp-content/media/20190527053126/container_weighing_header_1280_800_84_s_c1.jpg" alt="Cargo">
                 <div class="carousel-caption">
                 <h3>Cargo Containers in Port</h3>
                 <p>Ain't they purdy?</p>
