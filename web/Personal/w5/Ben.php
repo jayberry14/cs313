@@ -42,7 +42,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
             </button>
-            <a class="navbar-brand" href="https://images-na.ssl-images-amazon.com/images/I/41TVVos4V4L._AC_.jpg"></a>
+            <a class="navbar-brand" href="https://images-na.ssl-images-amazon.com/images/I/41TVVos4V4L._AC_.jpg">Logo</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
